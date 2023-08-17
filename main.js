@@ -1,3 +1,2 @@
-import './assets/scss/all.scss';
-
-console.log("Hello world!");
+import "./assets/scss/all.scss"
+import { Modal } from "bootstrap"
