@@ -1,2 +1,2 @@
-import "./assets/scss/all.scss"
-import { Modal } from "bootstrap"
+import "./assets/scss/all.scss";
+import "bootstrap/dist/js/bootstrap.esm.min.js";
