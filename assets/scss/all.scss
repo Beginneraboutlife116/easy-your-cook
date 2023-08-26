@@ -1,7 +1,7 @@
-@use "abstract" as *;
-@use "utilities";
-
 @import "bootstrap/scss/functions";
+@import "./abstract/colors";
+@import "./utilities/opacities";
+
 // @import "bootstrap/scss/variables";
 // @import "bootstrap/scss/variables-dark";
 // @import "bootstrap/scss/maps";
