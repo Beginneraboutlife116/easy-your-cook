@@ -1,7 +1,7 @@
 @import "bootstrap/scss/functions";
 @import "./abstract/colors";
-@import "./utilities/opacities";
-
+@import "./abstract/typography";
+@import "./base/font-faces";
 // @import "bootstrap/scss/variables";
 // @import "bootstrap/scss/variables-dark";
 // @import "bootstrap/scss/maps";
@@ -24,6 +24,6 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 
-@import "./layout/header.scss";
-@import "./layout/footer.scss";
-@import "./pages/index.scss";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./pages";
