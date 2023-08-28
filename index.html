@@ -5,14 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <script type="module" crossorigin src="/easy-your-cook/assets/bootstrap.esm.min-e80bcd25.js"></script>
-    <link rel="stylesheet" href="/easy-your-cook/assets/bootstrap.esm-e23c41c6.css">
+    <script type="module" crossorigin src="/easy-your-cook/assets/bootstrap.esm.min-748c5d50.js"></script>
+    <link rel="stylesheet" href="/easy-your-cook/assets/bootstrap.esm-c9ae2c64.css">
   </head>
   <body>
-    <h1 class="header">我是 header 被elma改了呦</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+    <header class="bg-primary-100">
+    <div class="px-40 py-12 d-flex justify-content-between align-items-center">
+        <!-- 漢堡選單 & logo -->
+        <div class="d-flex">
+            <button class="me-4 px-16 py-8 border-0 bg-primary-100">
+                <img src="/easy-your-cook/assets/Hamburger Menu-38fafa1c.svg" alt="icon hamburger menu">
+            </button>
+            <h1>
+                <a href="index.html">快煮趣</a>
+            </h1>
+        </div>
+
+        <!-- Search Bar -->
+        <form action="#" method="get">
+                <div class="d-flex">
+                <input type="search" class="input-search me-8" id="search" placeholder="搜尋食譜關鍵字">
+                <button class="d-flex align-items-center px-16 py-8 btn btn-primary-500 border-0">
+                    <img class="me-1" src="/easy-your-cook/assets/filter-e9994e3b.svg" alt="icon fliter">
+                    <span class="text-white">進階搜尋</span>
+                </button>
+            </div>
+        </form>
+
+        <!-- Nav Bar -->
+        <div class="d-flex align-items-center">
+            <ul class="m-0 list-inline">
+                <li class="mr-16 px-16 py-8 list-inline-item">
+                    <a class="link-primary-800 text-decoration-none" href="#">註冊</a>
+                </li>
+                <li class="mr-16 px-16 py-8 list-inline-item">
+                    <a class="link-primary-800 text-decoration-none" href="#">登入</a>
+                </li>
+                <li class="px-16 py-8 btn btn-secondary border-0">
+                    <img class="me-1" src="/easy-your-cook/assets/Crown-deddec20.svg" alt="icon Crown">
+                    <a class="text-white text-decoration-none" href="#">升級VIP</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
 
     <h1 class="index-title">我是首頁</h1>
     <img src="/easy-your-cook/assets/cat-0c0689ae.jpg" style="width: 300px" alt="cat" />
