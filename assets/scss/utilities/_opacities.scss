@@ -1,0 +1,122 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "text-opacity":
+      map-merge(
+        map-get($utilities, "text-opacity"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "text-opacity"), "values"),
+              (
+                5: 0.05,
+                10: 0.1,
+                20: 0.2,
+                40: 0.4,
+                60: 0.6,
+                80: 0.8,
+              )
+            ),
+        )
+      ),
+    "opacity":
+      map-merge(
+        map-get($utilities, "opacity"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "opacity"), "values"),
+              (
+                5: 0.05,
+                10: 0.1,
+                20: 0.2,
+                40: 0.4,
+                60: 0.6,
+                80: 0.8,
+              )
+            ),
+        )
+      ),
+    "border-opacity":
+      map-merge(
+        map-get($utilities, "border-opacity"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "border-opacity"), "values"),
+              (
+                5: 0.05,
+                10: 0.1,
+                20: 0.2,
+                40: 0.4,
+                60: 0.6,
+                80: 0.8,
+              )
+            ),
+        )
+      ),
+    "link-opacity":
+      map-merge(
+        map-get($utilities, "link-opacity"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "link-opacity"), "values"),
+              (
+                5: 0.05,
+                10: 0.1,
+                20: 0.2,
+                40: 0.4,
+                60: 0.6,
+                80: 0.8,
+              )
+            ),
+        )
+      ),
+    "link-underline-opacity":
+      map-merge(
+        map-get($utilities, "link-underline-opacity"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "link-underline-opacity"), "values"),
+              (
+                5: 0.05,
+                10: 0.1,
+                20: 0.2,
+                40: 0.4,
+                60: 0.6,
+                80: 0.8,
+              )
+            ),
+        )
+      ),
+    "bg-opacity":
+      map-merge(
+        map-get($utilities, "bg-opacity"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "bg-opacity"), "values"),
+              (
+                5: 0.05,
+                10: 0.1,
+                20: 0.2,
+                40: 0.4,
+                60: 0.6,
+                80: 0.8,
+              )
+            ),
+        )
+      ),
+  )
+);
+
+@import "bootstrap/scss/utilities/api";

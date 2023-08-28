@@ -1,12 +1,85 @@
-// $theme-colors: (
-// "primary": green,
-// "secondary": $secondary,
-// "success": $success,
-// "info": $info,
-// "warning": $warning,
-// "danger": $danger,
-// "light": $light,
-// "dark": $dark
-// );
+$taupe: #a88d67;
+$green: #4c9b58;
 
-// $blue
+$colors: (
+  "taupe": $taupe,
+  "green": $green,
+);
+
+$taupe-50: #fcf4ed;
+$taupe-100: #eee8d8;
+$taupe-200: #e0d9c8;
+$taupe-300: #ccc0a5;
+$taupe-400: #c1af92;
+$taupe-500: $taupe;
+$taupe-600: #9b7c5b;
+$taupe-700: #81654d;
+$taupe-800: #695243;
+$taupe-900: #564538;
+$taupe-950: #2e231c;
+
+$green-50: #f3faf3;
+$green-100: #e4f4e6;
+$green-200: #cbe7cf;
+$green-300: #a1d4a9;
+$green-400: #70b87a;
+$green-500: $green;
+$green-600: #3a7d44;
+$green-700: #316439;
+
+$taupes: (
+  "taupe-50": $taupe-50,
+  "taupe-100": $taupe-100,
+  "taupe-200": $taupe-200,
+  "taupe-300": $taupe-300,
+  "taupe-400": $taupe-400,
+  "taupe-500": $taupe-500,
+  "taupe-600": $taupe-600,
+  "taupe-700": $taupe-700,
+  "taupe-800": $taupe-800,
+  "taupe-900": $taupe-900,
+  "taupe-950": $taupe-950,
+);
+
+$greens: (
+  "green-50": $green-50,
+  "green-100": $green-100,
+  "green-200": $green-200,
+  "green-300": $green-300,
+  "green-400": $green-400,
+  "green-500": $green-500,
+  "green-600": $green-600,
+  "green-700": $green-700,
+);
+
+$theme-colors: (
+  "primary-50": $taupe-50,
+  "primary-100": $taupe-100,
+  "primary-200": $taupe-200,
+  "primary-300": $taupe-300,
+  "primary-400": $taupe-400,
+  "primary-500": $taupe-500,
+  "primary-600": $taupe-600,
+  "primary-700": $taupe-700,
+  "primary-800": $taupe-800,
+  "primary-900": $taupe-900,
+  "primary-950": $taupe-950,
+  "secondary-50": $green-50,
+  "secondary-100": $green-100,
+  "secondary-200": $green-200,
+  "secondary-300": $green-300,
+  "secondary-400": $green-400,
+  "secondary-500": $green-500,
+  "secondary-600": $green-600,
+  "secondary-700": $green-700,
+  "success-100": #e7f4e4,
+  "success-300": #a7d5a0,
+  "success-600": #418138,
+  "success-800": #31572c,
+  "danger-100": #ffe5d4,
+  "danger-300": #ffa072,
+  "danger-600": #ed2d09,
+  "danger-800": #9c1910,
+);
+
+$body-bg: #fcf4ed;
