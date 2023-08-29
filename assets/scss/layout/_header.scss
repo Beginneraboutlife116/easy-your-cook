@@ -1,4 +1,49 @@
-.header {
-  background: #69f0ae;
-  font-size: 64px;
+header {
+  // 希望能設 padding, margin 的 變數
+  .px-16 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .px-40 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .py-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .me-8 {
+    margin-right: 8px;
+  }
+  .me-80 {
+    margin-right: 80px;
+  }
+
+  h1 a{
+    background-image: url(../images/logo.svg);
+    width: 144px;
+    height: 44px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .input-search {
+    width: 562px;
+    padding-left: 64px;
+    height: 40px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 2 6 rgba(0, 0, 0, .8);
+    background: $white url('../images/Zoom.svg') no-repeat 16px 8px;
+  }
+  ::placeholder {
+    // 這個顏色沒有在變數中
+    color: #997B59;
+  }
 }
