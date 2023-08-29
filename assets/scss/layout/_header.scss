@@ -1,28 +1,4 @@
 header {
-  // 希望能設 padding, margin 的 變數
-  .px-16 {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .px-40 {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .py-8 {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-  .py-12 {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-  .me-8 {
-    margin-right: 8px;
-  }
-  .me-80 {
-    margin-right: 80px;
-  }
-
   h1 a{
     background-image: url(../images/logo.svg);
     width: 144px;
