@@ -1,4 +1,9 @@
-.footer {
-  background: #69f0ae;
-  font-size: 64px;
+footer {
+  .footer-text {
+    width: 61%;
+  }
+
+  .copy-right {
+    border-top: 1px dashed $taupe-400;
+  }
 }
