@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <script type="module" crossorigin src="/easy-your-cook/assets/bootstrap.esm.min-5061be07.js"></script>
+    <link rel="stylesheet" href="/easy-your-cook/assets/bootstrap.esm-80bd4dfd.css">
+  </head>
+  <body>
+    <header class="bg-primary-100">
+    <div class="px-40 py-12 d-flex justify-content-between align-items-center">
+        <!-- 漢堡選單 & logo -->
+        <div class="d-flex">
+            <button class="me-24 px-16 py-8 border-0 bg-primary-100">
+                <img src="/easy-your-cook/assets/Hamburger Menu-38fafa1c.svg" alt="icon hamburger menu">
+            </button>
+            <h1>
+                <a href="index.html">快煮趣</a>
+            </h1>
+        </div>
+
+        <!-- Search Bar -->
+        <form action="#" method="get">
+                <div class="d-flex">
+                <input type="search" class="input-search me-8" id="search" placeholder="搜尋食譜關鍵字">
+                <button class="d-flex align-items-center px-16 py-8 btn btn-primary-500 border-0">
+                    <img class="me-1" src="/easy-your-cook/assets/filter-e9994e3b.svg" alt="icon fliter">
+                    <span class="text-white">進階搜尋</span>
+                </button>
+            </div>
+        </form>
+
+        <!-- Nav Bar -->
+        <ul class="m-0 d-flex align-items-center">
+            <li class="me-16 px-16 py-8">
+                <a class="link-primary-800 text-decoration-none" href="#">註冊</a>
+            </li>
+            <li class="me-16 px-16 py-8">
+                <a class="link-primary-800 text-decoration-none" href="#">登入</a>
+            </li>
+            <li class="px-16 py-8 btn btn-secondary-500 border-0">
+                <img class="me-1" src="/easy-your-cook/assets/Crown-deddec20.svg" alt="icon Crown">
+                <a class="text-white text-decoration-none" href="#">升級VIP</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+    <!-- 封面圖 -->
+    <div class="mb-60 w-100">
+        <img src="/easy-your-cook/assets/料理封面圖-93d54183.svg" alt="料理封面圖">
+    </div>
+
+    <div class="container">
+        <!-- 簡介 & 食材 -->
+        <div class="mb-56 row align-items-stretch">
+            <!-- 左側 簡介 -->
+            <div class="col-4 py-12">
+                <div class="h-100 d-flex flex-column justify-content-between">
+                    <!-- 標題 & 簡介 -->
+                    <div>
+                        <div class="mb-16 d-flex justify-content-between align-items-center">
+                            <h2 class="mb-0 fs-1">中華涼麵</h2>
+                            <ul class="d-flex justify-content-between align-items-center">
+                                <li class="me-16">
+                                    <button class="p-0 border-0 bg-primary-50">
+                                        <img src="/easy-your-cook/assets/mdi_facebook-d55b4037.svg" alt="facebook">
+                                    </button>
+                                </li>
+                                <li class="me-16">
+                                    <button class="p-0 border-0 bg-primary-50">
+                                        <img src="/easy-your-cook/assets/mdi_instagram-b3361011.svg" alt="instagram">
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="p-0 border-0 bg-primary-50">
+                                        <img src="/easy-your-cook/assets/mdi_twitter-b5709038.svg" alt="twitter">
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mb-20 d-flex">
+                            <span class="me-16">#台式</span>
+                            <span class="me-16">#速成</span>
+                            <span class="me-16">#新手也可以</span>
+                            <span>#消暑</span>
+                        </div>
+                        <div class="py-16">
+                            <h3 class="mb-16 fs-5">簡介</h3>
+                            <p>「中華涼麵」是夏日經典，滋味爽口。細緻麵條搭配多種新鮮蔬菜，加上香濃醬汁，充滿層次。簡單步驟，快速上菜，滿足味蕾，驅散暑氣。</p>
+                        </div>
+                    </div>
+                    <!-- 廚師 -->
+                    <div class="px-20 py-16 d-flex justify-content-between align-items-center bg-white rounded-4 shadow-sm">
+                        <div class="d-flex align-items-center">
+                            <img class="me-16" src="/easy-your-cook/assets/avatar-70090926.svg" alt="廚師頭像">
+                            <span class="fs-4">阿聰師</span>
+                        </div>
+                        <span class="fs-7 opacity-50">122 食譜文章</span>
+                    </div>
+                    <!-- 喜歡 & 加入我的收藏 -->
+                    <div>
+                        <span class="mb-8 opacity-50">150 人說喜歡</span>
+                        <div class="row">
+                            <div class="col">
+                                <button class="w-100 py-12 d-flex justify-content-center align-items-center btn btn-primary-500">
+                                    <img class="me-12" src="/easy-your-cook/assets/heart-3cfb6c1e.svg" alt="heart">
+                                    <p class="m-0 fs-6 link-white">喜歡</p>
+                                </button>
+                            </div>
+                            <div class="col">
+                                <button class="w-100 py-12 d-flex justify-content-center align-items-center btn btn-primary-500">
+                                    <img class="me-12" src="/easy-your-cook/assets/bookmark-5c9df8e5.svg" alt="bookmark">
+                                    <p class="m-0 fs-6 link-white">加入我的收藏夾</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右側 食材 -->
+            <div class="col-5 px-20 py-16 bg-white rounded-4">
+                <div class="d-flex py-12 border-bottom">
+                    <div class="w-50 d-flex flex-column align-items-center fs-5 border-end">
+                        <p class="mb-12">份量</p>
+                        <p class="m-0"><span class="fw-bold" style="font-size: 28px;">2 </span>人份</p>
+                    </div>
+                    <div class="w-50 d-flex flex-column align-items-center fs-5">
+                        <p class="mb-12">時間</p>
+                        <p class="m-0"><span class="fw-bold" style="font-size: 28px;">30 </span>分鐘</p>
+                    </div>
+                </div>
+
+                <h3 class="m-0 py-20 fs-4 text-center border-bottom">食材</h3>
+
+                <div class="mb-16 d-flex py-16">
+                    <div class="w-50 px-12 border-end">
+                        <div class="mb-16 d-flex justify-content-between align-items-center">
+                            <span>黃麵</span>
+                            <span>1包</span>
+                        </div>
+                        <div class="mb-16 d-flex justify-content-between align-items-center">
+                            <span>胡蘿蔔</span>
+                            <span>1根</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>雞胸肉</span>
+                            <span>半片</span>
+                        </div>
+                    </div>
+                    <div class="w-50 px-12">
+                        <div class="mb-16 d-flex justify-content-between align-items-center">
+                            <span>小黃瓜</span>
+                            <span>1根</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>雞蛋</span>
+                            <span>2根</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-primary-500">
+                    <p class="m-0 p-12 bg-primary-500 text-white fs-5">涼麵醬</p>
+                    <div class="d-flex py-16">
+                        <div class="w-50 px-12 border-end">
+                            <div class="mb-16 d-flex justify-content-between align-items-center">
+                                <span>黃麵</span>
+                                <span>1包</span>
+                            </div>
+                            <div class="mb-16 d-flex justify-content-between align-items-center">
+                                <span>胡蘿蔔</span>
+                                <span>1根</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>雞胸肉</span>
+                                <span>半片</span>
+                            </div>
+                        </div>
+                        <div class="w-50 px-12">
+                            <div class="mb-16 d-flex justify-content-between align-items-center">
+                                <span>小黃瓜</span>
+                                <span>1根</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>雞蛋</span>
+                                <span>2根</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 料理步驟 -->
+        <h3 class="mb-20 fs-2">料理步驟</h3>
+        <!-- 步驟1 -->
+        <div class="row">
+            <div class="col-9 mb-20 border-bottom">
+                <div class="row mb-20 align-items-stretch">
+                    <div class="col-5">
+                        <img src="/easy-your-cook/assets/步驟1-a7fb73f0.svg" alt="步驟1">
+                    </div>
+                    <div class="col-7 flex-column justify-content-between">
+                        <div>
+                            <span class="d-flex mb-16 fs-3 fw-bold">01</span>
+                            <ol class="mb-16">
+                                <li class="mb-8" style="list-style: decimal;">將黃麵過水川燙就起鍋，主要是外面賣的黃麵有一層油脂，過水川燙能減少一點油膩感</li>
+                                <li class="mb-8" style="list-style: decimal;">胡蘿蔔(不用煮過) & 小黃瓜切絲，雞胸肉蒸熟後手撕成絲</li>
+                                <li class="mb-8" style="list-style: decimal;">將所有涼麵醬材料拌勻</li>
+                            </ol>
+                        </div>
+                        <div>
+                            <span class="d-flex mb-16 fs-5 fw-bold">💡 小撇步</span>
+                            <ul class="mb-12">
+                                <li class="mb-8" style="list-style: initial;">調味醬的濃稠度一個人喜好可以增減開水的量</li>
+                                <li class="mb-8" style="list-style: initial;">有些人喜歡蒜味有些不愛，所以蒜頭的量也可以增減喔</li>
+                                <li class="mb-8" style="list-style: initial;">黃麵過水川燙就起鍋，主要是外面賣的黃麵有一層油脂，過水川燙能減少一點油膩感</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 步驟2 -->
+        <div class="row">
+            <div class="col-9 mb-20 border-bottom">
+                <div class="row mb-20">
+                    <div class="col-5">
+                        <img src="/easy-your-cook/assets/步驟2-a049761c.svg" alt="步驟2">
+                    </div>
+                    <div class="col-7">
+                        <span class="d-flex mb-16 fs-3 fw-bold">02</span>
+                        <ol class="mb-16">
+                            <li class="mb-8" style="list-style: decimal;">熱油鍋煎蛋皮，先將兩顆蛋打散後，取一平底鍋至做蛋皮，完成後放涼準備切絲</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 步驟3 -->
+        <div class="mb-56 row align-items-stretch">
+            <div class="col-9 mb-20 border-bottom">
+                <div class="row mb-20">
+                    <div class="col-5">
+                        <img src="/easy-your-cook/assets/步驟3-a35b0868.svg" alt="步驟3">
+                    </div>
+                    <div class="col-7 d-flex flex-column justify-content-between">
+                            <div>
+                                <span class="d-flex mb-16 fs-3 fw-bold">03</span>
+                                <ol class="mb-16">
+                                    <li class="mb-8" style="list-style: decimal;">最後就是擺盤時間囉~~~將黃麵擺中間，小黃瓜絲、胡蘿蔔絲、雞絲、蛋絲擺在面上面，淋上涼麵醬</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <span class="d-flex mb-16 fs-5 fw-bold">💡 小撇步</span>
+                                <ul class="mb-12">
+                                    <li class="mb-8" style="list-style: initial;">也可以加火腿絲，一個人喜好調整配料囉~~</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white">
+    <!-- 上側 主區 -->
+    <div class="container py-40 d-flex justify-content-between">
+        <!-- 左側 logo區 -->
+        <div class="d-flex flex-column align-items-center">
+            <img class="mb-12" src="/easy-your-cook/assets/logo_footer-36354ba8.svg" alt="footer logo">
+            <span class="fs-5 text-primary-800">食譜、教學、備料，一次搞定！</span>
+        </div>
+
+        <!-- 右側 文字區 -->
+        <div class="footer-text d-flex justify-content-between">
+            <!-- 關於我們 -->
+            <div class="py-16">
+                <h3 class="mb-24 text-primary-800">關於我們</h3>
+                <ul class="p-0">
+                    <li class="mb-12">
+                        <a class="text-decoration-none link-primary-800" href="#">品牌精神</a>
+                    </li>
+                    <li class="mb-12">
+                        <a class="text-decoration-none link-primary-800" href="#">團隊成員</a>
+                    </li>
+                    <li>
+                        <a class="text-decoration-none link-primary-800" href="#">品牌故事</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 會員服務 -->
+            <div class="py-16">
+                <h3 class="mb-24 text-primary-800">會員服務</h3>
+                <ul class="p-0">
+                    <li class="mb-12">
+                        <a class="text-decoration-none link-primary-800" href="#">忘記密碼</a>
+                    </li>
+                    <li class="mb-12">
+                        <a class="text-decoration-none link-primary-800" href="#">帳號設定</a>
+                    </li>
+                    <li class="mb-12">
+                        <a class="text-decoration-none link-primary-800" href="#">個人頁面</a>
+                    </li>
+                    <li class="mb-12">
+                        <a class="text-decoration-none link-primary-800" href="#">我的訂單</a>
+                    </li>
+                    <li class="mb-12">
+                        <a class="text-decoration-none link-primary-800" href="#">食譜收藏</a>
+                    </li>
+                    <li class="mb-12">
+                        <a class="text-decoration-none link-primary-800" href="#">VIP 會員</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 逛食譜 -->
+            <div class="py-16">
+                <h3 class="mb-24 text-primary-800">逛食譜</h3>
+                <ul class="p-0">
+                    <li class="mb-12">
+                        <a class="text-decoration-none link-primary-800" href="#">全部分類</a>
+                    </li>
+                    <li class="mb-12">
+                        <a class="text-decoration-none link-primary-800" href="#">帳號設定</a>
+                    </li>
+                    <li class="mb-12">
+                        <a class="text-decoration-none link-primary-800" href="#">人氣食譜</a>
+                    </li>
+                    <li class="mb-12">
+                        <a class="text-decoration-none link-primary-800" href="#">影音食譜</a>
+                    </li>
+                    <li>
+                        <a class="text-decoration-none link-primary-800" href="#">最新上架</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 聯絡我們 -->
+            <div class="py-16">
+                <h3 class="mb-24 text-primary-800">聯絡我們</h3>
+                <ul class="p-0 mb-24">
+                    <li class="mb-12">
+                        <a class="d-flex align-items-center text-decoration-none link-primary-800" href="tel:06-1234567">
+                            <img class="me-8" src="/easy-your-cook/assets/Phone-e2c48493.svg" alt="icon Phone">
+                            06-1234567
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center text-decoration-none link-primary-800" href="mailto:cookkk@daydaycook.com">
+                            <img class="me-8" src="/easy-your-cook/assets/Email-1d5eee54.svg" alt="icon Email">
+                            cookkk@daydaycook.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="p-0 py-8 d-flex justify-content-between align-items-center">
+                    <li>
+                        <a href="#">
+                            <img src="/easy-your-cook/assets/mdi_facebook-d55b4037.svg" alt="icon facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/easy-your-cook/assets/mdi_instagram-b3361011.svg" alt="icon instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/easy-your-cook/assets/mdi_twitter-b5709038.svg" alt="icon twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/easy-your-cook/assets/uil_youtube-27e25113.svg" alt="icon youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 下側 copy right -->
+    <div class="copy-right py-16">
+        <p class="mb-1 text-center text-primary-800">© 2023 LOGO. All rights reserved.</p>
+        <p class="m-0 text-center text-primary-800">未經授權禁止複製本網站使用的信息、圖像、文字等。</p>
+    </div>
+</footer>
+
+    
+  </body>
+</html>
