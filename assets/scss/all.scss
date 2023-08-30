@@ -3,7 +3,7 @@
 @import "./abstract/typography";
 @import "./abstract/spacings";
 @import "./base/font-faces";
-@import "./base/base";
+
 // @import "bootstrap/scss/variables";
 // @import "bootstrap/scss/variables-dark";
 // @import "bootstrap/scss/maps";
@@ -25,6 +25,8 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 @import "bootstrap/scss/reboot";
+
+@import "./base/base";
 
 @import "./layout/header";
 @import "./layout/footer";
