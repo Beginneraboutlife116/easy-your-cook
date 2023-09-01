@@ -4,55 +4,374 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>Easy your cook</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px" alt="cat" />
-    <button
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      點我
-    </button>
-
-    <div
-      class="modal"
-      tabindex="-1"
-      id="exampleModal"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+    <main>
+      <div class="mb-lg-60 position-relative">
+        <div>
+          <div id="hero" class="carousel slide">
+            <div class="carousel-indicators bottom-72px m-0">
+              <% for (let i = 1; i <= 4; i++) { %>
+              <button
+                type="button"
+                data-bs-target="#hero"
+                data-bs-slide-to="<%= i - 1 %>"
+                class="<%= i === 1 ? 'active' : '' %> rounded-circle border-0"
+                aria-current="<%= i === 1 %>"
+                aria-label="Slide <%= i %>"
+              ></button>
+              <% } %>
+            </div>
+            <div class="carousel-inner">
+              <% for (let i = 1; i <= 4; i++) { %>
+              <div
+                class="carousel-item <%= i === 1 ? 'active' : '' %> position-relative"
+              >
+                <picture>
+                  <source
+                    srcset="../assets/images/carousel-image.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="../assets/images/carousel-image.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="../assets/images/carousel-image.png"
+                    class="d-block w-100 object-fit-cover | carousel__image"
+                    alt=""
+                  />
+                </picture>
+                <div
+                  class="bg-primary-950 w-100 d-none d-md-block position-absolute bottom-0"
+                  style="--bs-bg-opacity: 0.8"
+                >
+                  <div class="d-flex text-light container | carousel__footer">
+                    <h5 class="fs-5 fw-bold mb-0 me-24">南蠻機雞咖哩</h5>
+                    <p class="d-flex gap-16 align-items-center fw-medium mb-0">
+                      <span>#主食</span>
+                      <span>#飯料理</span>
+                      <span>#雞肉</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <% } %>
+            </div>
           </div>
-          <div class="modal-body">
-            <p>Modal body text goes here.</p>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#hero"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon w-100 h-25"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#hero"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon w-100 h-25"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="position-absolute top-50 start-50 translate-middle w-100">
+          <h1 class="fs-1 text-light text-center fw-bold mb-16">
+            今天想煮什麼料理？
+          </h1>
+          <p
+            class="text-center fs-5 d-flex justify-content-center align-items-center flex-wrap column-gap-12 text-light"
+          >
+            <span class="fs-4 fw-bold me-20">熱門關鍵字</span>
+            <span>雞肉</span>
+            <span>蛋料理</span><span>咖哩</span><span>晚餐</span>
+            <span>芒果</span><span>豆腐</span><span>雞肉</span>
+            <span>蛋料理</span><span>芒果</span><span>豆腐</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="container mb-84">
+        <div class="row justify-content-lg-between">
+          <div class="col-lg-8">
+            <section class="mb-104">
+              <div
+                class="d-flex justify-content-lg-between align-items-center mb-lg-32"
+              >
+                <h2 class="fw-bold fs-2 text-black position-relative">
+                  今日食譜推薦
+                  <hr
+                    class="border-bottom border-primary-300 border-8 m-0 position-absolute bottom-0 w-100"
+                  />
+                </h2>
+                <a
+                  class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium"
+                  href="./menus.html"
+                  ><span>查看詳情</span
+                  ><img src="../assets/images/Right Arrow.svg" alt="查看詳情"
+                /></a>
+              </div>
+              <div class="d-flex column-gap-32 row-gap-48 flex-wrap">
+                <% for (let i = 1; i <= 4; i++) { %>
+                <div class="rounded-3 shadow | card">
+                  <div class="position-relative">
+                    <a href="./recipe.html">
+                      <picture>
+                        <source
+                          srcset="../assets/images/card-img.avif"
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="../assets/images/card-img.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          src="../assets/images/card-img.png"
+                          class="card__image object-fit-cover rounded-top-3 opacity-50-hover"
+                          alt="蕃茄海鮮義大利麵"
+                        />
+                      </picture>
+                    </a>
+                    <button
+                      class="position-absolute border-0 bg-light rounded-circle top-16px end-16px | card__button--collection"
+                      aria-label="收藏按鈕"
+                    >
+                      <img
+                        src="../assets/images/bookmark<%= i !== 4 ? '-fill' : '' %>.svg"
+                        alt="收藏"
+                      />
+                    </button>
+                    <% if (i >= 3) { %>
+                    <button
+                      class="position-absolute border-0 bottom-12px start-12px bg-dark bg-opacity-40 rounded-3 | card__button--collection"
+                      aria-label="錄影播放"
+                    >
+                      <img src="../assets/images/video.svg" alt="錄影播放" />
+                    </button>
+                    <% } %>
+                  </div>
+                  <div class="py-20 px-16 bg-light rounded-bottom-3">
+                    <h5 class="fs-5 fw-bold mb-8">
+                      <a
+                        href="./recipe.html"
+                        class="text-black opacity-50-hover"
+                      >
+                        蕃茄海鮮義大利麵</a
+                      >
+                    </h5>
+                    <p class="d-flex gap-16 text-gray-600 fw-medium">
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="../assets/images/chef-hat.svg" alt="" /><span
+                          >DAYDAYcook</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="../assets/images/stopwatch.svg" alt="" /><span
+                          >20 min</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="../assets/images/heart.svg" alt="" /><span
+                          >150</span
+                        >
+                      </span>
+                    </p>
+                    <p class="text-gray-600 d-flex gap-8 flex-wrap m-0">
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>主食</span
+                      >
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>義大利麵</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <% } %>
+              </div>
+            </section>
+            <section>
+              <div
+                class="d-flex justify-content-lg-between align-items-center mb-lg-32"
+              >
+                <h2 class="fw-bold fs-2 text-black position-relative">
+                  當季料理
+                  <hr
+                    class="border-bottom border-primary-300 border-8 m-0 position-absolute bottom-0 w-100"
+                  />
+                </h2>
+                <a
+                  class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium"
+                  href="./menus.html"
+                  ><span>查看詳情</span
+                  ><img src="../assets/images/Right Arrow.svg" alt="查看詳情"
+                /></a>
+              </div>
+              <div class="d-flex column-gap-32 row-gap-48 flex-wrap">
+                <% for (let i = 1; i <= 4; i++) { %>
+                <div class="rounded-3 shadow | card">
+                  <div class="position-relative">
+                    <a href="./recipe.html">
+                      <picture>
+                        <source
+                          srcset="../assets/images/card-img.avif"
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="../assets/images/card-img.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          src="../assets/images/card-img.png"
+                          class="card__image object-fit-cover rounded-top-3 opacity-50-hover"
+                          alt="蕃茄海鮮義大利麵"
+                        />
+                      </picture>
+                    </a>
+                    <button
+                      class="position-absolute border-0 bg-light rounded-circle top-16px end-16px | card__button--collection"
+                      aria-label="收藏按鈕"
+                    >
+                      <img
+                        src="../assets/images/bookmark<%= i === 3 ? '-fill' : '' %>.svg"
+                        alt="收藏"
+                      />
+                    </button>
+                    <% if (i === 2) { %>
+                    <button
+                      class="position-absolute border-0 bottom-12px start-12px bg-dark bg-opacity-40 rounded-3 | card__button--collection"
+                      aria-label="錄影播放"
+                    >
+                      <img src="../assets/images/video.svg" alt="錄影播放" />
+                    </button>
+                    <% } %>
+                  </div>
+                  <div class="py-20 px-16 bg-light rounded-bottom-3">
+                    <h5 class="fs-5 fw-bold mb-8">
+                      <a
+                        href="./recipe.html"
+                        class="text-black opacity-50-hover"
+                      >
+                        蕃茄海鮮義大利麵</a
+                      >
+                    </h5>
+                    <p class="d-flex gap-16 text-gray-600 fw-medium">
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="../assets/images/chef-hat.svg" alt="" /><span
+                          >DAYDAYcook</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="../assets/images/stopwatch.svg" alt="" /><span
+                          >20 min</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="../assets/images/heart.svg" alt="" /><span
+                          >150</span
+                        >
+                      </span>
+                    </p>
+                    <p class="text-gray-600 d-flex gap-8 flex-wrap m-0">
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>主食</span
+                      >
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>義大利麵</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <% } %>
+              </div>
+            </section>
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="col-lg-3">
+            <section>
+              <h2
+                class="fs-4 fw-semibold d-flex align-items-center column-gap-4 mb-36"
+              >
+                <img src="../assets/images/ranking.svg" alt="" /><span
+                  >熱門食譜排行</span
+                >
+              </h2>
+              <ol class="d-flex flex-column gap-24 p-0 mb-16">
+                <% for (let i = 1; i <= 6; i++) { %>
+                <li class="position-relative rounded-3 shadow">
+                  <div
+                    class="position-absolute text-center bg-primary-500 text-light fs-4 fw-semibold rounded-circle top-8px start-8px | card__rank--rank"
+                  >
+                    <%= i %>
+                  </div>
+                  <picture>
+                    <source
+                      srcset="../assets/images/rank-card-img.avif"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="../assets/images/rank-card-img.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="../assets/images/rank-card-img.png"
+                      class="rounded-top-3 object-fit-cover | card__rank--image"
+                      alt="熱門第一名食譜"
+                    />
+                  </picture>
+                  <div class="p-8 bg-light rounded-bottom-3">
+                    <h5 class="mb-4 fw-semibold text-primary-900">
+                      紅絲絨杯子蛋糕
+                    </h5>
+                    <p class="d-flex gap-12 text-gray-600 fw-medium m-0">
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="../assets/images/chef-hat.svg" alt="" /><span
+                          >DAYDAYcook</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="../assets/images/stopwatch.svg" alt="" /><span
+                          >20 min</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="../assets/images/heart.svg" alt="" /><span
+                          >150</span
+                        >
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <% } %>
+              </ol>
+              <a
+                class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium justify-content-end"
+                href="./menus.html"
+                ><span>查看詳情</span
+                ><img src="../assets/images/Right Arrow.svg" alt="查看詳情"
+              /></a>
+            </section>
+            <img src="../assets/images/dash-line@296w.svg" alt="" class="my-56">
+            <section>
+
+            </section>
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
     <%- include('./layout/footer'); -%>
 

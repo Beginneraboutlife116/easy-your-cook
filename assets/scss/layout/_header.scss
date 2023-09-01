@@ -16,7 +16,7 @@ header {
     border: 0;
     border-radius: 8px;
     box-shadow: 0 2 6 rgba(0, 0, 0, .8);
-    background: $white url('../images/Zoom.svg') no-repeat 16px 8px;
+    background: $light url('../images/Zoom.svg') no-repeat 16px 8px;
   }
   ::placeholder {
     // 這個顏色沒有在變數中
