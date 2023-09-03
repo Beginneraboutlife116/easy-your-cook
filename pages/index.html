@@ -303,14 +303,14 @@
           <div class="col-lg-3">
             <section>
               <h2
-                class="fs-4 fw-semibold d-flex align-items-center column-gap-4 mb-36"
+                class="fs-4 fw-semibold d-flex align-items-center column-gap-4 mb-36 justify-content-center"
               >
                 <img src="../assets/images/ranking.svg" alt="" /><span
                   >熱門食譜排行</span
                 >
               </h2>
               <ol class="d-flex flex-column gap-24 p-0 mb-16">
-                <% for (let i = 1; i <= 6; i++) { %>
+                <% for (let i = 1; i <= 5; i++) { %>
                 <li class="position-relative rounded-3 shadow">
                   <div
                     class="position-absolute text-center bg-primary-500 text-light fs-4 fw-semibold rounded-circle top-8px start-8px | card__rank--rank"
@@ -364,9 +364,82 @@
                 ><img src="../assets/images/Right Arrow.svg" alt="查看詳情"
               /></a>
             </section>
-            <img src="../assets/images/dash-line@296w.svg" alt="" class="my-56">
+            <img
+              src="../assets/images/dash-line@296w.svg"
+              alt=""
+              class="my-56"
+            />
             <section>
-
+              <h2
+                class="fs-4 fw-semibold d-flex align-items-center column-gap-4 mb-40 justify-content-center"
+              >
+                <img src="../assets/images/calendar.svg" alt="" /><span
+                  >當季食材</span
+                >
+              </h2>
+              <ul class="p-0">
+                <li>
+                  <h3 class="py-8 px-16 bg-light rounded-2 shadow mb-0">
+                    <img
+                      src="../assets/images/lettuce.svg"
+                      class="me-4"
+                      alt=""
+                    />
+                    蔬菜
+                  </h3>
+                  <section
+                    class="d-flex p-16 flex-wrap row-gap-16 column-gap-24"
+                  >
+                    <% ['高麗菜', '花椰菜', '白蘿蔔', '空心菜', '茄子',
+                    '小白菜'].forEach(function (item) { %>
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800"><%= item %></span
+                      ><img src="../assets/images/right-caret.svg" alt=""
+                    /></a>
+                    <% }) %>
+                  </section>
+                </li>
+                <li>
+                  <h3 class="py-8 px-16 bg-light rounded-2 shadow mb-0">
+                    <img src="../assets/images/apple.svg" class="me-4" alt="" />
+                    水果
+                  </h3>
+                  <section
+                    class="d-flex p-16 flex-wrap row-gap-16 column-gap-24"
+                  >
+                    <% ['水梨', '芒果', '水蜜桃', '櫻桃'].forEach(function
+                    (item) { %>
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800"><%= item %></span
+                      ><img src="../assets/images/right-caret.svg" alt=""
+                    /></a>
+                    <% }) %>
+                  </section>
+                </li>
+                <li>
+                  <h3 class="py-8 px-16 bg-light rounded-2 shadow mb-0">
+                    <img src="../assets/images/fish.svg" class="me-4" alt="" />
+                    海鮮
+                  </h3>
+                  <section
+                    class="d-flex p-16 flex-wrap row-gap-16 column-gap-24"
+                  >
+                    <% ['高麗菜', '花椰菜', '白蘿蔔', '空心菜', '茄子',
+                    '小白菜'].forEach(function (item) { %>
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800"><%= item %></span
+                      ><img src="../assets/images/right-caret.svg" alt=""
+                    /></a>
+                    <% }) %>
+                  </section>
+                </li>
+              </ul>
             </section>
           </div>
         </div>
