@@ -20,10 +20,11 @@ $h2-font-size: $font-size-base * 2.25;
 $h3-font-size: $font-size-base * 1.5;
 
 $font-sizes: (
-  1: $font-size-base * 2.5,
-  2: $h2-font-size,
-  3: $font-size-base * 2,
-  4: $h3-font-size,
-  5: $font-size-base * 1.25,
-  6: $font-size-base,
+  1: $font-size-base * 2.5,   // 40px
+  2: $h2-font-size,           // 36px
+  3: $font-size-base * 2,     // 32px
+  4: $h3-font-size,           // 24px
+  5: $font-size-base * 1.25,  // 20px
+  6: $font-size-base,         // 16px
+  7: $font-size-base * 0.875, // 14px
 );
