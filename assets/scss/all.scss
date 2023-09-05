@@ -2,6 +2,7 @@
 @import "./abstract/colors";
 @import "./abstract/typography";
 @import "./abstract/spacings";
+
 @import "./base/font-faces";
 
 // @import "bootstrap/scss/variables";
@@ -27,6 +28,8 @@
 @import "bootstrap/scss/reboot";
 
 @import "./base/base";
+
+@import "./component/border-dash";
 
 @import "./layout/header";
 @import "./layout/footer";
