@@ -31,15 +31,15 @@
               >
                 <picture>
                   <source
-                    srcset="../assets/images/carousel-image.avif"
+                    srcset="../assets/images/home/carousel-image.avif"
                     type="image/avif"
                   />
                   <source
-                    srcset="../assets/images/carousel-image.webp"
+                    srcset="../assets/images/home/carousel-image.webp"
                     type="image/webp"
                   />
                   <img
-                    src="../assets/images/carousel-image.png"
+                    src="../assets/images/home/carousel-image.png"
                     class="d-block w-100 object-fit-cover | carousel__image"
                     alt=""
                   />
@@ -49,12 +49,20 @@
                   style="--bs-bg-opacity: 0.8"
                 >
                   <div class="d-flex text-light container | carousel__footer">
-                    <h5 class="fs-5 fw-bold mb-0 me-24">南蠻機雞咖哩</h5>
+                    <h5 class="fs-5 fw-bold mb-0 me-24">南蠻雞咖哩</h5>
                     <p class="d-flex gap-16 align-items-center fw-medium mb-0">
                       <span>#主食</span>
                       <span>#飯料理</span>
                       <span>#雞肉</span>
                     </p>
+                    <a
+                      href="./recipe.html"
+                      class="text-light opacity-50-hover d-flex align-items-center gap-8 ms-auto fw-medium"
+                      ><span>查看詳情</span
+                      ><img
+                        src="/assets/images/white-arrow-icon.svg"
+                        alt="前往南蠻雞咖哩"
+                    /></a>
                   </div>
                 </div>
               </div>
@@ -129,15 +137,15 @@
                     <a href="./recipe.html">
                       <picture>
                         <source
-                          srcset="../assets/images/card-img.avif"
+                          srcset="../assets/images/home/card-img.avif"
                           type="image/avif"
                         />
                         <source
-                          srcset="../assets/images/card-img.webp"
+                          srcset="../assets/images/home/card-img.webp"
                           type="image/webp"
                         />
                         <img
-                          src="../assets/images/card-img.png"
+                          src="../assets/images/home/card-img.png"
                           class="card__image object-fit-cover rounded-top-3 opacity-50-hover"
                           alt="蕃茄海鮮義大利麵"
                         />
@@ -226,15 +234,15 @@
                     <a href="./recipe.html">
                       <picture>
                         <source
-                          srcset="../assets/images/card-img.avif"
+                          srcset="../assets/images/home/card-img.avif"
                           type="image/avif"
                         />
                         <source
-                          srcset="../assets/images/card-img.webp"
+                          srcset="../assets/images/home/card-img.webp"
                           type="image/webp"
                         />
                         <img
-                          src="../assets/images/card-img.png"
+                          src="../assets/images/home/card-img.png"
                           class="card__image object-fit-cover rounded-top-3 opacity-50-hover"
                           alt="蕃茄海鮮義大利麵"
                         />
@@ -319,15 +327,15 @@
                   </div>
                   <picture>
                     <source
-                      srcset="../assets/images/rank-card-img.avif"
+                      srcset="../assets/images/home/rank-card-img.avif"
                       type="image/avif"
                     />
                     <source
-                      srcset="../assets/images/rank-card-img.webp"
+                      srcset="../assets/images/home/rank-card-img.webp"
                       type="image/webp"
                     />
                     <img
-                      src="../assets/images/rank-card-img.png"
+                      src="../assets/images/home/rank-card-img.png"
                       class="rounded-top-3 object-fit-cover | card__rank--image"
                       alt="熱門第一名食譜"
                     />
@@ -378,7 +386,7 @@
                 >
               </h2>
               <ul class="p-0">
-                <li>
+                <li class="text-primary-800">
                   <h3 class="py-8 px-16 bg-light rounded-2 shadow mb-0">
                     <img
                       src="../assets/images/lettuce.svg"
@@ -401,7 +409,7 @@
                     <% }) %>
                   </section>
                 </li>
-                <li>
+                <li class="text-primary-800">
                   <h3 class="py-8 px-16 bg-light rounded-2 shadow mb-0">
                     <img src="../assets/images/apple.svg" class="me-4" alt="" />
                     水果
@@ -420,7 +428,7 @@
                     <% }) %>
                   </section>
                 </li>
-                <li>
+                <li class="text-primary-800">
                   <h3 class="py-8 px-16 bg-light rounded-2 shadow mb-0">
                     <img src="../assets/images/fish.svg" class="me-4" alt="" />
                     海鮮
@@ -442,6 +450,87 @@
               </ul>
             </section>
           </div>
+        </div>
+      </div>
+      <div class="position-relative">
+        <div class="container pt-80 pb-120">
+          <div
+            class="d-flex justify-content-lg-between align-items-center mb-lg-40"
+          >
+            <h2 class="fs-2 fw-bold position-relative">
+              跟著做就沒問題，影音食譜講解全步驟
+              <hr
+                class="border-bottom border-primary-300 border-8 m-0 position-absolute bottom-0 w-100"
+              />
+            </h2>
+            <a
+              class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium"
+              href="./menus.html"
+              ><span>查看詳情</span
+              ><img src="../assets/images/Right Arrow.svg" alt="查看詳情"
+            /></a>
+          </div>
+          <div class="row">
+            <% for (let i = 1; i <= 4; i++) { %>
+            <div class="col-lg-3">
+              <div class="position-relative">
+                <picture>
+                  <source
+                    srcset="../assets/images/home/video-image.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="../assets/images/home/video-image.webp"
+                    type="image/webp"
+                  />
+                  <img src="../assets/images/home/video-image.png" alt="" />
+                </picture>
+                <a
+                  href="./recipe.html#video"
+                  aria-label="前往班尼迪克蛋頁面的影片播放區"
+                  class="position-absolute p-16 top-50 start-50 translate-middle bg-light rounded-circle opacity-50-hover"
+                >
+                  <img
+                    src="../assets/images/play-icon.svg"
+                    alt="前往班尼迪克蛋頁面的影片播放區"
+                  />
+                </a>
+              </div>
+              <div
+                class="py-12 px-16 bg-dark d-flex align-items-center justify-content-lg-between"
+              >
+                <h3 class="m-0">
+                  <a class="fs-6 text-light fw-bold" href="./recipe.html"
+                    >班尼迪克蛋</a
+                  >
+                </h3>
+                <a href="./recipe.html"
+                  ><img
+                    src="../assets/images/white-arrow-icon.svg"
+                    alt="前往班尼迪克蛋頁面"
+                /></a>
+              </div>
+            </div>
+            <% } %>
+          </div>
+        </div>
+        <div class="bg-primary-950 bg-opacity-60 text-light | video-mock">
+          <div class="opacity-100">
+            <img src="../assets/images/Crown.svg" alt="" class="" />
+          </div>
+          <p class="fs-3 fw-bold mt-8">VIP會員獨享服務</p>
+          <p class="fw-medium lh-lg mb-lg-80">
+            光看文字食譜還是不太夠？<br />我們提供給您最豐富仔細的影音食譜教學！
+          </p>
+          <a
+            href="./subscribe.html"
+            class="d-flex flex-column align-items-center gap-8"
+          >
+            <img src="../assets/images/home/button-subscribe.gif" alt="" />
+            <span class="text-light fw-bold opacity-50-hover"
+              >立刻了解詳情</span
+            >
+          </a>
         </div>
       </div>
     </main>
