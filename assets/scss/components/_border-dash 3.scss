@@ -1,0 +1,7 @@
+.border-dash-bottom {
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to right, $taupe-400 0%, $taupe-400 50%, transparent 50%);
+    background-size: 16px 100%;  // 寬度 高度
+    background-repeat: repeat-x;
+}
