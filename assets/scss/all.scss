@@ -2,8 +2,14 @@
 @import "./abstract/colors";
 @import "./abstract/typography";
 @import "./abstract/spacings";
+@import "./abstract/sizes";
 @import "./base/font-faces";
-
+@import "./base/base";
+@import "./components/carousel";
+@import "./components/card";
+@import "./utilities/opacities";
+@import "./utilities/shadow";
+@import "./pages/home";
 // @import "bootstrap/scss/variables";
 // @import "bootstrap/scss/variables-dark";
 // @import "bootstrap/scss/maps";
@@ -30,4 +36,3 @@
 
 @import "./layout/header";
 @import "./layout/footer";
-@import "./pages";
