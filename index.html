@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <script type="module" crossorigin src="/easy-your-cook/assets/bootstrap.esm.min-a6943c0d.js"></script>
-    <link rel="stylesheet" href="/easy-your-cook/assets/bootstrap.esm-bfe91ba5.css">
+    <title>Easy your cook</title>
+    <script type="module" crossorigin src="/easy-your-cook/assets/bootstrap.esm.min-2d6c2033.js"></script>
+    <link rel="stylesheet" href="/easy-your-cook/assets/bootstrap.esm-d5d1ade7.css">
   </head>
   <body>
-    <header class="bg-primary-100">
+    <header class="bg-primary-100  sticky-top">
     <div class="px-40 py-12 d-flex justify-content-between align-items-center">
         <!-- 漢堡選單 & logo -->
         <div class="d-flex">
@@ -26,8 +26,8 @@
                 <div class="d-flex">
                 <input type="search" class="input-search me-8" id="search" placeholder="搜尋食譜關鍵字">
                 <button class="d-flex align-items-center px-16 py-8 btn btn-primary-500 border-0">
-                    <img class="me-1" src="/easy-your-cook/assets/filter-e9994e3b.svg" alt="icon fliter">
-                    <span class="text-white">進階搜尋</span>
+                    <img class="me-1" src="/easy-your-cook/assets/filter-e9994e3b.svg" alt="icon filter">
+                    <span class="text-light">進階搜尋</span>
                 </button>
             </div>
         </form>
@@ -42,58 +42,1498 @@
             </li>
             <li class="px-16 py-8 btn btn-secondary-500 border-0">
                 <img class="me-1" src="/easy-your-cook/assets/Crown-deddec20.svg" alt="icon Crown">
-                <a class="text-white text-decoration-none" href="#">升級VIP</a>
+                <a class="text-light text-decoration-none" href="#">升級VIP</a>
             </li>
         </ul>
     </div>
 </header>
-
-    <h1 class="index-title">我是首頁</h1>
-    <img src="/easy-your-cook/assets/cat-0c0689ae.jpg" style="width: 300px" alt="cat" />
-    <button
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      點我
-    </button>
-
-    <div
-      class="modal"
-      tabindex="-1"
-      id="exampleModal"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+    <main>
+      <div class="mb-lg-60 position-relative">
+        <div>
+          <div id="hero" class="carousel slide">
+            <div class="carousel-indicators bottom-72px m-0">
+              
+              <button
+                type="button"
+                data-bs-target="#hero"
+                data-bs-slide-to="0"
+                class="active rounded-circle border-0"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              
+              <button
+                type="button"
+                data-bs-target="#hero"
+                data-bs-slide-to="1"
+                class=" rounded-circle border-0"
+                aria-current="false"
+                aria-label="Slide 2"
+              ></button>
+              
+              <button
+                type="button"
+                data-bs-target="#hero"
+                data-bs-slide-to="2"
+                class=" rounded-circle border-0"
+                aria-current="false"
+                aria-label="Slide 3"
+              ></button>
+              
+              <button
+                type="button"
+                data-bs-target="#hero"
+                data-bs-slide-to="3"
+                class=" rounded-circle border-0"
+                aria-current="false"
+                aria-label="Slide 4"
+              ></button>
+              
+            </div>
+            <div class="carousel-inner">
+              
+              <div
+                class="carousel-item active position-relative"
+              >
+                <picture>
+                  <source
+                    srcset="/easy-your-cook/assets/carousel-image-42f3c195.avif "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/easy-your-cook/assets/carousel-image-42f3c195.avif "
+                    type="image/webp"
+                  />
+                  <img
+                    src="/easy-your-cook/assets/carousel-image-23d8e537.png"
+                    class="d-block w-100 object-fit-cover | carousel__image"
+                    alt=""
+                  />
+                </picture>
+                <div
+                  class="bg-primary-950 w-100 d-none d-md-block position-absolute bottom-0"
+                  style="--bs-bg-opacity: 0.8"
+                >
+                  <div class="d-flex text-light container | carousel__footer">
+                    <h5 class="fs-5 fw-bold mb-0 me-24">南蠻雞咖哩</h5>
+                    <p class="d-flex gap-16 align-items-center fw-medium mb-0">
+                      <span>#主食</span>
+                      <span>#飯料理</span>
+                      <span>#雞肉</span>
+                    </p>
+                    <a
+                      href="./recipe.html"
+                      class="text-light opacity-50-hover d-flex align-items-center gap-8 ms-auto fw-medium"
+                      ><span>查看詳情</span
+                      ><img
+                        src="/easy-your-cook/assets/white-arrow-icon-d72ac415.svg"
+                        alt="前往南蠻雞咖哩"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              
+              <div
+                class="carousel-item  position-relative"
+              >
+                <picture>
+                  <source
+                    srcset="/easy-your-cook/assets/carousel-image-42f3c195.avif "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/easy-your-cook/assets/carousel-image-42f3c195.avif "
+                    type="image/webp"
+                  />
+                  <img
+                    src="/easy-your-cook/assets/carousel-image-23d8e537.png"
+                    class="d-block w-100 object-fit-cover | carousel__image"
+                    alt=""
+                  />
+                </picture>
+                <div
+                  class="bg-primary-950 w-100 d-none d-md-block position-absolute bottom-0"
+                  style="--bs-bg-opacity: 0.8"
+                >
+                  <div class="d-flex text-light container | carousel__footer">
+                    <h5 class="fs-5 fw-bold mb-0 me-24">南蠻雞咖哩</h5>
+                    <p class="d-flex gap-16 align-items-center fw-medium mb-0">
+                      <span>#主食</span>
+                      <span>#飯料理</span>
+                      <span>#雞肉</span>
+                    </p>
+                    <a
+                      href="./recipe.html"
+                      class="text-light opacity-50-hover d-flex align-items-center gap-8 ms-auto fw-medium"
+                      ><span>查看詳情</span
+                      ><img
+                        src="/easy-your-cook/assets/white-arrow-icon-d72ac415.svg"
+                        alt="前往南蠻雞咖哩"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              
+              <div
+                class="carousel-item  position-relative"
+              >
+                <picture>
+                  <source
+                    srcset="/easy-your-cook/assets/carousel-image-42f3c195.avif "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/easy-your-cook/assets/carousel-image-42f3c195.avif "
+                    type="image/webp"
+                  />
+                  <img
+                    src="/easy-your-cook/assets/carousel-image-23d8e537.png"
+                    class="d-block w-100 object-fit-cover | carousel__image"
+                    alt=""
+                  />
+                </picture>
+                <div
+                  class="bg-primary-950 w-100 d-none d-md-block position-absolute bottom-0"
+                  style="--bs-bg-opacity: 0.8"
+                >
+                  <div class="d-flex text-light container | carousel__footer">
+                    <h5 class="fs-5 fw-bold mb-0 me-24">南蠻雞咖哩</h5>
+                    <p class="d-flex gap-16 align-items-center fw-medium mb-0">
+                      <span>#主食</span>
+                      <span>#飯料理</span>
+                      <span>#雞肉</span>
+                    </p>
+                    <a
+                      href="./recipe.html"
+                      class="text-light opacity-50-hover d-flex align-items-center gap-8 ms-auto fw-medium"
+                      ><span>查看詳情</span
+                      ><img
+                        src="/easy-your-cook/assets/white-arrow-icon-d72ac415.svg"
+                        alt="前往南蠻雞咖哩"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              
+              <div
+                class="carousel-item  position-relative"
+              >
+                <picture>
+                  <source
+                    srcset="/easy-your-cook/assets/carousel-image-42f3c195.avif "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/easy-your-cook/assets/carousel-image-42f3c195.avif "
+                    type="image/webp"
+                  />
+                  <img
+                    src="/easy-your-cook/assets/carousel-image-23d8e537.png"
+                    class="d-block w-100 object-fit-cover | carousel__image"
+                    alt=""
+                  />
+                </picture>
+                <div
+                  class="bg-primary-950 w-100 d-none d-md-block position-absolute bottom-0"
+                  style="--bs-bg-opacity: 0.8"
+                >
+                  <div class="d-flex text-light container | carousel__footer">
+                    <h5 class="fs-5 fw-bold mb-0 me-24">南蠻雞咖哩</h5>
+                    <p class="d-flex gap-16 align-items-center fw-medium mb-0">
+                      <span>#主食</span>
+                      <span>#飯料理</span>
+                      <span>#雞肉</span>
+                    </p>
+                    <a
+                      href="./recipe.html"
+                      class="text-light opacity-50-hover d-flex align-items-center gap-8 ms-auto fw-medium"
+                      ><span>查看詳情</span
+                      ><img
+                        src="/easy-your-cook/assets/white-arrow-icon-d72ac415.svg"
+                        alt="前往南蠻雞咖哩"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
           </div>
-          <div class="modal-body">
-            <p>Modal body text goes here.</p>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#hero"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon w-100 h-25"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#hero"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon w-100 h-25"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="position-absolute top-50 start-50 translate-middle w-100">
+          <h1 class="fs-1 text-light text-center fw-bold mb-16">
+            今天想煮什麼料理？
+          </h1>
+          <p
+            class="text-center fs-5 d-flex justify-content-center align-items-center flex-wrap column-gap-12 text-light"
+          >
+            <span class="fs-4 fw-bold me-20">熱門關鍵字</span>
+            <span>雞肉</span>
+            <span>蛋料理</span><span>咖哩</span><span>晚餐</span>
+            <span>芒果</span><span>豆腐</span><span>雞肉</span>
+            <span>蛋料理</span><span>芒果</span><span>豆腐</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="container mb-84">
+        <div class="row justify-content-lg-between">
+          <div class="col-lg-8">
+            <section class="mb-104">
+              <div
+                class="d-flex justify-content-lg-between align-items-center mb-lg-32"
+              >
+                <h2 class="fw-bold fs-2 text-black position-relative">
+                  今日食譜推薦
+                  <hr
+                    class="border-bottom border-primary-300 border-8 m-0 position-absolute bottom-0 w-100"
+                  />
+                </h2>
+                <a
+                  class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium"
+                  href="./menus.html"
+                  ><span>查看詳情</span
+                  ><img src="/easy-your-cook/assets/Right Arrow-c495b816.svg" alt="查看詳情"
+                /></a>
+              </div>
+              <div class="d-flex column-gap-32 row-gap-48 flex-wrap">
+                
+                <div class="rounded-3 shadow | card">
+                  <div class="position-relative">
+                    <a href="./recipe.html">
+                      <picture>
+                        <source
+                          srcset="/easy-your-cook/assets/card-img-0f767e32.avif "
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="/easy-your-cook/assets/card-img-0f767e32.avif "
+                          type="image/webp"
+                        />
+                        <img
+                          src="/easy-your-cook/assets/card-img-e733b0a1.png"
+                          class="card__image object-fit-cover rounded-top-3 opacity-50-hover"
+                          alt="蕃茄海鮮義大利麵"
+                        />
+                      </picture>
+                    </a>
+                    <button
+                      class="position-absolute border-0 bg-light rounded-circle top-16px end-16px | card__button--collection"
+                      aria-label="收藏按鈕"
+                    >
+                      <img
+                        src="/easy-your-cook/assets/bookmark-fill-c5bbe733.svg"
+                        alt="收藏"
+                      />
+                    </button>
+                    
+                  </div>
+                  <div class="py-20 px-16 bg-light rounded-bottom-3">
+                    <h5 class="fs-5 fw-bold mb-8">
+                      <a
+                        href="./recipe.html"
+                        class="text-black opacity-50-hover"
+                      >
+                        蕃茄海鮮義大利麵</a
+                      >
+                    </h5>
+                    <p class="d-flex gap-16 text-gray-600 fw-medium">
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/chef-hat-88cde9b0.svg" alt="" /><span
+                          >DAYDAYcook</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/Stopwatch-43006c8b.svg" alt="" /><span
+                          >20 min</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/heart-cec00060.svg" alt="" /><span
+                          >150</span
+                        >
+                      </span>
+                    </p>
+                    <p class="text-gray-600 d-flex gap-8 flex-wrap m-0">
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>主食</span
+                      >
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>義大利麵</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="rounded-3 shadow | card">
+                  <div class="position-relative">
+                    <a href="./recipe.html">
+                      <picture>
+                        <source
+                          srcset="/easy-your-cook/assets/card-img-0f767e32.avif "
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="/easy-your-cook/assets/card-img-0f767e32.avif "
+                          type="image/webp"
+                        />
+                        <img
+                          src="/easy-your-cook/assets/card-img-e733b0a1.png"
+                          class="card__image object-fit-cover rounded-top-3 opacity-50-hover"
+                          alt="蕃茄海鮮義大利麵"
+                        />
+                      </picture>
+                    </a>
+                    <button
+                      class="position-absolute border-0 bg-light rounded-circle top-16px end-16px | card__button--collection"
+                      aria-label="收藏按鈕"
+                    >
+                      <img
+                        src="/easy-your-cook/assets/bookmark-fill-c5bbe733.svg"
+                        alt="收藏"
+                      />
+                    </button>
+                    
+                  </div>
+                  <div class="py-20 px-16 bg-light rounded-bottom-3">
+                    <h5 class="fs-5 fw-bold mb-8">
+                      <a
+                        href="./recipe.html"
+                        class="text-black opacity-50-hover"
+                      >
+                        蕃茄海鮮義大利麵</a
+                      >
+                    </h5>
+                    <p class="d-flex gap-16 text-gray-600 fw-medium">
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/chef-hat-88cde9b0.svg" alt="" /><span
+                          >DAYDAYcook</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/Stopwatch-43006c8b.svg" alt="" /><span
+                          >20 min</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/heart-cec00060.svg" alt="" /><span
+                          >150</span
+                        >
+                      </span>
+                    </p>
+                    <p class="text-gray-600 d-flex gap-8 flex-wrap m-0">
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>主食</span
+                      >
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>義大利麵</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="rounded-3 shadow | card">
+                  <div class="position-relative">
+                    <a href="./recipe.html">
+                      <picture>
+                        <source
+                          srcset="/easy-your-cook/assets/card-img-0f767e32.avif "
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="/easy-your-cook/assets/card-img-0f767e32.avif "
+                          type="image/webp"
+                        />
+                        <img
+                          src="/easy-your-cook/assets/card-img-e733b0a1.png"
+                          class="card__image object-fit-cover rounded-top-3 opacity-50-hover"
+                          alt="蕃茄海鮮義大利麵"
+                        />
+                      </picture>
+                    </a>
+                    <button
+                      class="position-absolute border-0 bg-light rounded-circle top-16px end-16px | card__button--collection"
+                      aria-label="收藏按鈕"
+                    >
+                      <img
+                        src="/easy-your-cook/assets/bookmark-fill-c5bbe733.svg"
+                        alt="收藏"
+                      />
+                    </button>
+                    
+                    <button
+                      class="position-absolute border-0 bottom-12px start-12px bg-dark bg-opacity-40 rounded-3 | card__button--collection"
+                      aria-label="錄影播放"
+                    >
+                      <img src="/easy-your-cook/assets/video-2935cd53.svg" alt="錄影播放" />
+                    </button>
+                    
+                  </div>
+                  <div class="py-20 px-16 bg-light rounded-bottom-3">
+                    <h5 class="fs-5 fw-bold mb-8">
+                      <a
+                        href="./recipe.html"
+                        class="text-black opacity-50-hover"
+                      >
+                        蕃茄海鮮義大利麵</a
+                      >
+                    </h5>
+                    <p class="d-flex gap-16 text-gray-600 fw-medium">
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/chef-hat-88cde9b0.svg" alt="" /><span
+                          >DAYDAYcook</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/Stopwatch-43006c8b.svg" alt="" /><span
+                          >20 min</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/heart-cec00060.svg" alt="" /><span
+                          >150</span
+                        >
+                      </span>
+                    </p>
+                    <p class="text-gray-600 d-flex gap-8 flex-wrap m-0">
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>主食</span
+                      >
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>義大利麵</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="rounded-3 shadow | card">
+                  <div class="position-relative">
+                    <a href="./recipe.html">
+                      <picture>
+                        <source
+                          srcset="/easy-your-cook/assets/card-img-0f767e32.avif "
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="/easy-your-cook/assets/card-img-0f767e32.avif "
+                          type="image/webp"
+                        />
+                        <img
+                          src="/easy-your-cook/assets/card-img-e733b0a1.png"
+                          class="card__image object-fit-cover rounded-top-3 opacity-50-hover"
+                          alt="蕃茄海鮮義大利麵"
+                        />
+                      </picture>
+                    </a>
+                    <button
+                      class="position-absolute border-0 bg-light rounded-circle top-16px end-16px | card__button--collection"
+                      aria-label="收藏按鈕"
+                    >
+                      <img
+                        src="/easy-your-cook/assets/bookmark-e06b21db.svg"
+                        alt="收藏"
+                      />
+                    </button>
+                    
+                    <button
+                      class="position-absolute border-0 bottom-12px start-12px bg-dark bg-opacity-40 rounded-3 | card__button--collection"
+                      aria-label="錄影播放"
+                    >
+                      <img src="/easy-your-cook/assets/video-2935cd53.svg" alt="錄影播放" />
+                    </button>
+                    
+                  </div>
+                  <div class="py-20 px-16 bg-light rounded-bottom-3">
+                    <h5 class="fs-5 fw-bold mb-8">
+                      <a
+                        href="./recipe.html"
+                        class="text-black opacity-50-hover"
+                      >
+                        蕃茄海鮮義大利麵</a
+                      >
+                    </h5>
+                    <p class="d-flex gap-16 text-gray-600 fw-medium">
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/chef-hat-88cde9b0.svg" alt="" /><span
+                          >DAYDAYcook</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/Stopwatch-43006c8b.svg" alt="" /><span
+                          >20 min</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/heart-cec00060.svg" alt="" /><span
+                          >150</span
+                        >
+                      </span>
+                    </p>
+                    <p class="text-gray-600 d-flex gap-8 flex-wrap m-0">
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>主食</span
+                      >
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>義大利麵</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                
+              </div>
+            </section>
+            <section>
+              <div
+                class="d-flex justify-content-lg-between align-items-center mb-lg-32"
+              >
+                <h2 class="fw-bold fs-2 text-black position-relative">
+                  當季料理
+                  <hr
+                    class="border-bottom border-primary-300 border-8 m-0 position-absolute bottom-0 w-100"
+                  />
+                </h2>
+                <a
+                  class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium"
+                  href="./menus.html"
+                  ><span>查看詳情</span
+                  ><img src="/easy-your-cook/assets/Right Arrow-c495b816.svg" alt="查看詳情"
+                /></a>
+              </div>
+              <div class="d-flex column-gap-32 row-gap-48 flex-wrap">
+                
+                <div class="rounded-3 shadow | card">
+                  <div class="position-relative">
+                    <a href="./recipe.html">
+                      <picture>
+                        <source
+                          srcset="/easy-your-cook/assets/card-img-0f767e32.avif "
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="/easy-your-cook/assets/card-img-0f767e32.avif "
+                          type="image/webp"
+                        />
+                        <img
+                          src="/easy-your-cook/assets/card-img-e733b0a1.png"
+                          class="card__image object-fit-cover rounded-top-3 opacity-50-hover"
+                          alt="蕃茄海鮮義大利麵"
+                        />
+                      </picture>
+                    </a>
+                    <button
+                      class="position-absolute border-0 bg-light rounded-circle top-16px end-16px | card__button--collection"
+                      aria-label="收藏按鈕"
+                    >
+                      <img
+                        src="/easy-your-cook/assets/bookmark-e06b21db.svg"
+                        alt="收藏"
+                      />
+                    </button>
+                    
+                  </div>
+                  <div class="py-20 px-16 bg-light rounded-bottom-3">
+                    <h5 class="fs-5 fw-bold mb-8">
+                      <a
+                        href="./recipe.html"
+                        class="text-black opacity-50-hover"
+                      >
+                        蕃茄海鮮義大利麵</a
+                      >
+                    </h5>
+                    <p class="d-flex gap-16 text-gray-600 fw-medium">
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/chef-hat-88cde9b0.svg" alt="" /><span
+                          >DAYDAYcook</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/Stopwatch-43006c8b.svg" alt="" /><span
+                          >20 min</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/heart-cec00060.svg" alt="" /><span
+                          >150</span
+                        >
+                      </span>
+                    </p>
+                    <p class="text-gray-600 d-flex gap-8 flex-wrap m-0">
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>主食</span
+                      >
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>義大利麵</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="rounded-3 shadow | card">
+                  <div class="position-relative">
+                    <a href="./recipe.html">
+                      <picture>
+                        <source
+                          srcset="/easy-your-cook/assets/card-img-0f767e32.avif "
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="/easy-your-cook/assets/card-img-0f767e32.avif "
+                          type="image/webp"
+                        />
+                        <img
+                          src="/easy-your-cook/assets/card-img-e733b0a1.png"
+                          class="card__image object-fit-cover rounded-top-3 opacity-50-hover"
+                          alt="蕃茄海鮮義大利麵"
+                        />
+                      </picture>
+                    </a>
+                    <button
+                      class="position-absolute border-0 bg-light rounded-circle top-16px end-16px | card__button--collection"
+                      aria-label="收藏按鈕"
+                    >
+                      <img
+                        src="/easy-your-cook/assets/bookmark-e06b21db.svg"
+                        alt="收藏"
+                      />
+                    </button>
+                    
+                    <button
+                      class="position-absolute border-0 bottom-12px start-12px bg-dark bg-opacity-40 rounded-3 | card__button--collection"
+                      aria-label="錄影播放"
+                    >
+                      <img src="/easy-your-cook/assets/video-2935cd53.svg" alt="錄影播放" />
+                    </button>
+                    
+                  </div>
+                  <div class="py-20 px-16 bg-light rounded-bottom-3">
+                    <h5 class="fs-5 fw-bold mb-8">
+                      <a
+                        href="./recipe.html"
+                        class="text-black opacity-50-hover"
+                      >
+                        蕃茄海鮮義大利麵</a
+                      >
+                    </h5>
+                    <p class="d-flex gap-16 text-gray-600 fw-medium">
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/chef-hat-88cde9b0.svg" alt="" /><span
+                          >DAYDAYcook</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/Stopwatch-43006c8b.svg" alt="" /><span
+                          >20 min</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/heart-cec00060.svg" alt="" /><span
+                          >150</span
+                        >
+                      </span>
+                    </p>
+                    <p class="text-gray-600 d-flex gap-8 flex-wrap m-0">
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>主食</span
+                      >
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>義大利麵</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="rounded-3 shadow | card">
+                  <div class="position-relative">
+                    <a href="./recipe.html">
+                      <picture>
+                        <source
+                          srcset="/easy-your-cook/assets/card-img-0f767e32.avif "
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="/easy-your-cook/assets/card-img-0f767e32.avif "
+                          type="image/webp"
+                        />
+                        <img
+                          src="/easy-your-cook/assets/card-img-e733b0a1.png"
+                          class="card__image object-fit-cover rounded-top-3 opacity-50-hover"
+                          alt="蕃茄海鮮義大利麵"
+                        />
+                      </picture>
+                    </a>
+                    <button
+                      class="position-absolute border-0 bg-light rounded-circle top-16px end-16px | card__button--collection"
+                      aria-label="收藏按鈕"
+                    >
+                      <img
+                        src="/easy-your-cook/assets/bookmark-fill-c5bbe733.svg"
+                        alt="收藏"
+                      />
+                    </button>
+                    
+                  </div>
+                  <div class="py-20 px-16 bg-light rounded-bottom-3">
+                    <h5 class="fs-5 fw-bold mb-8">
+                      <a
+                        href="./recipe.html"
+                        class="text-black opacity-50-hover"
+                      >
+                        蕃茄海鮮義大利麵</a
+                      >
+                    </h5>
+                    <p class="d-flex gap-16 text-gray-600 fw-medium">
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/chef-hat-88cde9b0.svg" alt="" /><span
+                          >DAYDAYcook</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/Stopwatch-43006c8b.svg" alt="" /><span
+                          >20 min</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/heart-cec00060.svg" alt="" /><span
+                          >150</span
+                        >
+                      </span>
+                    </p>
+                    <p class="text-gray-600 d-flex gap-8 flex-wrap m-0">
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>主食</span
+                      >
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>義大利麵</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="rounded-3 shadow | card">
+                  <div class="position-relative">
+                    <a href="./recipe.html">
+                      <picture>
+                        <source
+                          srcset="/easy-your-cook/assets/card-img-0f767e32.avif "
+                          type="image/avif"
+                        />
+                        <source
+                          srcset="/easy-your-cook/assets/card-img-0f767e32.avif "
+                          type="image/webp"
+                        />
+                        <img
+                          src="/easy-your-cook/assets/card-img-e733b0a1.png"
+                          class="card__image object-fit-cover rounded-top-3 opacity-50-hover"
+                          alt="蕃茄海鮮義大利麵"
+                        />
+                      </picture>
+                    </a>
+                    <button
+                      class="position-absolute border-0 bg-light rounded-circle top-16px end-16px | card__button--collection"
+                      aria-label="收藏按鈕"
+                    >
+                      <img
+                        src="/easy-your-cook/assets/bookmark-e06b21db.svg"
+                        alt="收藏"
+                      />
+                    </button>
+                    
+                  </div>
+                  <div class="py-20 px-16 bg-light rounded-bottom-3">
+                    <h5 class="fs-5 fw-bold mb-8">
+                      <a
+                        href="./recipe.html"
+                        class="text-black opacity-50-hover"
+                      >
+                        蕃茄海鮮義大利麵</a
+                      >
+                    </h5>
+                    <p class="d-flex gap-16 text-gray-600 fw-medium">
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/chef-hat-88cde9b0.svg" alt="" /><span
+                          >DAYDAYcook</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/Stopwatch-43006c8b.svg" alt="" /><span
+                          >20 min</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/heart-cec00060.svg" alt="" /><span
+                          >150</span
+                        >
+                      </span>
+                    </p>
+                    <p class="text-gray-600 d-flex gap-8 flex-wrap m-0">
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>主食</span
+                      >
+                      <span
+                        class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                        ><span class="pe-4">#</span>義大利麵</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                
+              </div>
+            </section>
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="col-lg-3">
+            <section>
+              <h2
+                class="fs-4 fw-semibold d-flex align-items-center column-gap-4 mb-36 justify-content-center"
+              >
+                <img src="/easy-your-cook/assets/ranking-024c2095.svg" alt="" /><span
+                  >熱門食譜排行</span
+                >
+              </h2>
+              <ol class="d-flex flex-column gap-24 p-0 mb-16">
+                
+                <li class="position-relative rounded-3 shadow">
+                  <div
+                    class="position-absolute text-center bg-primary-500 text-light fs-4 fw-semibold rounded-circle top-8px start-8px | card__rank--rank"
+                  >
+                    1
+                  </div>
+                  <picture>
+                    <source
+                      srcset="/easy-your-cook/assets/rank-card-img-607b2625.avif "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="/easy-your-cook/assets/rank-card-img-607b2625.avif "
+                      type="image/webp"
+                    />
+                    <img
+                      src="/easy-your-cook/assets/rank-card-img-6d318ae7.png"
+                      class="rounded-top-3 object-fit-cover | card__rank--image"
+                      alt="熱門第一名食譜"
+                    />
+                  </picture>
+                  <div class="p-8 bg-light rounded-bottom-3">
+                    <h5 class="mb-4 fw-semibold text-primary-900">
+                      紅絲絨杯子蛋糕
+                    </h5>
+                    <p class="d-flex gap-12 text-gray-600 fw-medium m-0">
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/chef-hat-88cde9b0.svg" alt="" /><span
+                          >DAYDAYcook</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/Stopwatch-43006c8b.svg" alt="" /><span
+                          >20 min</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/heart-cec00060.svg" alt="" /><span
+                          >150</span
+                        >
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                
+                <li class="position-relative rounded-3 shadow">
+                  <div
+                    class="position-absolute text-center bg-primary-500 text-light fs-4 fw-semibold rounded-circle top-8px start-8px | card__rank--rank"
+                  >
+                    2
+                  </div>
+                  <picture>
+                    <source
+                      srcset="/easy-your-cook/assets/rank-card-img-607b2625.avif "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="/easy-your-cook/assets/rank-card-img-607b2625.avif "
+                      type="image/webp"
+                    />
+                    <img
+                      src="/easy-your-cook/assets/rank-card-img-6d318ae7.png"
+                      class="rounded-top-3 object-fit-cover | card__rank--image"
+                      alt="熱門第一名食譜"
+                    />
+                  </picture>
+                  <div class="p-8 bg-light rounded-bottom-3">
+                    <h5 class="mb-4 fw-semibold text-primary-900">
+                      紅絲絨杯子蛋糕
+                    </h5>
+                    <p class="d-flex gap-12 text-gray-600 fw-medium m-0">
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/chef-hat-88cde9b0.svg" alt="" /><span
+                          >DAYDAYcook</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/Stopwatch-43006c8b.svg" alt="" /><span
+                          >20 min</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/heart-cec00060.svg" alt="" /><span
+                          >150</span
+                        >
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                
+                <li class="position-relative rounded-3 shadow">
+                  <div
+                    class="position-absolute text-center bg-primary-500 text-light fs-4 fw-semibold rounded-circle top-8px start-8px | card__rank--rank"
+                  >
+                    3
+                  </div>
+                  <picture>
+                    <source
+                      srcset="/easy-your-cook/assets/rank-card-img-607b2625.avif "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="/easy-your-cook/assets/rank-card-img-607b2625.avif "
+                      type="image/webp"
+                    />
+                    <img
+                      src="/easy-your-cook/assets/rank-card-img-6d318ae7.png"
+                      class="rounded-top-3 object-fit-cover | card__rank--image"
+                      alt="熱門第一名食譜"
+                    />
+                  </picture>
+                  <div class="p-8 bg-light rounded-bottom-3">
+                    <h5 class="mb-4 fw-semibold text-primary-900">
+                      紅絲絨杯子蛋糕
+                    </h5>
+                    <p class="d-flex gap-12 text-gray-600 fw-medium m-0">
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/chef-hat-88cde9b0.svg" alt="" /><span
+                          >DAYDAYcook</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/Stopwatch-43006c8b.svg" alt="" /><span
+                          >20 min</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/heart-cec00060.svg" alt="" /><span
+                          >150</span
+                        >
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                
+                <li class="position-relative rounded-3 shadow">
+                  <div
+                    class="position-absolute text-center bg-primary-500 text-light fs-4 fw-semibold rounded-circle top-8px start-8px | card__rank--rank"
+                  >
+                    4
+                  </div>
+                  <picture>
+                    <source
+                      srcset="/easy-your-cook/assets/rank-card-img-607b2625.avif "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="/easy-your-cook/assets/rank-card-img-607b2625.avif "
+                      type="image/webp"
+                    />
+                    <img
+                      src="/easy-your-cook/assets/rank-card-img-6d318ae7.png"
+                      class="rounded-top-3 object-fit-cover | card__rank--image"
+                      alt="熱門第一名食譜"
+                    />
+                  </picture>
+                  <div class="p-8 bg-light rounded-bottom-3">
+                    <h5 class="mb-4 fw-semibold text-primary-900">
+                      紅絲絨杯子蛋糕
+                    </h5>
+                    <p class="d-flex gap-12 text-gray-600 fw-medium m-0">
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/chef-hat-88cde9b0.svg" alt="" /><span
+                          >DAYDAYcook</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/Stopwatch-43006c8b.svg" alt="" /><span
+                          >20 min</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/heart-cec00060.svg" alt="" /><span
+                          >150</span
+                        >
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                
+                <li class="position-relative rounded-3 shadow">
+                  <div
+                    class="position-absolute text-center bg-primary-500 text-light fs-4 fw-semibold rounded-circle top-8px start-8px | card__rank--rank"
+                  >
+                    5
+                  </div>
+                  <picture>
+                    <source
+                      srcset="/easy-your-cook/assets/rank-card-img-607b2625.avif "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="/easy-your-cook/assets/rank-card-img-607b2625.avif "
+                      type="image/webp"
+                    />
+                    <img
+                      src="/easy-your-cook/assets/rank-card-img-6d318ae7.png"
+                      class="rounded-top-3 object-fit-cover | card__rank--image"
+                      alt="熱門第一名食譜"
+                    />
+                  </picture>
+                  <div class="p-8 bg-light rounded-bottom-3">
+                    <h5 class="mb-4 fw-semibold text-primary-900">
+                      紅絲絨杯子蛋糕
+                    </h5>
+                    <p class="d-flex gap-12 text-gray-600 fw-medium m-0">
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/chef-hat-88cde9b0.svg" alt="" /><span
+                          >DAYDAYcook</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/Stopwatch-43006c8b.svg" alt="" /><span
+                          >20 min</span
+                        >
+                      </span>
+                      <span class="d-flex align-items-center gap-4">
+                        <img src="/easy-your-cook/assets/heart-cec00060.svg" alt="" /><span
+                          >150</span
+                        >
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                
+              </ol>
+              <a
+                class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium justify-content-end"
+                href="./menus.html"
+                ><span>查看詳情</span
+                ><img src="/easy-your-cook/assets/Right Arrow-c495b816.svg" alt="查看詳情"
+              /></a>
+            </section>
+            <img
+              src="/easy-your-cook/assets/dash-line@296w-cec6e910.svg"
+              alt=""
+              class="my-56"
+            />
+            <section>
+              <h2
+                class="fs-4 fw-semibold d-flex align-items-center column-gap-4 mb-40 justify-content-center"
+              >
+                <img src="/easy-your-cook/assets/calendar-1a8d424a.svg" alt="" /><span
+                  >當季食材</span
+                >
+              </h2>
+              <ul class="p-0">
+                <li class="text-primary-800">
+                  <h3 class="py-8 px-16 bg-light rounded-2 shadow mb-0">
+                    <img
+                      src="/easy-your-cook/assets/lettuce-60f9dcfb.svg"
+                      class="me-4"
+                      alt=""
+                    />
+                    蔬菜
+                  </h3>
+                  <section
+                    class="d-flex p-16 flex-wrap row-gap-16 column-gap-24"
+                  >
+                    
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800">高麗菜</span
+                      ><img src="/easy-your-cook/assets/right-caret-a6e5154a.svg" alt=""
+                    /></a>
+                    
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800">花椰菜</span
+                      ><img src="/easy-your-cook/assets/right-caret-a6e5154a.svg" alt=""
+                    /></a>
+                    
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800">白蘿蔔</span
+                      ><img src="/easy-your-cook/assets/right-caret-a6e5154a.svg" alt=""
+                    /></a>
+                    
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800">空心菜</span
+                      ><img src="/easy-your-cook/assets/right-caret-a6e5154a.svg" alt=""
+                    /></a>
+                    
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800">茄子</span
+                      ><img src="/easy-your-cook/assets/right-caret-a6e5154a.svg" alt=""
+                    /></a>
+                    
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800">小白菜</span
+                      ><img src="/easy-your-cook/assets/right-caret-a6e5154a.svg" alt=""
+                    /></a>
+                    
+                  </section>
+                </li>
+                <li class="text-primary-800">
+                  <h3 class="py-8 px-16 bg-light rounded-2 shadow mb-0">
+                    <img src="/easy-your-cook/assets/apple-24140e5f.svg" class="me-4" alt="" />
+                    水果
+                  </h3>
+                  <section
+                    class="d-flex p-16 flex-wrap row-gap-16 column-gap-24"
+                  >
+                    
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800">水梨</span
+                      ><img src="/easy-your-cook/assets/right-caret-a6e5154a.svg" alt=""
+                    /></a>
+                    
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800">芒果</span
+                      ><img src="/easy-your-cook/assets/right-caret-a6e5154a.svg" alt=""
+                    /></a>
+                    
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800">水蜜桃</span
+                      ><img src="/easy-your-cook/assets/right-caret-a6e5154a.svg" alt=""
+                    /></a>
+                    
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800">櫻桃</span
+                      ><img src="/easy-your-cook/assets/right-caret-a6e5154a.svg" alt=""
+                    /></a>
+                    
+                  </section>
+                </li>
+                <li class="text-primary-800">
+                  <h3 class="py-8 px-16 bg-light rounded-2 shadow mb-0">
+                    <img src="/easy-your-cook/assets/fish-8fc65687.svg" class="me-4" alt="" />
+                    海鮮
+                  </h3>
+                  <section
+                    class="d-flex p-16 flex-wrap row-gap-16 column-gap-24"
+                  >
+                    
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800">高麗菜</span
+                      ><img src="/easy-your-cook/assets/right-caret-a6e5154a.svg" alt=""
+                    /></a>
+                    
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800">花椰菜</span
+                      ><img src="/easy-your-cook/assets/right-caret-a6e5154a.svg" alt=""
+                    /></a>
+                    
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800">白蘿蔔</span
+                      ><img src="/easy-your-cook/assets/right-caret-a6e5154a.svg" alt=""
+                    /></a>
+                    
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800">空心菜</span
+                      ><img src="/easy-your-cook/assets/right-caret-a6e5154a.svg" alt=""
+                    /></a>
+                    
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800">茄子</span
+                      ><img src="/easy-your-cook/assets/right-caret-a6e5154a.svg" alt=""
+                    /></a>
+                    
+                    <a
+                      href="#"
+                      class="d-flex align-items-center gap-4 opacity-50-hover"
+                      ><span class="text-primary-800">小白菜</span
+                      ><img src="/easy-your-cook/assets/right-caret-a6e5154a.svg" alt=""
+                    /></a>
+                    
+                  </section>
+                </li>
+              </ul>
+            </section>
           </div>
         </div>
       </div>
-    </div>
+      <div class="position-relative">
+        <div class="container pt-80 pb-120">
+          <div
+            class="d-flex justify-content-lg-between align-items-center mb-lg-40"
+          >
+            <h2 class="fs-2 fw-bold position-relative">
+              跟著做就沒問題，影音食譜講解全步驟
+              <hr
+                class="border-bottom border-primary-300 border-8 m-0 position-absolute bottom-0 w-100"
+              />
+            </h2>
+            <a
+              class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium"
+              href="./menus.html"
+              ><span>查看詳情</span
+              ><img src="/easy-your-cook/assets/Right Arrow-c495b816.svg" alt="查看詳情"
+            /></a>
+          </div>
+          <div class="row">
+            
+            <div class="col-lg-3">
+              <div class="position-relative">
+                <picture>
+                  <source
+                    srcset="/easy-your-cook/assets/video-image-51b5c052.avif "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/easy-your-cook/assets/video-image-51b5c052.avif "
+                    type="image/webp"
+                  />
+                  <img src="/easy-your-cook/assets/video-image-0f72d0be.png" alt="" />
+                </picture>
+                <a
+                  href="./recipe.html#video"
+                  aria-label="前往班尼迪克蛋頁面的影片播放區"
+                  class="position-absolute p-16 top-50 start-50 translate-middle bg-light rounded-circle opacity-50-hover"
+                >
+                  <img
+                    src="/easy-your-cook/assets/play-icon-7cd5ca24.svg"
+                    alt="前往班尼迪克蛋頁面的影片播放區"
+                  />
+                </a>
+              </div>
+              <div
+                class="py-12 px-16 bg-dark d-flex align-items-center justify-content-lg-between"
+              >
+                <h3 class="m-0">
+                  <a class="fs-6 text-light fw-bold" href="./recipe.html"
+                    >班尼迪克蛋</a
+                  >
+                </h3>
+                <a href="./recipe.html"
+                  ><img
+                    src="/easy-your-cook/assets/white-arrow-icon-d72ac415.svg"
+                    alt="前往班尼迪克蛋頁面"
+                /></a>
+              </div>
+            </div>
+            
+            <div class="col-lg-3">
+              <div class="position-relative">
+                <picture>
+                  <source
+                    srcset="/easy-your-cook/assets/video-image-51b5c052.avif "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/easy-your-cook/assets/video-image-51b5c052.avif "
+                    type="image/webp"
+                  />
+                  <img src="/easy-your-cook/assets/video-image-0f72d0be.png" alt="" />
+                </picture>
+                <a
+                  href="./recipe.html#video"
+                  aria-label="前往班尼迪克蛋頁面的影片播放區"
+                  class="position-absolute p-16 top-50 start-50 translate-middle bg-light rounded-circle opacity-50-hover"
+                >
+                  <img
+                    src="/easy-your-cook/assets/play-icon-7cd5ca24.svg"
+                    alt="前往班尼迪克蛋頁面的影片播放區"
+                  />
+                </a>
+              </div>
+              <div
+                class="py-12 px-16 bg-dark d-flex align-items-center justify-content-lg-between"
+              >
+                <h3 class="m-0">
+                  <a class="fs-6 text-light fw-bold" href="./recipe.html"
+                    >班尼迪克蛋</a
+                  >
+                </h3>
+                <a href="./recipe.html"
+                  ><img
+                    src="/easy-your-cook/assets/white-arrow-icon-d72ac415.svg"
+                    alt="前往班尼迪克蛋頁面"
+                /></a>
+              </div>
+            </div>
+            
+            <div class="col-lg-3">
+              <div class="position-relative">
+                <picture>
+                  <source
+                    srcset="/easy-your-cook/assets/video-image-51b5c052.avif "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/easy-your-cook/assets/video-image-51b5c052.avif "
+                    type="image/webp"
+                  />
+                  <img src="/easy-your-cook/assets/video-image-0f72d0be.png" alt="" />
+                </picture>
+                <a
+                  href="./recipe.html#video"
+                  aria-label="前往班尼迪克蛋頁面的影片播放區"
+                  class="position-absolute p-16 top-50 start-50 translate-middle bg-light rounded-circle opacity-50-hover"
+                >
+                  <img
+                    src="/easy-your-cook/assets/play-icon-7cd5ca24.svg"
+                    alt="前往班尼迪克蛋頁面的影片播放區"
+                  />
+                </a>
+              </div>
+              <div
+                class="py-12 px-16 bg-dark d-flex align-items-center justify-content-lg-between"
+              >
+                <h3 class="m-0">
+                  <a class="fs-6 text-light fw-bold" href="./recipe.html"
+                    >班尼迪克蛋</a
+                  >
+                </h3>
+                <a href="./recipe.html"
+                  ><img
+                    src="/easy-your-cook/assets/white-arrow-icon-d72ac415.svg"
+                    alt="前往班尼迪克蛋頁面"
+                /></a>
+              </div>
+            </div>
+            
+            <div class="col-lg-3">
+              <div class="position-relative">
+                <picture>
+                  <source
+                    srcset="/easy-your-cook/assets/video-image-51b5c052.avif "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="/easy-your-cook/assets/video-image-51b5c052.avif "
+                    type="image/webp"
+                  />
+                  <img src="/easy-your-cook/assets/video-image-0f72d0be.png" alt="" />
+                </picture>
+                <a
+                  href="./recipe.html#video"
+                  aria-label="前往班尼迪克蛋頁面的影片播放區"
+                  class="position-absolute p-16 top-50 start-50 translate-middle bg-light rounded-circle opacity-50-hover"
+                >
+                  <img
+                    src="/easy-your-cook/assets/play-icon-7cd5ca24.svg"
+                    alt="前往班尼迪克蛋頁面的影片播放區"
+                  />
+                </a>
+              </div>
+              <div
+                class="py-12 px-16 bg-dark d-flex align-items-center justify-content-lg-between"
+              >
+                <h3 class="m-0">
+                  <a class="fs-6 text-light fw-bold" href="./recipe.html"
+                    >班尼迪克蛋</a
+                  >
+                </h3>
+                <a href="./recipe.html"
+                  ><img
+                    src="/easy-your-cook/assets/white-arrow-icon-d72ac415.svg"
+                    alt="前往班尼迪克蛋頁面"
+                /></a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="bg-primary-950 bg-opacity-60 text-light | video-mock">
+          <div class="opacity-100">
+            <img src="/easy-your-cook/assets/Crown-deddec20.svg" alt="" class="" />
+          </div>
+          <p class="fs-3 fw-bold mt-8">VIP會員獨享服務</p>
+          <p class="fw-medium lh-lg mb-lg-80">
+            光看文字食譜還是不太夠？<br />我們提供給您最豐富仔細的影音食譜教學！
+          </p>
+          <a
+            href="./subscribe.html"
+            class="d-flex flex-column align-items-center gap-8"
+          >
+            <img src="/easy-your-cook/assets/button-subscribe-18aaa221.gif" alt="" />
+            <span class="text-light fw-bold opacity-50-hover"
+              >立刻了解詳情</span
+            >
+          </a>
+        </div>
+      </div>
+    </main>
 
-    <footer class="bg-white">
+    <footer class="bg-light">
     <!-- 上側 主區 -->
     <div class="container py-40 d-flex justify-content-between">
         <!-- 左側 logo區 -->
