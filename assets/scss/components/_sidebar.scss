@@ -1,0 +1,9 @@
+$sidebar-width: 26%;
+
+.sidebar {
+    width: $sidebar-width;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: $white;
+}

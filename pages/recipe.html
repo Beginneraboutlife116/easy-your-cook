@@ -8,425 +8,534 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-      
-    <div class="container my-40 bg-white">
-        <!-- 簡介區 -->
-        <!-- Breadcrumbs -->
-        <div class="px-32 py-16 border-dash-box">
-            <nav style="--bs-breadcrumb-divider: url(../assets/images/Right\ Caret.svg);" aria-label="breadcrumb">
-                <ol class="m-0 p-0 breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-decoration-none link-primary-800 fw-bold" href="index.html">首頁</a></li>
-                    <li class="breadcrumb-item"><a class="text-decoration-none link-primary-800 fw-bold" href="#">影音食譜</a></li>
-                    <li class="breadcrumb-item active text-decoration-none link-primary-800 fw-bold" aria-current="page">甜食</li>
-                </ol>
-            </nav>
-        </div>
-        <!-- 底線 -->
-        <div class="border-dash-bottom"></div>
-        <!-- 簡介 -->
-        <div class="row">
-            <div class="col-7">
-                <div class="px-32 py-24">
-                    <img src="../assets/images/recipe/recipe-cover.svg" alt="recipe cover">
-                </div>
-            </div>
-            <div class="col-5">
-                <div class="px-32 py-24">
-                    <!-- recipe-title -->
-                    <div class="mb-16 d-flex justify-content-between align-items-center">
-                        <h2 class="m-0 fs-2">老奶奶檸檬糖霜蛋糕</h2>
-                        <img src="../assets/images/flag-video.svg" alt="video">
-                    </div>
-                    <!-- recipe-tag -->
-                    <div class="mb-24 d-flex">
-                        <div class="me-16 px-8 py-4 bg-primary-50 border border-primary-400 rounded-3 text-gray-600 fw-bold">
-                            <span class="me-4">#</span>
-                            <span>甜點</span>
-                        </div>
-                        <div class="me-16 px-8 py-4 bg-primary-50 border border-primary-400 rounded-3 text-gray-600 fw-bold">
-                            <span class="me-4">#</span>
-                            <span>下午茶</span>
-                        </div>
-                        <div class="px-8 py-4 bg-primary-50 border border-primary-400 rounded-3 text-gray-600 fw-bold">
-                            <span class="me-4">#</span>
-                            <span>新手也可以</span>
-                        </div>
-                    </div>
-                    <!-- recipe-info 份量、時間 -->
-                    <div class="w-100 mb-24 py-12 d-flex align-items-center bg-primary-100 rounded-3">
-                        <!-- 份量 -->
-                        <div class="w-50 d-flex flex-column  align-items-center">
-                            <div class="mb-16 d-flex align-items-center">
-                                <img class="me-4" src="../assets/images/User Group.svg" alt="user group">
-                                <span class="text-primary-900 fw-bold">份量</span>
-                            </div>
-                            <div class="d-flex align-items-center fw-bold">
-                                <span class="me-16 fs-3">8</span>
-                                <span class="fs-5">人份</span>
-                            </div>
-                        </div>
-                        <!-- 分隔線 -->
-                        <div style="background-color: #c1af92; height: 40px; width: 1px;"></div>
-                        <!-- 時間 -->
-                        <div class="w-50 d-flex flex-column  align-items-center">
-                            <div class="mb-16 d-flex align-items-center">
-                                <img class="me-4" src="../assets/images/Stopwatch.svg" alt="stop watch">
-                                <span class="text-primary-900 fw-bold">時間</span>
-                            </div>
-                            <div class="d-flex align-items-center fw-bold">
-                                <span class="me-16 fs-3">45</span>
-                                <span class="fs-5">分鐘</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- description -->
-                    <div class="mb-16 px-16" style="height: 96px;">
-                        <p class="m-0 p-0 fw-bold">內容包含了全蛋打發海綿蛋糕的小技巧以及檸檬糖霜的製作夏日盛產的檸檬皮薄多汁又便宜今天我們就化身為南法的老奶奶一起來完成這款他們的家常蛋糕!</p>
-                    </div>
-                    <!-- 底線 -->
-                    <div class="mb-16 border-dash-bottom"></div>
-                    <!-- recipe-author -->
-                    <div class="mb-16 px-16">
-                        <div class="d-flex align-items-center">
-                            <img class="me-16" src="../assets/images/avatar.svg" alt="author photo">
-                            <div class="w-100 d-flex justify-content-between align-items-center">
-                                <div class="d-flex align-items-center">
-                                    <img class="me-4" src="../assets/images/chef-hat.svg" alt="chef hat">
-                                    <span class="text-primary-900 fs-5 fw-bold">John Doe</span>
-                                </div>
-                                <span class="text-gray-600 fs-7 fw-bold">122 食譜文章</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Button -->
-                    <div class="w-100 mb-8 py-16 d-flex justify-content-center align-items-center btn btn-primary-500 rounded-3">
-                        <img class="me-8" src="../assets/images/Add Folder.svg" alt="add folder">
-                        <span class="text-white fs-5 fw-bold">加入我的收藏夾</span>
-                    </div>
-                    <!-- Button-Second -->
-                    <div class="p-8">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <!-- 喜歡 -->
-                            <a class="d-flex align-items-center link-primary-800 fw-bold text-decoration-none">
-                                <img class="me-4" src="../assets/images/heart.svg" alt="heart">
-                                <span class="me-4">150</span>
-                                <span>人喜歡</span>
-                            </a>
-                            <!-- 分隔線 -->
-                            <div style="background-color: #c1af92; height: 16px; width: 1px;"></div>
-                            <!-- 評論 -->
-                            <a class="d-flex align-items-center link-primary-800 fw-bold text-decoration-none">
-                                <img class="me-4" src="../assets/images/Chat.svg" alt="chat">
-                                <span>3 則評論</span>
-                            </a>
-                            <!-- 分隔線 -->
-                            <div style="background-color: #c1af92; height: 16px; width: 1px;"></div>
-                            <!-- 列印 -->
-                            <a class="d-flex align-items-center link-primary-800 fw-bold text-decoration-none">
-                                <img class="me-4" src="../assets/images/Print.svg" alt="print">
-                                <span>列印</span>
-                            </a>
-                            <!-- 分隔線 -->
-                            <div style="background-color: #c1af92; height: 16px; width: 1px;"></div>
-                            <!-- 分享 -->
-                            <a class="d-flex align-items-center link-primary-800 fw-bold text-decoration-none">
-                                <img class="me-4" src="../assets/images/Share.svg" alt="share">
-                                <span>分享</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
     
-    <div class="container mb-80">
-        <!-- 食材 -->
-        <div class="row mb-80">
-            <div class="col-9 bg-white">
-                <div class="p-24">
-                    <!-- ingredients-title -->
-                    <div class="mb-24 d-flex justify-content-between align-items-end">
-                        <h2 class="m-0 p-0 d-inline position-relative" style="z-index: 1;">食材
-                            <div class="w-100 position-absolute bottom-0 start-0 bg-primary-200" style="height: 16px; z-index: -1;"></div>
-                        </h2>
-                        <span class="fs-5 fw-bold">（8人份）</span>
-                    </div>
-                    <!-- ingredients-main -->
-                    <div class="mb-24 p-16 d-flex justify-content-between border border-primary-400 rounded-3">
-                        <div class="w-100 pe-24 border-end border-primary-400">
-                            <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
-                                <span>檸檬</span>
-                                <span>300克</span>
-                            </div>
-                            <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
-                                <span>細砂糖</span>
-                                <span>30克</span>
-                            </div>
-                            <div class="w-100 d-flex justify-content-between align-items-center fw-bold">
-                                <span>吉利丁</span>
-                                <span>4克</span>
-                            </div>
-                        </div>
-                        <div class="w-100 ms-24">
-                            <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
-                                <span>水</span>
-                                <span>30克</span>
-                            </div>
-                            <div class="w-100 d-flex justify-content-between align-items-center fw-bold">
-                                <span>檸檬汁</span>
-                                <span>3克</span>
-                            </div>
+    <div class="position-relative">
+        <main class="container">
+            <!-- 簡介區 -->
+            <div class="my-40 bg-white">
+                <!-- Breadcrumbs -->
+                <div class="px-32 py-16 border-dash-box">
+                    <nav style="--bs-breadcrumb-divider: url(../assets/images/Right\ Caret.svg);" aria-label="breadcrumb">
+                        <ol class="m-0 p-0 breadcrumb">
+                            <li class="breadcrumb-item"><a class="text-decoration-none link-primary-800 fw-bold" href="index.html">首頁</a></li>
+                            <li class="breadcrumb-item"><a class="text-decoration-none link-primary-800 fw-bold" href="#">影音食譜</a></li>
+                            <li class="breadcrumb-item active text-decoration-none link-primary-800 fw-bold" aria-current="page">甜食</li>
+                        </ol>
+                    </nav>
+                </div>
+                <!-- 底線 -->
+                <div class="border-dash-bottom"></div>
+                <!-- 簡介 -->
+                <div class="row">
+                    <div class="col-7">
+                        <div class="px-32 py-24">
+                            <img src="../assets/images/recipe/recipe-cover.svg" alt="recipe cover">
                         </div>
                     </div>
-                    <!-- ingredients-detail 六吋海綿蛋糕 -->
-                    <div class="mb-16 border border-primary-400 rounded-3">
-                        <div class="px-16 py-8 d-flex justify-content-between align-items-center bg-primary-300 rounded-1">
-                            <h3 class="m-0 p-0 fs-5">六吋海綿蛋糕</h3>
-                            <img src="../assets/images/Button-Dropdown.svg" alt="button dropdown">
-                        </div>
-                        <div class="p-16 d-flex justify-content-between">
-                            <div class="w-100 pe-24 border-end border-primary-400">
-                                <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
-                                    <span>雞蛋</span>
-                                    <span>2大匙</span>
+                    <div class="col-5">
+                        <div class="px-32 py-24">
+                            <!-- recipe-title -->
+                            <div class="mb-16 d-flex justify-content-between align-items-center">
+                                <h2 class="m-0 fs-2">老奶奶檸檬糖霜蛋糕</h2>
+                                <img src="../assets/images/flag-video.svg" alt="video">
+                            </div>
+                            <!-- recipe-tag -->
+                            <div class="mb-24 d-flex">
+                                <div class="me-16 px-8 py-4 bg-primary-50 border border-primary-400 rounded-3 text-gray-600 fw-bold">
+                                    <span class="me-4">#</span>
+                                    <span>甜點</span>
                                 </div>
-                                <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
-                                    <span>低筋麵粉</span>
-                                    <span>1大匙</span>
+                                <div class="me-16 px-8 py-4 bg-primary-50 border border-primary-400 rounded-3 text-gray-600 fw-bold">
+                                    <span class="me-4">#</span>
+                                    <span>下午茶</span>
                                 </div>
-                                <div class="w-100 d-flex justify-content-between align-items-center fw-bold">
-                                    <span>全脂牛奶</span>
-                                    <span>1大匙</span>
+                                <div class="px-8 py-4 bg-primary-50 border border-primary-400 rounded-3 text-gray-600 fw-bold">
+                                    <span class="me-4">#</span>
+                                    <span>新手也可以</span>
                                 </div>
                             </div>
-                            <div class="w-100 ms-24">
-                                <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
-                                    <span>無鹽奶油</span>
-                                    <span>1大匙</span>
+                            <!-- recipe-info 份量、時間 -->
+                            <div class="w-100 mb-24 py-12 d-flex align-items-center bg-primary-100 rounded-3">
+                                <!-- 份量 -->
+                                <div class="w-50 d-flex flex-column  align-items-center">
+                                    <div class="mb-16 d-flex align-items-center">
+                                        <img class="me-4" src="../assets/images/User Group.svg" alt="user group">
+                                        <span class="text-primary-900 fw-bold">份量</span>
+                                    </div>
+                                    <div class="d-flex align-items-center fw-bold">
+                                        <span class="me-16 fs-3">8</span>
+                                        <span class="fs-5">人份</span>
+                                    </div>
                                 </div>
-                                <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
-                                    <span>細砂糖</span>
-                                    <span>1大匙</span>
-                                </div>
-                                <div class="w-100 d-flex justify-content-between align-items-center fw-bold">
-                                    <span>雞蛋</span>
-                                    <span>2大匙</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ingredients-detail 檸檬糖霜 -->
-                    <div class="mb-16 border border-primary-400 rounded-3">
-                        <div class="px-16 py-8 d-flex justify-content-between align-items-center bg-primary-300 rounded-1">
-                            <h3 class="m-0 p-0 fs-5">檸檬糖霜</h3>
-                            <img src="../assets/images/Button-Dropdown.svg" alt="button dropdown">
-                        </div>
-                        <div class="p-16 d-flex justify-content-between">
-                            <div class="w-100 pe-24 border-end border-primary-400">
-                                <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
-                                    <span>過篩糖粉</span>
-                                    <span>2大匙</span>
-                                </div>
-                                <div class="w-100 d-flex justify-content-between align-items-center fw-bold">
-                                    <span>食用水</span>
-                                    <span>1大匙</span>
+                                <!-- 分隔線 -->
+                                <div style="background-color: #c1af92; height: 40px; width: 1px;"></div>
+                                <!-- 時間 -->
+                                <div class="w-50 d-flex flex-column  align-items-center">
+                                    <div class="mb-16 d-flex align-items-center">
+                                        <img class="me-4" src="../assets/images/Stopwatch.svg" alt="stop watch">
+                                        <span class="text-primary-900 fw-bold">時間</span>
+                                    </div>
+                                    <div class="d-flex align-items-center fw-bold">
+                                        <span class="me-16 fs-3">45</span>
+                                        <span class="fs-5">分鐘</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="w-100 ms-24">
-                                <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
-                                    <span>檸檬汁</span>
-                                    <span>1大匙</span>
+                            <!-- description -->
+                            <div class="mb-16 px-16" style="height: 96px;">
+                                <p class="m-0 p-0 fw-bold">內容包含了全蛋打發海綿蛋糕的小技巧以及檸檬糖霜的製作夏日盛產的檸檬皮薄多汁又便宜今天我們就化身為南法的老奶奶一起來完成這款他們的家常蛋糕!</p>
+                            </div>
+                            <!-- 底線 -->
+                            <div class="mb-16 border-dash-bottom"></div>
+                            <!-- recipe-author -->
+                            <div class="mb-16 px-16">
+                                <div class="d-flex align-items-center">
+                                    <img class="me-16" src="../assets/images/avatar.svg" alt="author photo">
+                                    <div class="w-100 d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="me-4" src="../assets/images/chef-hat.svg" alt="chef hat">
+                                            <span class="text-primary-900 fs-5 fw-bold">John Doe</span>
+                                        </div>
+                                        <span class="text-gray-600 fs-7 fw-bold">122 食譜文章</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- ingredients-detail 蛋糕裝飾 -->
-                    <div class="border border-primary-400 rounded-3">
-                        <div class="px-16 py-8 d-flex justify-content-between align-items-center bg-primary-300 rounded-1">
-                            <h3 class="m-0 p-0 fs-5">蛋糕裝飾</h3>
-                            <img src="../assets/images/Button-Dropdown-Up.svg" alt="button dropdown up">
+                            <!-- Button -->
+                            <div class="w-100 mb-8 py-16 d-flex justify-content-center align-items-center btn btn-primary-500 rounded-3">
+                                <img class="me-8" src="../assets/images/Add Folder.svg" alt="add folder">
+                                <span class="text-white fs-5 fw-bold">加入我的收藏夾</span>
+                            </div>
+                            <!-- Button-Second -->
+                            <div class="p-8">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <!-- 喜歡 -->
+                                    <a class="d-flex align-items-center link-primary-800 fw-bold text-decoration-none">
+                                        <img class="me-4" src="../assets/images/heart.svg" alt="heart">
+                                        <span class="me-4">150</span>
+                                        <span>人喜歡</span>
+                                    </a>
+                                    <!-- 分隔線 -->
+                                    <div style="background-color: #c1af92; height: 16px; width: 1px;"></div>
+                                    <!-- 評論 -->
+                                    <a class="d-flex align-items-center link-primary-800 fw-bold text-decoration-none">
+                                        <img class="me-4" src="../assets/images/Chat.svg" alt="chat">
+                                        <span>3 則評論</span>
+                                    </a>
+                                    <!-- 分隔線 -->
+                                    <div style="background-color: #c1af92; height: 16px; width: 1px;"></div>
+                                    <!-- 列印 -->
+                                    <a class="d-flex align-items-center link-primary-800 fw-bold text-decoration-none">
+                                        <img class="me-4" src="../assets/images/Print.svg" alt="print">
+                                        <span>列印</span>
+                                    </a>
+                                    <!-- 分隔線 -->
+                                    <div style="background-color: #c1af92; height: 16px; width: 1px;"></div>
+                                    <!-- 分享 -->
+                                    <a class="d-flex align-items-center link-primary-800 fw-bold text-decoration-none">
+                                        <img class="me-4" src="../assets/images/Share.svg" alt="share">
+                                        <span>分享</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="mb-80">
+                <!-- 食材 -->
+                <div class="row mb-80">
+                    <div class="col-9">
+                        <div class="p-24 bg-white">
+                            <!-- ingredients-title -->
+                            <div class="mb-24 d-flex justify-content-between align-items-end">
+                                <h2 class="m-0 p-0 d-inline position-relative" style="z-index: 1;">食材
+                                    <div class="w-100 position-absolute bottom-0 start-0 bg-primary-200" style="height: 16px; z-index: -1;"></div>
+                                </h2>
+                                <span class="fs-5 fw-bold">（8人份）</span>
+                            </div>
+                            <!-- ingredients-main -->
+                            <div class="mb-24 p-16 d-flex justify-content-between border border-primary-400 rounded-3">
+                                <div class="w-100 pe-24 border-end border-primary-400">
+                                    <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
+                                        <span>檸檬</span>
+                                        <span>300克</span>
+                                    </div>
+                                    <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
+                                        <span>細砂糖</span>
+                                        <span>30克</span>
+                                    </div>
+                                    <div class="w-100 d-flex justify-content-between align-items-center fw-bold">
+                                        <span>吉利丁</span>
+                                        <span>4克</span>
+                                    </div>
+                                </div>
+                                <div class="w-100 ms-24">
+                                    <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
+                                        <span>水</span>
+                                        <span>30克</span>
+                                    </div>
+                                    <div class="w-100 d-flex justify-content-between align-items-center fw-bold">
+                                        <span>檸檬汁</span>
+                                        <span>3克</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ingredients-detail 六吋海綿蛋糕 -->
+                            <div class="mb-16 border border-primary-400 rounded-3">
+                                <div class="px-16 py-8 d-flex justify-content-between align-items-center bg-primary-300 rounded-1">
+                                    <h3 class="m-0 p-0 fs-5">六吋海綿蛋糕</h3>
+                                    <img src="../assets/images/Button-Dropdown.svg" alt="button dropdown">
+                                </div>
+                                <div class="p-16 d-flex justify-content-between">
+                                    <div class="w-100 pe-24 border-end border-primary-400">
+                                        <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
+                                            <span>雞蛋</span>
+                                            <span>2大匙</span>
+                                        </div>
+                                        <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
+                                            <span>低筋麵粉</span>
+                                            <span>1大匙</span>
+                                        </div>
+                                        <div class="w-100 d-flex justify-content-between align-items-center fw-bold">
+                                            <span>全脂牛奶</span>
+                                            <span>1大匙</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 ms-24">
+                                        <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
+                                            <span>無鹽奶油</span>
+                                            <span>1大匙</span>
+                                        </div>
+                                        <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
+                                            <span>細砂糖</span>
+                                            <span>1大匙</span>
+                                        </div>
+                                        <div class="w-100 d-flex justify-content-between align-items-center fw-bold">
+                                            <span>雞蛋</span>
+                                            <span>2大匙</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ingredients-detail 檸檬糖霜 -->
+                            <div class="mb-16 border border-primary-400 rounded-3">
+                                <div class="px-16 py-8 d-flex justify-content-between align-items-center bg-primary-300 rounded-1">
+                                    <h3 class="m-0 p-0 fs-5">檸檬糖霜</h3>
+                                    <img src="../assets/images/Button-Dropdown.svg" alt="button dropdown">
+                                </div>
+                                <div class="p-16 d-flex justify-content-between">
+                                    <div class="w-100 pe-24 border-end border-primary-400">
+                                        <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
+                                            <span>過篩糖粉</span>
+                                            <span>2大匙</span>
+                                        </div>
+                                        <div class="w-100 d-flex justify-content-between align-items-center fw-bold">
+                                            <span>食用水</span>
+                                            <span>1大匙</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 ms-24">
+                                        <div class="w-100 mb-16 d-flex justify-content-between align-items-center fw-bold">
+                                            <span>檸檬汁</span>
+                                            <span>1大匙</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ingredients-detail 蛋糕裝飾 -->
+                            <div class="border border-primary-400 rounded-3">
+                                <div class="px-16 py-8 d-flex justify-content-between align-items-center bg-primary-300 rounded-1">
+                                    <h3 class="m-0 p-0 fs-5">蛋糕裝飾</h3>
+                                    <img src="../assets/images/Button-Dropdown-Up.svg" alt="button dropdown up">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 料理步驟 -->
+                <!-- title -->
+                <div class="mb-24">
+                    <h2 class="m-0 p-0 d-inline position-relative" style="z-index: 1;">
+                        料理步驟
+                        <div class="w-100 position-absolute bottom-0 start-0 bg-primary-200" style="height: 16px; z-index: -1;"></div>
+                    </h2>
+                </div>
+                <!-- step 1 -->
+                <div class="row mb-20">
+                    <div class="col-4">
+                        <img class="rounded-3" src="../assets/images/recipe/recipe-step-cover-01.svg" alt="step 01">
+                    </div>
+                    <div class="col-5">
+                        <!-- recipe-step-title -->
+                        <div class="mb-8 d-flex align-items-center">
+                            <div style="width: 40px;height: 40px;" class="me-16 bg-primary-500 rounded-circle d-flex justify-content-center align-items-center">
+                                <span class="text-white fs-5 fw-bold">1</span>
+                            </div>
+                            <h3 class="m-0 p-0">打發</h3>
+                        </div>
+                        <!-- recipe-step-description -->
+                        <div class="p-16 d-flex flex-column justify-content-between bg-white" style="height:85%;">
+                            <ol class="fw-bold">
+                                <li>雞蛋、鹽、糖打發至拉起來，麵糊滴落能清楚出現紋路3～5秒左右才消失即可。</li>
+                                <li>雞蛋、鹽、糖打發至拉起來，麵糊滴落能清楚出現紋路3～5秒左右才消失即可。</li>
+                            </ol>
+                            <div class="px-16 py-8 d-flex bg-primary-100 border border-primary-400 rounded-3">
+                                <div class="me-16 d-flex align-items-center">
+                                    <img class="me-4" src="../assets/images/Pin.svg" alt="pin">
+                                    <div class="text-primary-800 fw-bold text-nowrap">小撇步</div>
+                                </div>
+                                <p class="m-0 p-0 fs-8 fw-bold" style="line-height: 1.5;">打發前可以用隔水加熱約1～2分鐘，再拿出來打發可以幫助雞蛋氣泡速度喔！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 底線 -->
+                <div class="border-dash-bottom mb-20"></div>
+                <!-- step 2 -->
+                <div class="row mb-20">
+                    <div class="col-4">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/images/recipe/recipe-step-cover-02-01.svg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/images/recipe/recipe-step-cover-02-02.svg" class="d-block w-100" alt="...">
+                                </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                    </div>
+                    <div class="col-5">
+                        <!-- recipe-step-title -->
+                        <div class="mb-8 d-flex align-items-center">
+                            <div style="width: 40px;height: 40px;" class="me-16 bg-primary-500 rounded-circle d-flex justify-content-center align-items-center">
+                                <span class="text-white fs-5 fw-bold">2</span>
+                            </div>
+                            <h3 class="m-0 p-0">過篩攪拌</h3>
+                        </div>
+                        <!-- recipe-step-description -->
+                        <div class="p-16 d-flex flex-column justify-content-between bg-white" style="height:85%;">
+                            <p class="m-0 p-o fw-bold">
+                                接下來，過篩加入低筋麵粉，可以分2～3次加入，攪拌時用用刮刀以翻拌的方式攪拌。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 底線 -->
+                <div class="border-dash-bottom mb-20"></div>
+                <!-- step 3 -->
+                <div class="row mb-20">
+                    <div class="col-4">
+                        <img class="rounded-3" src="../assets/images/recipe/recipe-step-cover-03.svg" alt="step 03">
+                    </div>
+                    <div class="col-5">
+                        <!-- recipe-step-title -->
+                        <div class="mb-8 d-flex align-items-center">
+                            <div style="width: 40px;height: 40px;" class="me-16 bg-primary-500 rounded-circle d-flex justify-content-center align-items-center">
+                                <span class="text-white fs-5 fw-bold">3</span>
+                            </div>
+                            <!-- <h3 class="m-0 p-0"></h3> -->
+                        </div>
+                        <!-- recipe-step-description -->
+                        <div class="p-16 d-flex flex-column justify-content-between bg-white" style="height:85%;">
+                            <p class="m-0 p-o fw-bold">
+                                接下來加入奶油（融化成液體）、檸檬汁翻拌均勻。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 底線 -->
+                <div class="border-dash-bottom mb-20"></div>
+                <!-- step 4 -->
+                <div class="row mb-20">
+                    <div class="col-4">
+                        <img class="rounded-3" src="../assets/images/recipe/recipe-step-cover-04.svg" alt="step 04">
+                    </div>
+                    <div class="col-5">
+                        <!-- recipe-step-title -->
+                        <div class="mb-8 d-flex align-items-center">
+                            <div style="width: 40px;height: 40px;" class="me-16 bg-primary-500 rounded-circle d-flex justify-content-center align-items-center">
+                                <span class="text-white fs-5 fw-bold">4</span>
+                            </div>
+                            <!-- <h3 class="m-0 p-0"></h3> -->
+                        </div>
+                        <!-- recipe-step-description -->
+                        <div class="p-16 d-flex flex-column justify-content-between bg-white" style="height:85%;">
+                            <p class="m-0 p-o fw-bold">
+                                接下來在模具刷油，倒入麵糊，敲2下，用烤箱175°c 30分鐘（建議可以用筷子，讓烤箱門留一點小縫隙）每個人家烤箱溫度不一樣，如果還沒熟可以再自行加一點點時間！
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 底線 -->
+                <div class="border-dash-bottom mb-20"></div>
+                <!-- step 5 -->
+                <div class="row">
+                    <div class="col-4">
+                        <div id="carouselExampleCaptions02" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions02" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions02" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/images/recipe/recipe-step-cover-05-01.svg" class="d-block w-100" alt="step 05-01">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/images/recipe/recipe-step-cover-05-02.svg" class="d-block w-100" alt="step 05-02">
+                                </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions02" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions02" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                    </div>
+                    <div class="col-5">
+                        <!-- recipe-step-title -->
+                        <div class="mb-8 d-flex align-items-center">
+                            <div style="width: 40px;height: 40px;" class="me-16 bg-primary-500 rounded-circle d-flex justify-content-center align-items-center">
+                                <span class="text-white fs-5 fw-bold">5</span>
+                            </div>
+                            <!-- <h3 class="m-0 p-0"></h3> -->
+                        </div>
+                        <!-- recipe-step-description -->
+                        <div class="p-16 d-flex flex-column justify-content-between bg-white" style="height:85%;">
+                            <p class="m-0 p-o fw-bold">
+                                烤完後，拿出來放涼，再脫模，這個時候可以來製作糖霜了！將檸檬汁和糖粉攪拌均勻，倒在放涼的檸檬蛋糕上，就完成啦！
+                            </p>
+                            <div class="px-16 py-8 d-flex bg-primary-100 border border-primary-400 rounded-3">
+                                <div class="me-16 d-flex align-items-center">
+                                    <img class="me-4" src="../assets/images/Pin.svg" alt="pin">
+                                    <div class="text-primary-800 fw-bold text-nowrap">小撇步</div>
+                                </div>
+                                <p class="m-0 p-0 fs-8 fw-bold" style="line-height: 1.5;">建議冰過比較好吃喔。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 浮動按鈕 -->
+        <div class="fixed-bottom">
+            <div class="me-36 mb-8 d-flex justify-content-end align-items-center">
+                <div data-bs-toggle="tooltip" data-bs-placement="top" title="幫我備料">
+                    <button type="button" class="me-12 p-12 btn btn-light rounded-circle shadow">
+                        <img src="../assets/images/Cart.svg" alt="cart">
+                    </button>
+                </div>
+                <div data-bs-toggle="tooltip" data-bs-placement="top" title="筆記標註">
+                    <button type="button" class="me-12 p-12 btn btn-light rounded-circle shadow" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <img src="../assets/images/Edit (alt).svg" alt="edit">
+                    </button>
+                </div>
+                <div data-bs-toggle="tooltip" data-bs-placement="top" title="VIP會員獨享功能">
+                    <button type="button" class="me-12 p-16 btn btn-light rounded-circle shadow">
+                        <img src="../assets/images/Crown-Green.svg" alt="crown">
+                    </button>
+                </div>
+                <button type="button" class="p-16 btn btn-light rounded-circle shadow" data-bs-toggle="tooltip" data-bs-placement="top" title="回到上層">
+                    <img src="../assets/images/Up-Arrow.svg" alt="up arrow">
+                </button>
             </div>
         </div>
 
-        <!-- 料理步驟 -->
-        <!-- title -->
-        <div class="mb-24">
-            <h2 class="m-0 p-0 d-inline position-relative" style="z-index: 1;">
-                料理步驟
-                <div class="w-100 position-absolute bottom-0 start-0 bg-primary-200" style="height: 16px; z-index: -1;"></div>
-            </h2>
-        </div>
-        <!-- step 1 -->
-        <div class="row mb-20">
-            <div class="col-4">
-                <img class="rounded-3" src="../assets/images/recipe/recipe-step-cover-01.svg" alt="step 01">
+        <!-- 筆記欄 -->
+        <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <!-- 關閉按鈕 -->
+            <div class="offcanvas-header d-flex justify-content-end">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="col-5">
-                <!-- recipe-step-title -->
-                <div class="mb-8 d-flex align-items-center">
-                    <div style="width: 40px;height: 40px;" class="me-16 bg-primary-500 rounded-circle d-flex justify-content-center align-items-center">
-                        <span class="text-white fs-5 fw-bold">1</span>
-                    </div>
-                    <h3 class="m-0 p-0">打發</h3>
-                </div>
-                <!-- recipe-step-description -->
-                <div class="p-16 d-flex flex-column justify-content-between bg-white" style="height:85%;">
-                    <ol class="fw-bold">
-                        <li>雞蛋、鹽、糖打發至拉起來，麵糊滴落能清楚出現紋路3～5秒左右才消失即可。</li>
-                        <li>雞蛋、鹽、糖打發至拉起來，麵糊滴落能清楚出現紋路3～5秒左右才消失即可。</li>
-                    </ol>
-                    <div class="px-16 py-8 d-flex bg-primary-100 border border-primary-400 rounded-3">
-                        <div class="me-16 d-flex align-items-center">
-                            <img class="me-4" src="../assets/images/Pin.svg" alt="pin">
-                            <div class="text-primary-800 fw-bold text-nowrap">小撇步</div>
-                        </div>
-                        <p class="m-0 p-0 fs-8 fw-bold" style="line-height: 1.5;">打發前可以用隔水加熱約1～2分鐘，再拿出來打發可以幫助雞蛋氣泡速度喔！</p>
-                    </div>
+            <!-- 導覽列 -->
+            <div class="offcanvas-header">
+                <div class="w-100 position-relative">
+                    <ul class="nav" id="offcanvasRightLabel">
+                        <li class="nav-item border-bottom border-4 border-primary-400">
+                            <a class="nav-link active link-primary-700 fs-5 fw-bold" aria-current="page" href="#">食譜筆記</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-primary-300 fs-5 fw-bold" href="#">影音筆記</a>
+                        </li>
+                    </ul>
+                    <div class="border-dash-bottom position-absolute bottom-0 start-0"></div>
                 </div>
             </div>
-        </div>
-        <!-- 底線 -->
-        <div class="border-dash-bottom mb-20"></div>
-        <!-- step 2 -->
-        <div class="row mb-20">
-            <div class="col-4">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <div class="offcanvas-body">
+                <div class="overflow-auto" style="max-height: 85%;">
+                    <!-- title 1 -->
+                    <div class="mb-12 d-flex align-items-start">
+                        <span class="lh-lg position-relative" style="z-index: 1;">
+                            可以分2～3次加入，攪拌時用用刮刀以翻拌的方式攪拌。
+                            <div class="w-100 position-absolute top-0 start-0 bg-secondary-200" style="height: 20px; z-index: -1;"></div>
+                            <div class="w-100 position-absolute bottom-0 start-0 bg-secondary-200" style="height: 20px; z-index: -1;"></div>
+                        </span>
+                        <img class="me-4" src="../assets/images/Edit.svg" alt="edit">
+                        <img src="../assets/images/Trash.svg" alt="trash">
+                    </div>
+                    <!-- note 1 -->
+                    <div class="mb-24 px-12 py-8 bg-primary-50 border border-primary-400 rounded-3">
+                        <span class="lh-lg">當麵糊滴落到鍋子或平面上時，它會形成獨特的紋路或模式，這有助於提高食物的視覺吸引力和質感。這種效果通常出現在烘焙或炸食品時，如餅乾、薄餅或油炸點心。可以通過精心控制麵糊的流動方式以及材料的溫度和黏度來實現這種效果。</span>
+                    </div>
+                    <!-- title 2 -->
+                    <div class="mb-12 d-flex align-items-start">
+                        <span class="lh-lg position-relative" style="z-index: 1;">
+                            可以分2～3次加入，攪拌時用用刮刀以翻拌的方式攪拌。
+                            <div class="w-100 position-absolute top-0 start-0 bg-secondary-200" style="height: 20px; z-index: -1;"></div>
+                            <div class="w-100 position-absolute bottom-0 start-0 bg-secondary-200" style="height: 20px; z-index: -1;"></div>
+                        </span>
+                        <img class="me-4" src="../assets/images/Edit.svg" alt="edit">
+                        <img src="../assets/images/Trash.svg" alt="trash">
+                    </div>
+                    <!-- note 2 -->
+                    <div class="mb-24 px-12 py-8 bg-primary-50 border border-primary-400 rounded-3">
+                        <span class="lh-lg">使用新鮮的檸檬皮和檸檬汁，以確保蛋糕獲得最佳的檸檬風味。有機檸檬通常更適合，因為它們不含化學殘留物。</span>
+                    </div>
+                    <!-- title 3 -->
+                    <div class="mb-12 d-flex align-items-start">
+                        <span class="lh-lg position-relative" style="z-index: 1;">
+                            可以分2～3次加入，攪拌時用用刮刀以翻拌的方式攪拌。
+                            <div class="w-100 position-absolute top-0 start-0 bg-secondary-200" style="height: 20px; z-index: -1;"></div>
+                            <div class="w-100 position-absolute bottom-0 start-0 bg-secondary-200" style="height: 20px; z-index: -1;"></div>
+                        </span>
+                        <img class="me-4" src="../assets/images/Edit.svg" alt="edit">
+                        <img src="../assets/images/Trash.svg" alt="trash">
+                    </div>
+                    <!-- note 3 -->
+                    <div class="mb-24 px-12 py-8 bg-primary-50 border border-primary-400 rounded-3">
+                        <span class="lh-lg">一旦添加麵粉，只需輕輕攪拌，直到混合物結合。過度攪拌會使蛋糕變得橡皮質。</span>
+                    </div>
+                </div>
+
+                <!-- buttons -->
+                <div class="fixed-bottom">
+                    <div class="me-32 mb-8 d-flex justify-content-end align-items-center">
+                        <div data-bs-toggle="tooltip" data-bs-placement="top" title="">
+                            <button type="button" class="me-12 p-16 btn btn-light rounded-circle shadow">
+                                <img src="../assets/images/Close.svg" alt="close">
+                            </button>
                         </div>
-                        <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../assets/images/recipe/recipe-step-cover-02-01.svg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/recipe/recipe-step-cover-02-02.svg" class="d-block w-100" alt="...">
-                        </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                        <button type="button" class="p-16 btn btn-light rounded-circle shadow" data-bs-toggle="tooltip" data-bs-placement="top" title="回到上層">
+                            <img src="../assets/images/Up-Arrow.svg" alt="up arrow">
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-            </div>
-            <div class="col-5">
-                <!-- recipe-step-title -->
-                <div class="mb-8 d-flex align-items-center">
-                    <div style="width: 40px;height: 40px;" class="me-16 bg-primary-500 rounded-circle d-flex justify-content-center align-items-center">
-                        <span class="text-white fs-5 fw-bold">2</span>
-                    </div>
-                    <h3 class="m-0 p-0">過篩攪拌</h3>
-                </div>
-                <!-- recipe-step-description -->
-                <div class="p-16 d-flex flex-column justify-content-between bg-white" style="height:85%;">
-                    <p class="m-0 p-o fw-bold">
-                        接下來，過篩加入低筋麵粉，可以分2～3次加入，攪拌時用用刮刀以翻拌的方式攪拌。
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- 底線 -->
-        <div class="border-dash-bottom mb-20"></div>
-        <!-- step 3 -->
-        <div class="row mb-20">
-            <div class="col-4">
-                <img class="rounded-3" src="../assets/images/recipe/recipe-step-cover-03.svg" alt="step 03">
-            </div>
-            <div class="col-5">
-                <!-- recipe-step-title -->
-                <div class="mb-8 d-flex align-items-center">
-                    <div style="width: 40px;height: 40px;" class="me-16 bg-primary-500 rounded-circle d-flex justify-content-center align-items-center">
-                        <span class="text-white fs-5 fw-bold">3</span>
-                    </div>
-                    <!-- <h3 class="m-0 p-0"></h3> -->
-                </div>
-                <!-- recipe-step-description -->
-                <div class="p-16 d-flex flex-column justify-content-between bg-white" style="height:85%;">
-                    <p class="m-0 p-o fw-bold">
-                        接下來加入奶油（融化成液體）、檸檬汁翻拌均勻。
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- 底線 -->
-        <div class="border-dash-bottom mb-20"></div>
-        <!-- step 4 -->
-        <div class="row mb-20">
-            <div class="col-4">
-                <img class="rounded-3" src="../assets/images/recipe/recipe-step-cover-04.svg" alt="step 04">
-            </div>
-            <div class="col-5">
-                <!-- recipe-step-title -->
-                <div class="mb-8 d-flex align-items-center">
-                    <div style="width: 40px;height: 40px;" class="me-16 bg-primary-500 rounded-circle d-flex justify-content-center align-items-center">
-                        <span class="text-white fs-5 fw-bold">4</span>
-                    </div>
-                    <!-- <h3 class="m-0 p-0"></h3> -->
-                </div>
-                <!-- recipe-step-description -->
-                <div class="p-16 d-flex flex-column justify-content-between bg-white" style="height:85%;">
-                    <p class="m-0 p-o fw-bold">
-                        接下來在模具刷油，倒入麵糊，敲2下，用烤箱175°c 30分鐘（建議可以用筷子，讓烤箱門留一點小縫隙）每個人家烤箱溫度不一樣，如果還沒熟可以再自行加一點點時間！
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- 底線 -->
-        <div class="border-dash-bottom mb-20"></div>
-        <!-- step 5 -->
-        <div class="row">
-            <div class="col-4">
-                <div id="carouselExampleCaptions02" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions02" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions02" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../assets/images/recipe/recipe-step-cover-05-01.svg" class="d-block w-100" alt="step 05-01">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/images/recipe/recipe-step-cover-05-02.svg" class="d-block w-100" alt="step 05-02">
-                        </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions02" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions02" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-            </div>
-            <div class="col-5">
-                <!-- recipe-step-title -->
-                <div class="mb-8 d-flex align-items-center">
-                    <div style="width: 40px;height: 40px;" class="me-16 bg-primary-500 rounded-circle d-flex justify-content-center align-items-center">
-                        <span class="text-white fs-5 fw-bold">5</span>
-                    </div>
-                    <!-- <h3 class="m-0 p-0"></h3> -->
-                </div>
-                <!-- recipe-step-description -->
-                <div class="p-16 d-flex flex-column justify-content-between bg-white" style="height:85%;">
-                    <p class="m-0 p-o fw-bold">
-                        烤完後，拿出來放涼，再脫模，這個時候可以來製作糖霜了！將檸檬汁和糖粉攪拌均勻，倒在放涼的檸檬蛋糕上，就完成啦！
-                    </p>
-                    <div class="px-16 py-8 d-flex bg-primary-100 border border-primary-400 rounded-3">
-                        <div class="me-16 d-flex align-items-center">
-                            <img class="me-4" src="../assets/images/Pin.svg" alt="pin">
-                            <div class="text-primary-800 fw-bold text-nowrap">小撇步</div>
-                        </div>
-                        <p class="m-0 p-0 fs-8 fw-bold" style="line-height: 1.5;">建議冰過比較好吃喔。</p>
                     </div>
                 </div>
             </div>
@@ -435,6 +544,17 @@
 
     <%- include('./layout/footer'); -%>
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
