@@ -20,7 +20,6 @@ header {
     background: $light url('../images/Zoom.svg') no-repeat 16px 8px;
   }
   ::placeholder {
-    // 這個顏色沒有在變數中
-    color: #997B59;
+    color: $gray-600;
   }
 }
