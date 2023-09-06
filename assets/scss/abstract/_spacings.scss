@@ -8,8 +8,23 @@ $spacers: (
   20: $spacer * 1.25,
   24: $spacer * 1.5,
   32: $spacer * 2,
+  36: $spacer * 2.25,
   40: $spacer * 2.5,
+  48: $spacer * 3,
   56: $spacer * 3.5,
   60: $spacer * 3.75,
   80: $spacer * 5,
+  84: $spacer * 5.25,
+  104: $spacer * 6.5,
+  120: $spacer * 7.5,
+);
+
+$position-values: (
+  0: 0,
+  "8px": 0.5rem,
+  "12px": 0.75rem,
+  "16px": 1rem,
+  50: 50%,
+  "72px": 4.5rem,
+  100: 100%,
 );

@@ -86,7 +86,7 @@ $theme-colors: (
   "primary-800": $taupe-800,
   "primary-900": $taupe-900,
   "primary-950": $taupe-950,
-  "secondary":   $green,
+  "secondary": $green,
   "secondary-50": $green-50,
   "secondary-100": $green-100,
   "secondary-200": $green-200,
@@ -103,8 +103,9 @@ $theme-colors: (
   "danger-300": #ffa072,
   "danger-600": #ed2d09,
   "danger-800": #9c1910,
-  "white":      #FEFEFE,
-  "gray-600":   $gray-600,
+  "gray-600": #6c757d,
+  "light": #fefefe,
+  "dark": #291f1e,
 );
 
 $body-bg: #fcf4ed;
