@@ -52,6 +52,28 @@ $greens: (
   "green-700": $green-700,
 );
 
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+) !default;
+
 $theme-colors: (
   "primary-50": $taupe-50,
   "primary-100": $taupe-100,
@@ -64,7 +86,7 @@ $theme-colors: (
   "primary-800": $taupe-800,
   "primary-900": $taupe-900,
   "primary-950": $taupe-950,
-  "secondary":   $green,
+  "secondary": $green,
   "secondary-50": $green-50,
   "secondary-100": $green-100,
   "secondary-200": $green-200,
@@ -81,7 +103,9 @@ $theme-colors: (
   "danger-300": #ffa072,
   "danger-600": #ed2d09,
   "danger-800": #9c1910,
-  "white":      #FEFEFE,
+  "gray-600": #6c757d,
+  "light": #fefefe,
+  "dark": #291f1e,
 );
 
 $body-bg: #fcf4ed;

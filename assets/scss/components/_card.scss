@@ -1,0 +1,25 @@
+.card {
+  width: min(25.25rem, 100%);
+
+  &__image {
+    aspect-ratio: calc(404 / 240);
+  }
+
+  &__button--collection {
+    width: 2.5rem;
+    aspect-ratio: 1;
+  }
+
+  &__rank {
+    &--rank {
+      width: 3.5rem;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+    }
+
+    &--image {
+      aspect-ratio: calc(296 / 120);
+    }
+  }
+}
