@@ -3,6 +3,14 @@
     aspect-ratio: calc(404 / 240);
   }
 
+  &__image-2 {
+    aspect-ratio: calc(296 / 240);
+  }
+
+  &__image-3 {
+    aspect-ratio: calc(296 / 160);
+  }
+
   &__rank {
     &--rank {
       width: 3.5rem;
@@ -19,6 +27,13 @@
   &__video {
     &--image {
       aspect-ratio: calc(296 / 240);
+    }
+  }
+
+  &__chef {
+    & > img {
+      width: 80px;
+      aspect-ratio: 1;
     }
   }
 }

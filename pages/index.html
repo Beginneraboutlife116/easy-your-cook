@@ -118,7 +118,7 @@
               <div
                 class="d-flex justify-content-lg-between align-items-center mb-lg-32"
               >
-                <h2 class="fw-bold fs-2 text-black position-relative m-0">
+                <h2 class="fw-bold fs-2 text-dark position-relative m-0">
                   今日食譜推薦
                   <hr
                     class="border-bottom border-primary-300 border-8 m-0 position-absolute bottom-0 w-100"
@@ -175,7 +175,7 @@
                       <h5 class="fs-5 fw-bold mb-8">
                         <a
                           href="./recipe.html"
-                          class="text-black opacity-50-hover"
+                          class="text-dark opacity-50-hover"
                         >
                           蕃茄海鮮義大利麵</a
                         >
@@ -219,7 +219,7 @@
               <div
                 class="d-flex justify-content-lg-between align-items-center mb-lg-32"
               >
-                <h2 class="fw-bold fs-2 text-black position-relative m-0">
+                <h2 class="fw-bold fs-2 text-dark position-relative m-0">
                   當季料理
                   <hr
                     class="border-bottom border-primary-300 border-8 m-0 position-absolute bottom-0 w-100"
@@ -276,7 +276,7 @@
                       <h5 class="fs-5 fw-bold mb-8">
                         <a
                           href="./recipe.html"
-                          class="text-black opacity-50-hover"
+                          class="text-dark opacity-50-hover"
                         >
                           蕃茄海鮮義大利麵</a
                         >
@@ -549,7 +549,7 @@
         </div>
       </div>
       <div class="container py-80">
-        <div class="row pt-98 gx-5 position-relative">
+        <div class="row pt-98 gx-5 position-relative pb-16">
           <div class="col-lg-6">
             <div class="bg-primary-950">
               <iframe
@@ -616,6 +616,288 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="container">
+        <div class="border-dash-bottom container mb-80"></div>
+        <section>
+          <div
+            class="d-flex justify-content-lg-between align-items-center mb-40"
+          >
+            <h2 class="fw-bold fs-2 text-dark position-relative m-0">
+              十分鐘內搞定，簡單好上手
+              <hr
+                class="border-bottom border-primary-300 border-8 m-0 position-absolute bottom-0 w-100"
+              />
+            </h2>
+            <a
+              class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium"
+              href="./menus.html"
+              ><span>查看詳情</span
+              ><img src="../assets/images/Right Arrow.svg" alt="查看詳情"
+            /></a>
+          </div>
+          <div class="row g-5">
+            <% for (let i = 1; i <= 4; i++) { %>
+            <div class="col-lg-3">
+              <div class="rounded shadow">
+                <div class="position-relative">
+                  <a href="./recipe.html">
+                    <picture>
+                      <source
+                        srcset="../assets/images/home/card-img-2.avif"
+                        type="image/avif"
+                      />
+                      <source
+                        srcset="../assets/images/home/card-img-2.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="../assets/images/home/card-img-2.png"
+                        class="card__image-2 object-fit-cover rounded-top opacity-50-hover"
+                        alt="日式馬鈴薯沙拉"
+                      />
+                    </picture>
+                  </a>
+                  <button
+                    class="position-absolute border-0 bg-light rounded-circle top-16px end-16px p-8"
+                    aria-label="收藏按鈕"
+                  >
+                    <img src="../assets/images/bookmark.svg" alt="收藏" />
+                  </button>
+                  <button
+                    class="position-absolute border-0 bottom-12px start-12px bg-dark bg-opacity-40 rounded-3 py-4 px-6 opacity-50-hover"
+                    aria-label="錄影播放"
+                  >
+                    <img src="../assets/images/video.svg" alt="錄影播放" />
+                  </button>
+                </div>
+                <div class="p-12 bg-light rounded-bottom">
+                  <h5 class="fs-5 fw-bold mb-8">
+                    <a href="./recipe.html" class="text-dark opacity-50-hover">
+                      日式馬鈴薯沙拉</a
+                    >
+                  </h5>
+                  <p class="d-flex gap-16 text-gray-600 fw-medium">
+                    <span class="d-flex align-items-center gap-4">
+                      <img src="../assets/images/chef-hat.svg" alt="" /><span
+                        >DAYDAYcook</span
+                      >
+                    </span>
+                    <span class="d-flex align-items-center gap-4">
+                      <img src="../assets/images/stopwatch.svg" alt="" /><span
+                        >20 min</span
+                      >
+                    </span>
+                    <span class="d-flex align-items-center gap-4">
+                      <img src="../assets/images/heart.svg" alt="" /><span
+                        >150</span
+                      >
+                    </span>
+                  </p>
+                  <p class="text-gray-600 d-flex gap-8 flex-wrap m-0">
+                    <span
+                      class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                      ><span class="pe-4">#</span>沙拉</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <% } %>
+          </div>
+        </section>
+        <section>
+          <div
+            class="d-flex justify-content-lg-between align-items-center my-40"
+          >
+            <h2 class="fw-bold fs-2 text-dark position-relative m-0">
+              少油少糖，健康好料理
+              <hr
+                class="border-bottom border-primary-300 border-8 m-0 position-absolute bottom-0 w-100"
+              />
+            </h2>
+            <a
+              class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium"
+              href="./menus.html"
+              ><span>查看詳情</span
+              ><img src="../assets/images/Right Arrow.svg" alt="查看詳情"
+            /></a>
+          </div>
+          <div class="row g-5">
+            <% for (let i = 1; i <= 4; i++) { %>
+            <div class="col-lg-3">
+              <div class="rounded shadow">
+                <div class="position-relative">
+                  <a href="./recipe.html">
+                    <picture>
+                      <source
+                        srcset="../assets/images/home/card-img-2.avif"
+                        type="image/avif"
+                      />
+                      <source
+                        srcset="../assets/images/home/card-img-2.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="../assets/images/home/card-img-2.png"
+                        class="card__image-2 object-fit-cover rounded-top opacity-50-hover"
+                        alt="日式馬鈴薯沙拉"
+                      />
+                    </picture>
+                  </a>
+                  <button
+                    class="position-absolute border-0 bg-light rounded-circle top-16px end-16px p-8"
+                    aria-label="收藏按鈕"
+                  >
+                    <img src="../assets/images/bookmark.svg" alt="收藏" />
+                  </button>
+                  <button
+                    class="position-absolute border-0 bottom-12px start-12px bg-dark bg-opacity-40 rounded-3 py-4 px-6 opacity-50-hover"
+                    aria-label="錄影播放"
+                  >
+                    <img src="../assets/images/video.svg" alt="錄影播放" />
+                  </button>
+                </div>
+                <div class="p-12 bg-light rounded-bottom">
+                  <h5 class="fs-5 fw-bold mb-8">
+                    <a href="./recipe.html" class="text-dark opacity-50-hover">
+                      日式馬鈴薯沙拉</a
+                    >
+                  </h5>
+                  <p class="d-flex gap-16 text-gray-600 fw-medium">
+                    <span class="d-flex align-items-center gap-4">
+                      <img src="../assets/images/chef-hat.svg" alt="" /><span
+                        >DAYDAYcook</span
+                      >
+                    </span>
+                    <span class="d-flex align-items-center gap-4">
+                      <img src="../assets/images/stopwatch.svg" alt="" /><span
+                        >20 min</span
+                      >
+                    </span>
+                    <span class="d-flex align-items-center gap-4">
+                      <img src="../assets/images/heart.svg" alt="" /><span
+                        >150</span
+                      >
+                    </span>
+                  </p>
+                  <p class="text-gray-600 d-flex gap-8 flex-wrap m-0">
+                    <span
+                      class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                      ><span class="pe-4">#</span>沙拉</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <% } %>
+          </div>
+          <div class="border-dash-bottom container mt-80"></div>
+        </section>
+      </div>
+      <div class="container pt-60 pb-120">
+        <div class="d-flex justify-content-lg-between align-items-center mb-60">
+          <h2 class="fw-bold fs-2 text-dark position-relative m-0">
+            多位知名主廚，菜單不藏私
+            <hr
+              class="border-bottom border-primary-300 border-8 m-0 position-absolute bottom-0 w-100"
+            />
+          </h2>
+          <a
+            class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium"
+            href="./menus.html"
+            ><span>看看其他推薦廚師</span
+            ><img src="../assets/images/home/change.svg" alt="看看其他推薦廚師"
+          /></a>
+        </div>
+        <% for (let i = 1; i <= 3; i++) { %>
+        <div class="row mb-40 align-items-center">
+          <div class="col-6 row">
+            <div class="col-4">
+              <div class="text-center | card__chef">
+                <img src="../assets/images/avatar.svg" alt="John Doe" />
+                <p
+                  class="mb-0 mt-8 d-flex align-items-center justify-content-center text-primary-900 fw-medium fs-4"
+                >
+                  <img
+                    src="../assets/images/chef-hat.svg"
+                    class="me-4"
+                    alt=""
+                  />John Doe
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="text-gray-600 d-flex gap-4 flex-wrap mb-8">
+                <span
+                  class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-light"
+                  ><span class="pe-4">#</span>飯食</span
+                >
+                <span
+                  class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-light"
+                  ><span class="pe-4">#</span>咖哩飯</span
+                >
+              </div>
+              <p class="lh-lg">
+                John
+                Doe精湛的廚藝與獨特的咖哩秘方，使他成為飯食與咖哩界的頂尖代表，風靡食客，享譽國際。
+              </p>
+            </div>
+          </div>
+          <div class="col-6 row gx-5">
+            <div class="col-6">
+              <div class="position-relative">
+                <picture>
+                  <source
+                    srcset="../assets/images/home/chef-recipe.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="../assets/images/home/chef-recipe.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="../assets/images/home/chef-recipe.png"
+                    class="card__image-2 object-fit-cover w-100 rounded-4 card__image-3"
+                    alt="南洋咖哩雞"
+                  />
+                </picture>
+                <p
+                  class="m-0 bg-dark text-light py-8 text-center position-absolute bottom-0 w-100 rounded-bottom-4"
+                  style="--bs-bg-opacity: 0.8"
+                >
+                  南洋咖哩雞
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="position-relative">
+                <picture>
+                  <source
+                    srcset="../assets/images/home/chef-recipe.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="../assets/images/home/chef-recipe.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="../assets/images/home/chef-recipe.png"
+                    class="card__image-2 object-fit-cover w-100 rounded-4 card__image-3"
+                    alt="南洋咖哩雞"
+                  />
+                </picture>
+                <p
+                  class="m-0 bg-dark text-light py-8 text-center position-absolute bottom-0 w-100 rounded-bottom-4"
+                  style="--bs-bg-opacity: 0.8"
+                >
+                  南洋咖哩雞
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% } %>
       </div>
     </main>
 
