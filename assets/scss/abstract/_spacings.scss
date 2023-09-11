@@ -2,6 +2,7 @@ $spacer: 1rem;
 $spacers: (
   0: 0,
   4: $spacer * 0.25,
+  6: $spacer * 0.375,
   8: $spacer * 0.5,
   12: $spacer * 0.75,
   16: $spacer,
@@ -15,8 +16,19 @@ $spacers: (
   60: $spacer * 3.75,
   80: $spacer * 5,
   84: $spacer * 5.25,
+  98: $spacer * 6.125,
   104: $spacer * 6.5,
   120: $spacer * 7.5,
+);
+
+$gutters: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+  6: $spacer * 3,
 );
 
 $position-values: (

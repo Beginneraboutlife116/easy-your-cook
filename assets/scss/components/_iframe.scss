@@ -1,0 +1,14 @@
+@use "sass:map";
+
+.iframe {
+  aspect-ratio: calc(622 / 324);
+
+  &__tooltip {
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+
+    a {
+      translate: -50% -60%;
+    }
+  }
+}
