@@ -31,6 +31,12 @@
   }
 
   &__chef {
+    transition: scale 200ms ease-in-out;
+    
+    &:hover {
+      scale: 1.03125;
+    }
+
     & > img {
       width: 80px;
       aspect-ratio: 1;
