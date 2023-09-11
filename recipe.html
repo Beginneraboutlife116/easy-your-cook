@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <!-- animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script type="module" crossorigin src="/easy-your-cook/assets/bootstrap.esm.min-d1c8b1d9.js"></script>
-    <link rel="stylesheet" href="/easy-your-cook/assets/bootstrap.esm-22da42a2.css">
+    <script type="module" crossorigin src="/easy-your-cook/assets/bootstrap.esm.min-9a68b81e.js"></script>
+    <link rel="stylesheet" href="/easy-your-cook/assets/bootstrap.esm-519a629a.css">
   </head>
   <body>
     <header class="bg-primary-100  sticky-top">
@@ -44,7 +42,7 @@
             </li>
             <li class="me-16 px-8">
                 <a class="link-primary-800 text-decoration-none" href="#">
-                    <img src="/easy-your-cook/assets/bookmark-c2646ee1.svg" alt="bookmark">
+                    <img src="/easy-your-cook/assets/Bookmark_header-c2646ee1.svg" alt="bookmark">
                 </a>
             </li>
             <li class="me-16 px-8">
@@ -52,7 +50,7 @@
                     <img src="/easy-your-cook/assets/User_header-381b02bf.svg" alt="User">
                 </a>
             </li>
-            <li class="px-16 py-8 btn btn-secondary-500 border-0">
+            <li class="px-16 py-8 btn btn-secondary-500 border-0 btnVip">
                 <img class="me-1" src="/easy-your-cook/assets/Crown-deddec20.svg" alt="icon Crown">
                 <a class="text-light text-decoration-none" href="#">升級VIP</a>
             </li>
@@ -61,7 +59,7 @@
 </header>
     
     <div class="position-relative">
-        <main class="container">
+        <main class="container" id="top">
             <!-- 簡介區 -->
             <div class="my-40 bg-white">
                 <!-- Breadcrumbs -->
@@ -86,7 +84,7 @@
                     <div class="col-5">
                         <div class="px-32 py-24">
                             <!-- recipe-title -->
-                            <div class="mb-16 d-flex justify-content-between align-items-center" id="top">
+                            <div class="mb-16 d-flex justify-content-between align-items-center">
                                 <h2 class="m-0 fs-2">老奶奶檸檬糖霜蛋糕</h2>
                                 <img src="/easy-your-cook/assets/flag-video-6d1a0408.svg" alt="video">
                             </div>
@@ -158,7 +156,7 @@
                             </div>
                             <!-- Button-Second -->
                             <div class="p-8">
-                                <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-between align-items-center position-relative">
                                     <!-- 喜歡 -->
                                     <a class="d-flex align-items-center link-primary-800 fw-bold text-decoration-none">
                                         <img class="me-4" src="/easy-your-cook/assets/heart-cec00060.svg" alt="heart">
@@ -181,15 +179,38 @@
                                     <!-- 分隔線 -->
                                     <div style="background-color: #c1af92; height: 16px; width: 1px;"></div>
                                     <!-- 分享 -->
-                                    <a class="d-flex align-items-center link-primary-800 fw-bold text-decoration-none">
+                                    <a class="btnShare d-flex align-items-center link-primary-800 fw-bold text-decoration-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                                         <img class="me-4" src="/easy-your-cook/assets/Share-e0215b54.svg" alt="share">
                                         <span>分享</span>
                                     </a>
+                                    <div style="position: absolute; right: 0; top: 40px;">
+                                        <div class="collapse" style="width: 240px;" id="collapseExample">
+                                            <div class="card card-body bg-white border border-primary-400 p-0">
+                                                <a class="btn-hover-primary-100 px-12 d-flex align-items-center" href="#">
+                                                    <img class="me-12" src="/easy-your-cook/assets/share_Link-83431d58.svg" alt="link">
+                                                    <span class="py-12 d-block w-100 link-gray-800 fw-bold border-bottom border-gray-400">複製連結</span>
+                                                </a>
+                                                <a class="btn-hover-primary-100 px-12 d-flex align-items-center" href="#">
+                                                    <img class="me-12" src="/easy-your-cook/assets/share_Facebook-2318eb9d.svg" alt="Facebook">
+                                                    <span class="py-12 d-block w-100 link-gray-800 fw-bold border-bottom border-gray-400">分享到 Facebook</span>
+                                                </a>
+                                                <a class="btn-hover-primary-100 px-12 d-flex align-items-center" href="#">
+                                                    <img class="me-12" src="/easy-your-cook/assets/share_Instagram-a6b23f4e.svg" alt="Instagram">
+                                                    <span class="py-12 d-block w-100 link-gray-800 fw-bold border-bottom border-gray-400">分享到 Instagram</span>
+                                                </a>
+                                                <a class="btn-hover-primary-100 px-12 d-flex align-items-center" href="#">
+                                                    <img class="me-12" src="/easy-your-cook/assets/share_Twitter-c7aa1154.svg" alt="Twitter">
+                                                    <span class="py-12 d-block w-100 link-gray-800 fw-bold border-bottom border-gray-400">分享到 Twitter</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
 
             <div class="mb-80">
@@ -231,69 +252,104 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- ingredients-detail 六吋海綿蛋糕 -->
-                            <div class="mb-16 border border-primary-400 rounded-3">
-                                <div class="px-16 py-8 d-flex justify-content-between align-items-center bg-primary-300 rounded-1">
-                                    <h3 class="m-0 p-0 fs-5 fw-normal">六吋海綿蛋糕</h3>
-                                    <img src="/easy-your-cook/assets/Button-Dropdown-fba16306.svg" alt="button dropdown">
-                                </div>
-                                <div class="p-16 d-flex justify-content-between">
-                                    <div class="w-100 pe-24 border-end border-primary-400">
-                                        <div class="w-100 mb-16 d-flex justify-content-between align-items-center">
-                                            <span>雞蛋</span>
-                                            <span>8顆</span>
-                                        </div>
-                                        <div class="w-100 mb-16 d-flex justify-content-between align-items-center">
-                                            <span>低筋麵粉</span>
-                                            <span>320克</span>
-                                        </div>
-                                        <div class="w-100 d-flex justify-content-between align-items-center">
-                                            <span>全脂牛奶</span>
-                                            <span>1大匙</span>
-                                        </div>
-                                    </div>
-                                    <div class="w-100 ms-24">
-                                        <div class="w-100 mb-16 d-flex justify-content-between align-items-center">
-                                            <span>無鹽奶油</span>
-                                            <span>1大匙</span>
-                                        </div>
-                                        <div class="w-100 mb-16 d-flex justify-content-between align-items-center">
-                                            <span>細砂糖</span>
-                                            <span>95克</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ingredients-detail 檸檬糖霜 -->
-                            <div class="mb-16 border border-primary-400 rounded-3">
-                                <div class="px-16 py-8 d-flex justify-content-between align-items-center bg-primary-300 rounded-1">
-                                    <h3 class="m-0 p-0 fs-5 fw-normal">檸檬糖霜</h3>
-                                    <img src="/easy-your-cook/assets/Button-Dropdown-fba16306.svg" alt="button dropdown">
-                                </div>
-                                <div class="p-16 d-flex justify-content-between">
-                                    <div class="w-100 pe-24 border-end border-primary-400">
-                                        <div class="w-100 mb-16 d-flex justify-content-between align-items-center">
-                                            <span>過篩糖粉</span>
-                                            <span>80克</span>
-                                        </div>
-                                        <div class="w-100 d-flex justify-content-between align-items-center">
-                                            <span>食用水</span>
-                                            <span>1大匙</span>
-                                        </div>
-                                    </div>
-                                    <div class="w-100 ms-24">
-                                        <div class="w-100 mb-16 d-flex justify-content-between align-items-center">
-                                            <span>檸檬汁</span>
-                                            <span>40克</span>
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                                <!-- ingredients-detail 六吋海綿蛋糕 -->
+                                <div class="accordion-item mb-16 border border-primary-400 rounded-3 bg-white">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                        <button class="accordion-button px-16 py-12 bg-primary-300 rounded-2 fs-5 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                            六吋海綿蛋糕
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                        <div class="accordion-body p-0">
+                                            <div class="p-16 d-flex justify-content-between">
+                                                <div class="w-100 pe-24 border-end border-primary-400">
+                                                    <div class="w-100 mb-16 d-flex justify-content-between align-items-center">
+                                                        <span>雞蛋</span>
+                                                        <span>8顆</span>
+                                                    </div>
+                                                    <div class="w-100 mb-16 d-flex justify-content-between align-items-center">
+                                                        <span>低筋麵粉</span>
+                                                        <span>320克</span>
+                                                    </div>
+                                                    <div class="w-100 d-flex justify-content-between align-items-center">
+                                                        <span>全脂牛奶</span>
+                                                        <span>1大匙</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 ms-24">
+                                                    <div class="w-100 mb-16 d-flex justify-content-between align-items-center">
+                                                        <span>無鹽奶油</span>
+                                                        <span>1大匙</span>
+                                                    </div>
+                                                    <div class="w-100 mb-16 d-flex justify-content-between align-items-center">
+                                                        <span>細砂糖</span>
+                                                        <span>95克</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- ingredients-detail 蛋糕裝飾 -->
-                            <div class="border border-primary-400 rounded-3">
-                                <div class="px-16 py-8 d-flex justify-content-between align-items-center bg-primary-300 rounded-1">
-                                    <h3 class="m-0 p-0 fs-5 fw-normal">蛋糕裝飾</h3>
-                                    <img src="/easy-your-cook/assets/Button-Dropdown-Up-22b00c26.svg" alt="button dropdown up">
+                                <!-- ingredients-detail 檸檬糖霜 -->
+                                <div class="accordion-item mb-16 border border-primary-400 rounded-3 bg-white">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                        <button class="accordion-button px-16 py-12 bg-primary-300 rounded-2 fs-5 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                            檸檬糖霜
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                                        <div class="accordion-body p-0">
+                                            <div class="p-16 d-flex justify-content-between">
+                                                <div class="w-100 pe-24 border-end border-primary-400">
+                                                    <div class="w-100 mb-16 d-flex justify-content-between align-items-center">
+                                                        <span>過篩糖粉</span>
+                                                        <span>80克</span>
+                                                    </div>
+                                                    <div class="w-100 d-flex justify-content-between align-items-center">
+                                                        <span>食用水</span>
+                                                        <span>1大匙</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 ms-24">
+                                                    <div class="w-100 mb-16 d-flex justify-content-between align-items-center">
+                                                        <span>檸檬汁</span>
+                                                        <span>40克</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ingredients-detail 蛋糕裝飾 -->
+                                <div class="accordion-item mb-16 border border-primary-400 rounded-3 bg-white">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                        <button class="accordion-button collapsed px-16 py-12 bg-primary-300 rounded-2 fs-5 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                            蛋糕裝飾
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                        <div class="accordion-body p-0">
+                                            <div class="p-16 d-flex justify-content-between">
+                                                <div class="w-100 pe-24 border-end border-primary-400">
+                                                    <div class="w-100 mb-16 d-flex justify-content-between align-items-center">
+                                                        <span>過篩糖粉</span>
+                                                        <span>80克</span>
+                                                    </div>
+                                                    <div class="w-100 d-flex justify-content-between align-items-center">
+                                                        <span>食用水</span>
+                                                        <span>1大匙</span>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 ms-24">
+                                                    <div class="w-100 mb-16 d-flex justify-content-between align-items-center">
+                                                        <span>檸檬汁</span>
+                                                        <span>40克</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -497,14 +553,14 @@
         </main>
 
         <!-- 浮動按鈕 -->
-        <div class="fixed-bottom">
-            <div class="me-36 mb-8 d-flex justify-content-end align-items-center">
-                <div id="prepareBtn" style="visibility: hidden;" data-bs-toggle="tooltip" data-bs-placement="top" title="幫我備料">
+        <div style="position: fixed; right: 0; bottom: 0; z-index: 1030;width: fit-content;">
+            <div class="me-32 mb-8 d-flex justify-content-end align-items-center">
+                <div id="prepareBtn" style="display: none;" data-bs-toggle="tooltip" data-bs-placement="top" title="幫我備料">
                     <button type="button" class="me-12 p-12 btn btn-light rounded-circle shadow">
                         <img src="/easy-your-cook/assets/Cart-6a87edaa.svg" alt="cart">
                     </button>
                 </div>
-                <div id="noteBtn" style="visibility: hidden;" data-bs-toggle="tooltip" data-bs-placement="top" title="筆記標註">
+                <div id="noteBtn" style="display: none;" data-bs-toggle="tooltip" data-bs-placement="top" title="筆記標註">
                     <button type="button" class="me-12 p-12 btn btn-light rounded-circle shadow" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
                         <img src="/easy-your-cook/assets/Edit (alt)-2de55295.svg" alt="edit">
                     </button>
@@ -608,7 +664,7 @@
     <div class="container py-40 d-flex justify-content-between">
         <!-- 左側 logo區 -->
         <div class="d-flex flex-column align-items-center">
-            <img class="mb-12" src="/easy-your-cook/assets/logo_footer-36354ba8.svg" alt="footer logo">
+            <img class="mb-12" src="/easy-your-cook/assets/logo_footer-9eb4df58.svg" alt="footer logo">
             <span class="fs-5 text-primary-800">食譜、教學、備料，一次搞定！</span>
         </div>
 
@@ -726,9 +782,9 @@
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- BS tooltip -->
     <script>
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
@@ -737,18 +793,40 @@
         })
     </script>
     <script>
+        // delete header vip button
+        let type = "vip";
+        const btnVip = document.querySelector('.btnVip');
+        function isVIP(){
+            if(type == "vip"){
+                btnVip.style = "display: none";
+            }
+        }
+        isVIP();
+
+        // 分享按鈕在點擊後會加背景色，再次點擊會去除背景色
+        const btnShare = document.querySelector('.btnShare');
+        let count = 0;
+        btnShare.addEventListener("click", function(e){
+            count+=1;
+            if (count%2!=0){
+                btnShare.style = "background: #eee8d8";
+            } else {
+                btnShare.style = "background: #FEFEFE";
+            }
+        });
+
+        // float buttons
         const prepareBtn = document.getElementById('prepareBtn');
         const noteBtn = document.getElementById('noteBtn');
         const vipBtn = document.getElementById('vipBtn');
-
         vipBtn.addEventListener("click", function(e){
-            if ( noteBtn.style.visibility == "hidden" && prepareBtn.style.visibility == "hidden" ) {
-                noteBtn.style = "visibility: visible";
-                prepareBtn.style = "visibility: visible";
+            if ( noteBtn.style.display == "none" && prepareBtn.style.display == "none" ) {
+                noteBtn.style = "display: block";
+                prepareBtn.style = "display: block";
                 noteBtn.classList.add("animate__fadeInRight");
             } else {
-                noteBtn.style = "visibility: hidden";
-                prepareBtn.style = "visibility: hidden";
+                noteBtn.style = "display: none";
+                prepareBtn.style = "display: none";
             }
         });
     </script>
