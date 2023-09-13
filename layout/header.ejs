@@ -1,38 +1,55 @@
 <header class="bg-primary-100  sticky-top">
-    <div class="px-40 py-12 d-flex justify-content-between align-items-center">
-        <!-- 漢堡選單 & logo -->
-        <div class="d-flex">
+    <div class="px-16 pt-8 pb-12 px-xl-40 py-xl-12">
+        <div class="d-flex justify-content-between align-items-center">
             <button class="me-24 px-16 py-8 border-0 bg-primary-100">
                 <img src="../assets/images/Hamburger Menu.svg" alt="icon hamburger menu">
             </button>
             <h1>
                 <a href="index.html">快煮趣</a>
             </h1>
-        </div>
-
-        <!-- Search Bar -->
-        <form action="#" method="get">
-                <div class="d-flex">
-                <input type="search" class="input-search me-8" id="search" placeholder="搜尋食譜關鍵字">
-                <button class="d-flex align-items-center px-16 py-8 btn btn-primary-500 border-0">
-                    <img class="me-1" src="../assets/images/filter.svg" alt="icon filter">
-                    <span class="text-light">進階搜尋</span>
+            <!-- 漢堡選單 & logo -->
+            <!-- <div class="d-flex">
+                <button class="me-24 px-16 py-8 border-0 bg-primary-100">
+                    <img src="../assets/images/Hamburger Menu.svg" alt="icon hamburger menu">
                 </button>
-            </div>
-        </form>
-
-        <!-- Nav Bar -->
-        <ul class="m-0 d-flex align-items-center">
-            <li class="me-16 px-16 py-8">
-                <a class="link-primary-800 text-decoration-none" href="#">註冊</a>
-            </li>
-            <li class="me-16 px-16 py-8">
-                <a class="link-primary-800 text-decoration-none" href="#">登入</a>
-            </li>
-            <li class="px-16 py-8 btn btn-secondary-500 border-0">
-                <img class="me-1" src="../assets/images/Crown.svg" alt="icon Crown">
-                <a class="text-light text-decoration-none" href="#">升級VIP</a>
-            </li>
-        </ul>
+                <h1>
+                    <a href="index.html">快煮趣</a>
+                </h1>
+            </div> -->
+    
+            <!-- Search Bar -->
+            <form class="d-none d-xl-block" action="#" method="get">
+                    <div class="d-flex">
+                    <input type="search" class="input-search input-search-lg me-8" id="search" placeholder="搜尋食譜關鍵字">
+                    <button class="d-flex align-items-center px-16 py-8 btn btn-primary-500 border-0">
+                        <img class="me-1" src="../assets/images/filter.svg" alt="icon filter">
+                        <span class="text-light text-nowrap">進階搜尋</span>
+                    </button>
+                </div>
+            </form>
+    
+            <!-- Nav Bar -->
+            <ul class="m-0 d-flex align-items-center">
+                <li class="d-none d-md-block me-16 px-16 py-8">
+                    <a class="link-primary-800 text-decoration-none text-nowrap" href="#">註冊</a>
+                </li>
+                <li class="me-lg-16 px-0 px-md-16 py-8">
+                    <a class="link-primary-800 text-decoration-none text-nowrap" href="#">登入</a>
+                </li>
+                <li class="d-none d-md-block px-16 py-8 btn btn-secondary-500 border-0">
+                    <img class="me-1" src="../assets/images/Crown.svg" alt="icon Crown">
+                    <a class="text-light text-decoration-none text-nowrap" href="#">升級VIP</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Search Bar mobile -->
+        <form class="px-8 pt-16 d-xl-none" action="#" method="get">
+            <div class="w-100 d-flex">
+            <input type="search" class="input-search w-100 me-8" id="search" placeholder="搜尋食譜關鍵字">
+            <button class="px-16 py-8 btn btn-primary-500 border-0">
+                <img class="me-1" src="../assets/images/filter.svg" alt="icon filter">
+            </button>
+        </div>
     </div>
+</form>
 </header>
