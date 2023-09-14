@@ -11,13 +11,15 @@ header {
   }
 
   .input-search {
-    width: 562px;
     padding-left: 64px;
     height: 40px;
     border: 0;
     border-radius: 8px;
     box-shadow: 0 2 6 rgba(0, 0, 0, .8);
     background: $light url('../images/Zoom.svg') no-repeat 16px 8px;
+  }
+  .input-search-lg {
+    width: 562px;
   }
   ::placeholder {
     color: $gray-600;
