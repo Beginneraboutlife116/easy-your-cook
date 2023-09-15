@@ -1,7 +1,11 @@
 .dropdown {
   &__login {
     width: 32.25rem;
+    @media (width <= 32.5em) {
+      width: 20rem;
+    }
   }
+
   .form-control + img {
     right: 1rem;
   }
