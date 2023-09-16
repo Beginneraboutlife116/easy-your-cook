@@ -23,7 +23,88 @@
                     <a class="link-primary-800 text-decoration-none text-nowrap" href="#">註冊</a>
                 </li>
                 <li class="me-lg-16 px-0 px-md-16 py-8">
-                    <a class="link-primary-800 text-decoration-none text-nowrap" href="#">登入</a>
+                    <div class="dropdown">
+                        <button
+                            class="me-16 rounded-3 fw-medium text-primary-700 btn px-16 py-8"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            data-bs-offset="0, 50"
+                        >
+                            登入
+                        </button>
+                        <div
+                            class="dropdown-menu dropdown__login shadow-lg border border-primary-400 py-24 px-48 rounded-3"
+                        >
+                            <header class="shadow-none text-center">
+                                <img src="../assets/images/login-logo.svg" alt="logo" />
+                                <h2 class="text-primary-800 mt-8 mb-48 fs-2 fw-bold">登入會員</h2>
+                            </header>
+                            <button
+                            class="btn btn-primary-500 py-8 d-block w-100 d-flex align-items-center justify-content-center gap-4 fw-medium text-light"
+                            >
+                                <img src="../assets/images/google-logo.svg" alt="google" />使用 GOOGLE 登入
+                            </button>
+                            <div class="border-dash-bottom my-24 position-relative pe-none">
+                                <span
+                                    class="text-gray-600 fw-semibold position-absolute top-50 start-50 translate-middle px-16 bg-primary-50"
+                                >or</span>
+                            </div>
+                            <form>
+                                <div class="mb-16 position-relative">
+                                    <input
+                                    type="email"
+                                    class="form-control border-gray-500 py-8 px-16"
+                                    placeholder="輸入您的電子信箱"
+                                    />
+                                    <img
+                                    src="../assets/images/Email.svg"
+                                    class="position-absolute top-50 translate-middle-y"
+                                    alt="Email"
+                                    />
+                                </div>
+                                <div class="mb-16 position-relative">
+                                    <input
+                                    type="email"
+                                    class="form-control border-gray-500 py-8 px-16"
+                                    placeholder="輸入您的密碼"
+                                    />
+                                    <img
+                                    src="../assets/images/eye-closed.svg"
+                                    class="position-absolute top-50 translate-middle-y"
+                                    alt="eye-closed"
+                                    />
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-between mb-40"
+                                >
+                                    <div class="d-flex align-items-center">
+                                    <input type="checkbox" class="me-8" /><span
+                                        class="text-gray-800 lh-sm pe-none"
+                                        >保持登入</span
+                                    >
+                                    </div>
+                                    <a href="#" class="text-primary-700">忘記密碼？</a>
+                                </div>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary-500 rounded-3 text-light w-100 py-16 text-center fw-medium fs-5 mb-8"
+                                >
+                                    登入
+                                </button>
+                            </form>
+                            <div
+                            class="text-gray-800 fw-medium d-flex align-items-center justify-content-sm-end gap-8 mb-16 justify-content-between"
+                            >
+                            還不是會員？<a
+                                href="#"
+                                class="d-flex align-items-center gap-4 text-primary-700"
+                                >立即註冊
+                                <img src="../assets/images/Right Arrow.svg" alt="to go"
+                            /></a>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li class="d-none d-md-flex px-16 py-8 align-items-center flex-nowrap btn btn-secondary-500 border-0">
                     <img class="me-1" src="../assets/images/Crown.svg" alt="icon Crown">

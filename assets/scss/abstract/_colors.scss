@@ -103,11 +103,13 @@ $theme-colors: (
   "danger-300": #ffa072,
   "danger-600": #ed2d09,
   "danger-800": #9c1910,
-  "gray-800": #343A40,
+  "gray-800": #343a40,
   "gray-600": #6c757d,
-  "gray-400": #CED4DA,
+  "gray-500": #adb5bd,
+  "gray-400": #ced4da,
   "light": #fefefe,
   "dark": #291f1e,
 );
 
 $body-bg: #fcf4ed;
+$input-placeholder-color: $gray-500;
