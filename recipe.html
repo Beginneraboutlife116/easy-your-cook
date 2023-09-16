@@ -6,55 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script type="module" crossorigin src="/easy-your-cook/assets/bootstrap.esm.min-9a68b81e.js"></script>
-    <link rel="stylesheet" href="/easy-your-cook/assets/bootstrap.esm-519a629a.css">
+    <script type="module" crossorigin src="/easy-your-cook/assets/bootstrap.esm.min-cc8cba37.js"></script>
+    <link rel="stylesheet" href="/easy-your-cook/assets/bootstrap.esm-82cb75c9.css">
   </head>
   <body>
     <header class="bg-primary-100  sticky-top">
-    <div class="px-40 py-12 d-flex justify-content-between align-items-center">
-        <!-- 漢堡選單 & logo -->
-        <div class="d-flex">
+    <div class="px-16 pt-8 pb-12 px-xl-40 py-xl-12">
+        <div class="d-flex justify-content-between align-items-center">
             <button class="me-24 px-16 py-8 border-0 bg-primary-100">
                 <img src="/easy-your-cook/assets/Hamburger Menu-1c5e7374.svg" alt="icon hamburger menu">
             </button>
             <h1>
                 <a href="index.html">快煮趣</a>
             </h1>
-        </div>
-
-        <!-- Search Bar -->
-        <form action="#" method="get">
-                <div class="d-flex">
-                <input type="search" class="input-search me-8" id="search" placeholder="搜尋食譜關鍵字">
+    
+            <!-- Search Bar -->
+            <form class="d-none d-xl-flex justify-content-center" style="width: 60%" action="#" method="get">
+                <input type="search" class="input-search input-search-lg me-8" id="search" placeholder="搜尋食譜關鍵字">
                 <button class="d-flex align-items-center px-16 py-8 btn btn-primary-500 border-0">
                     <img class="me-1" src="/easy-your-cook/assets/filter-e9994e3b.svg" alt="icon filter">
-                    <span class="text-light">進階搜尋</span>
+                    <span class="text-light text-nowrap">進階搜尋</span>
+                </button>
+            </form>
+
+            <!-- Nav Bar -->
+            <ul class="m-0 d-flex align-items-center">
+                <li class="me-16 px-8">
+                    <a class="link-primary-800 text-decoration-none" href="#">
+                        <img src="/easy-your-cook/assets/Cart_header-ec3121ab.svg" alt="chart">
+                    </a>
+                </li>
+                <li class="me-16 px-8">
+                    <a class="link-primary-800 text-decoration-none" href="#">
+                        <img src="/easy-your-cook/assets/Bookmark_header-c2646ee1.svg" alt="bookmark">
+                    </a>
+                </li>
+                <li class="me-16 px-8">
+                    <a class="link-primary-800 text-decoration-none" href="#">
+                        <img src="/easy-your-cook/assets/User_header-381b02bf.svg" alt="User">
+                    </a>
+                </li>
+                <li class="d-none d-md-flex px-16 py-8 align-items-center flex-nowrap btn btn-secondary-500 border-0">
+                    <img class="me-1" src="/easy-your-cook/assets/Crown-deddec20.svg" alt="icon Crown">
+                    <a class="text-light text-decoration-none text-nowrap" href="#">升級VIP</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Search Bar mobile -->
+        <form class="px-8 pt-16 d-xl-none" action="#" method="get">
+            <div class="w-100 d-flex">
+                <input type="search" class="input-search w-100 me-8" id="search" placeholder="搜尋食譜關鍵字">
+                <button class="px-16 py-8 btn btn-primary-500 border-0">
+                    <img class="me-1" src="/easy-your-cook/assets/filter-e9994e3b.svg" alt="icon filter">
                 </button>
             </div>
         </form>
-
-        <!-- Nav Bar -->
-        <ul class="m-0 d-flex align-items-center">
-            <li class="me-16 px-8">
-                <a class="link-primary-800 text-decoration-none" href="#">
-                    <img src="/easy-your-cook/assets/Cart_header-ec3121ab.svg" alt="chart">
-                </a>
-            </li>
-            <li class="me-16 px-8">
-                <a class="link-primary-800 text-decoration-none" href="#">
-                    <img src="/easy-your-cook/assets/Bookmark_header-c2646ee1.svg" alt="bookmark">
-                </a>
-            </li>
-            <li class="me-16 px-8">
-                <a class="link-primary-800 text-decoration-none" href="#">
-                    <img src="/easy-your-cook/assets/User_header-381b02bf.svg" alt="User">
-                </a>
-            </li>
-            <li class="px-16 py-8 btn btn-secondary-500 border-0 btnVip">
-                <img class="me-1" src="/easy-your-cook/assets/Crown-deddec20.svg" alt="icon Crown">
-                <a class="text-light text-decoration-none" href="#">升級VIP</a>
-            </li>
-        </ul>
     </div>
 </header>
     
@@ -661,19 +667,42 @@
 
     <footer class="bg-light">
     <!-- 上側 主區 -->
-    <div class="container py-40 d-flex justify-content-between">
+    <div class="container py-40 d-flex flex-column align-items-center flex-lg-row justify-content-lg-between align-items-lg-start">
         <!-- 左側 logo區 -->
         <div class="d-flex flex-column align-items-center">
             <img class="mb-12" src="/easy-your-cook/assets/logo_footer-9eb4df58.svg" alt="footer logo">
             <span class="fs-5 text-primary-800">食譜、教學、備料，一次搞定！</span>
+            <!-- SNS Icons -->
+            <ul class="w-100 mt-8 p-0 py-8 d-flex justify-content-between align-items-center d-lg-none">
+                <li>
+                    <a href="#">
+                        <img src="/easy-your-cook/assets/mdi_facebook-d55b4037.svg" alt="icon facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/easy-your-cook/assets/mdi_instagram-b3361011.svg" alt="icon instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/easy-your-cook/assets/mdi_twitter-b5709038.svg" alt="icon twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/easy-your-cook/assets/uil_youtube-27e25113.svg" alt="icon youtube">
+                    </a>
+                </li>
+            </ul>
         </div>
 
         <!-- 右側 文字區 -->
-        <div class="footer-text d-flex justify-content-between">
+        <div class="mt-24 mt-lg-0 footer-text d-flex flex-column flex-lg-row justify-content-between">
             <!-- 關於我們 -->
-            <div class="py-16">
-                <h3 class="mb-24 text-primary-800">關於我們</h3>
-                <ul class="p-0">
+            <div class="py-lg-16">
+                <h3 class="mb-0 text-center text-lg-start text-primary-800">關於我們</h3>
+                <ul class="d-none d-lg-block p-0 mt-lg-24">
                     <li class="mb-12">
                         <a class="text-decoration-none link-primary-800" href="#">品牌精神</a>
                     </li>
@@ -686,9 +715,9 @@
                 </ul>
             </div>
             <!-- 會員服務 -->
-            <div class="py-16">
-                <h3 class="mb-24 text-primary-800">會員服務</h3>
-                <ul class="p-0">
+            <div class="mt-16 mt-lg-0 py-lg-16">
+                <h3 class="mb-0 text-center text-lg-start text-primary-800">會員服務</h3>
+                <ul class="d-none d-lg-block p-0 mt-lg-24">
                     <li class="mb-12">
                         <a class="text-decoration-none link-primary-800" href="#">忘記密碼</a>
                     </li>
@@ -710,9 +739,9 @@
                 </ul>
             </div>
             <!-- 逛食譜 -->
-            <div class="py-16">
-                <h3 class="mb-24 text-primary-800">逛食譜</h3>
-                <ul class="p-0">
+            <div class="mt-16 mt-lg-0 py-lg-16">
+                <h3 class="mb-0 text-center text-lg-start text-primary-800">逛食譜</h3>
+                <ul class="d-none d-lg-block p-0 mt-lg-24">
                     <li class="mb-12">
                         <a class="text-decoration-none link-primary-800" href="#">全部分類</a>
                     </li>
@@ -731,9 +760,9 @@
                 </ul>
             </div>
             <!-- 聯絡我們 -->
-            <div class="py-16">
-                <h3 class="mb-24 text-primary-800">聯絡我們</h3>
-                <ul class="p-0 mb-24">
+            <div class="mt-16 mt-lg-0 py-lg-16">
+                <h3 class="mb-0 text-center text-lg-start text-primary-800">聯絡我們</h3>
+                <ul class="d-none d-lg-block p-0 mb-lg-24 mt-lg-24">
                     <li class="mb-12">
                         <a class="d-flex align-items-center text-decoration-none link-primary-800" href="tel:06-1234567">
                             <img class="me-8" src="/easy-your-cook/assets/Phone-e2c48493.svg" alt="icon Phone">
@@ -747,7 +776,8 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="p-0 py-8 d-flex justify-content-between align-items-center">
+                <!-- SNS Icons -->
+                <ul class="d-none d-lg-flex p-0 py-8 justify-content-between align-items-center">
                     <li>
                         <a href="#">
                             <img src="/easy-your-cook/assets/mdi_facebook-d55b4037.svg" alt="icon facebook">
@@ -774,8 +804,8 @@
     </div>
 
     <!-- 下側 copy right -->
-    <div class="copy-right py-16">
-        <p class="mb-1 text-center text-primary-800">© 2023 LOGO. All rights reserved.</p>
+    <div class="copy-right">
+        <p class="mb-4 text-center text-primary-800">© 2023 LOGO. All rights reserved.</p>
         <p class="m-0 text-center text-primary-800">未經授權禁止複製本網站使用的信息、圖像、文字等。</p>
     </div>
 </footer>
