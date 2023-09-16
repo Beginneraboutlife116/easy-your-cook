@@ -1,4 +1,6 @@
 @import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
 @import "./abstract/colors";
 @import "./abstract/typography";
 @import "./abstract/spacings";
@@ -13,10 +15,8 @@
 @import "./utilities/opacities";
 @import "./utilities/shadow";
 @import "./pages/home";
-// @import "bootstrap/scss/variables";
 // @import "bootstrap/scss/variables-dark";
 // @import "bootstrap/scss/maps";
-// @import "bootstrap/scss/mixins";
 // @import "bootstrap/scss/root";
 // @import "bootstrap/scss/utilities";
 // @import "bootstrap/scss/type";

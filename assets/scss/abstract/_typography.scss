@@ -21,12 +21,25 @@ $h2-font-size: $font-size-base * 2.25;
 $h3-font-size: $font-size-base * 1.5;
 
 $font-sizes: (
-  1: $font-size-base * 2.5,   // 40px
-  2: $h2-font-size,           // 36px
-  3: $font-size-base * 2,     // 32px
-  4: $h3-font-size,           // 24px
-  5: $font-size-base * 1.25,  // 20px
-  6: $font-size-base,         // 16px
-  7: $font-size-base * 0.875, // 14px
-  8: $font-size-base * 0.75,  // 12px
+  // 24 -> 40
+  1: clamp($h3-font-size, calc(0.12rem + 3.85vw), $font-size-base * 2.5),
+  // 20 -> 36
+  2: clamp($font-size-base * 1.25, calc(-0.13rem + 3.85vw), $h2-font-size),
+  // 32
+  3: $font-size-base * 2,
+  // 20 -> 24
+  4: clamp($font-size-base * 1.25, calc(0.9rem + 0.96vw), $h3-font-size),
+  // 14 -> 20
+  5:
+    clamp(
+      $font-size-base * 0.875,
+      calc(0.36rem + 1.44vw),
+      $font-size-base * 1.25
+    ),
+  // 12 -> 16
+  6: clamp($font-size-base * 0.75, calc(0.4rem + 0.96vw), $font-size-base),
+  // 14px
+  7: $font-size-base * 0.875,
+  // 12px
+  8: $font-size-base * 0.75
 );

@@ -1,9 +1,25 @@
 .carousel {
+  .carousel-indicators {
+    bottom: 2rem;
+
+    @include media-breakpoint-up(sm) {
+      bottom: 4.5rem;
+    }
+  }
+
   &__image {
-    aspect-ratio: 3.6;
+    aspect-ratio: 1.875;
+
+    @include media-breakpoint-up(lg) {
+      aspect-ratio: 3.6;
+    }
   }
 
   &__footer {
-    padding-block: 9.5px;
+    padding-block: 0.25rem;
+
+    @include media-breakpoint-up(sm) {
+      padding-block: 9.5px;
+    }
   }
 }

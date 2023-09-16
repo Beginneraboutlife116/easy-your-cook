@@ -1,3 +1,26 @@
 .btn-hover-primary-100:hover {
-    background-color: $taupe-100;
+  background-color: $taupe-100;
+}
+
+.btn {
+  &--collection {
+    top: 0.5rem;
+    right: 0.3125rem;
+
+    @include media-breakpoint-up(lg) {
+      top: 1rem;
+      right: 1rem;
+    }
+  }
+
+  &--video {
+    bottom: -2.25rem;
+    right: 0.25rem;
+
+    @include media-breakpoint-up(lg) {
+      right: auto;
+      bottom: 0.75rem;
+      left: 0.75rem;
+    }
+  }
 }
