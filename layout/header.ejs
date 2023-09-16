@@ -7,25 +7,14 @@
             <h1>
                 <a href="index.html">快煮趣</a>
             </h1>
-            <!-- 漢堡選單 & logo -->
-            <!-- <div class="d-flex">
-                <button class="me-24 px-16 py-8 border-0 bg-primary-100">
-                    <img src="../assets/images/Hamburger Menu.svg" alt="icon hamburger menu">
-                </button>
-                <h1>
-                    <a href="index.html">快煮趣</a>
-                </h1>
-            </div> -->
     
             <!-- Search Bar -->
-            <form class="d-none d-xl-block" action="#" method="get">
-                    <div class="d-flex">
-                    <input type="search" class="input-search input-search-lg me-8" id="search" placeholder="搜尋食譜關鍵字">
-                    <button class="d-flex align-items-center px-16 py-8 btn btn-primary-500 border-0">
-                        <img class="me-1" src="../assets/images/filter.svg" alt="icon filter">
-                        <span class="text-light text-nowrap">進階搜尋</span>
-                    </button>
-                </div>
+            <form class="d-none d-xl-flex justify-content-center" style="width: 60%" action="#" method="get">
+                <input type="search" class="input-search input-search-lg me-8" id="search" placeholder="搜尋食譜關鍵字">
+                <button class="d-flex align-items-center px-16 py-8 btn btn-primary-500 border-0">
+                    <img class="me-1" src="../assets/images/filter.svg" alt="icon filter">
+                    <span class="text-light text-nowrap">進階搜尋</span>
+                </button>
             </form>
     
             <!-- Nav Bar -->
@@ -33,10 +22,10 @@
                 <li class="d-none d-md-block me-16 px-16 py-8">
                     <a class="link-primary-800 text-decoration-none text-nowrap" href="#">註冊</a>
                 </li>
-                <li class="me-lg-16 px-0 px-md-16 py-8">
+                <li class="px-0 py-8">
                     <div class="dropdown">
                         <button
-                            class="me-16 rounded-3 fw-medium text-primary-700 btn px-16 py-8"
+                            class="me-16 text-nowrap rounded-3 fw-medium text-primary-700 btn px-16 py-8"
                             type="button"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
@@ -99,7 +88,7 @@
                                 </div>
                                 <button
                                     type="button"
-                                    class="btn btn-primary-500 rounded-3 text-light w-100 py-16 text-center fw-medium fs-5 mb-8"
+                                    class="text-nowrap btn btn-primary-500 rounded-3 text-light w-100 py-16 text-center fw-medium fs-5 mb-8"
                                 >
                                     登入
                                 </button>
@@ -117,7 +106,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="d-none d-md-block px-16 py-8 btn btn-secondary-500 border-0">
+                <li class="d-none d-md-flex px-16 py-8 align-items-center flex-nowrap btn btn-secondary-500 border-0">
                     <img class="me-1" src="../assets/images/Crown.svg" alt="icon Crown">
                     <a class="text-light text-decoration-none text-nowrap" href="#">升級VIP</a>
                 </li>
@@ -133,4 +122,5 @@
             </div>
         </form>
     </div>
+</form>
 </header>
