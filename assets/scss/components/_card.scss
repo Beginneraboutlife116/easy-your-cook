@@ -1,38 +1,82 @@
+@use "sass:map";
+
 .card {
   &__image {
-    aspect-ratio: calc(404 / 240);
+    aspect-ratio: calc(168 / 124);
+
+    @include media-breakpoint-up(xl) {
+      aspect-ratio: calc(404 / 240);
+    }
+
+    &--title {
+      width: 16px;
+      aspect-ratio: 1;
+
+      @include media-breakpoint-up(lg) {
+        width: 24px;
+      }
+    }
   }
 
   &__image-2 {
     aspect-ratio: calc(296 / 240);
   }
 
-  &__image-3 {
-    aspect-ratio: calc(296 / 160);
-  }
-
   &__rank {
+    &s {
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      scrollbar-width: 0px;
+    }
+
     &--rank {
-      width: 3.5rem;
       aspect-ratio: 1;
       display: grid;
       place-items: center;
+      width: 2rem;
+      top: 0.25rem;
+      left: 0.25rem;
+      font-size: $font-size-base;
+
+      @include media-breakpoint-up(lg) {
+        width: 3.5rem;
+        top: 0.5rem;
+        left: 0.5rem;
+        font-size: $h3-font-size;
+      }
     }
 
     &--image {
-      aspect-ratio: calc(296 / 120);
+      min-width: 10.5rem;
+      aspect-ratio: calc(168 / 90);
+
+      @include media-breakpoint-up(lg) {
+        aspect-ratio: calc(296 / 120);
+      }
     }
   }
 
   &__video {
     &--image {
-      aspect-ratio: calc(296 / 240);
+      min-width: 16rem;
+      aspect-ratio: calc(256 / 180);
+
+      @include media-breakpoint-up(xl) {
+        aspect-ratio: calc(296 / 240);
+      }
+    }
+
+    &--playBtn {
+      @include media-breakpoint-up(md) {
+        background-color: map.get($theme-colors, "light");
+      }
     }
   }
 
   &__chef {
     transition: scale 200ms ease-in-out;
-    
+
     &:hover {
       scale: 1.03125;
     }
@@ -40,6 +84,17 @@
     & > img {
       width: 80px;
       aspect-ratio: 1;
+    }
+
+    &--image {
+      width: 10.5rem;
+      flex-shrink: 0;
+      aspect-ratio: calc(168 / 160);
+
+      @include media-breakpoint-up(lg) {
+        width: auto;
+        aspect-ratio: calc(296 / 160);
+      }
     }
   }
 }

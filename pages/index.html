@@ -10,10 +10,10 @@
   <body>
     <%- include('./layout/header'); -%>
     <main>
-      <div class="mb-lg-60 position-relative">
+      <div class="mb-sm-60 mb-32 position-relative">
         <div>
           <div id="hero" class="carousel slide">
-            <div class="carousel-indicators bottom-72px m-0">
+            <div class="m-0 | carousel-indicators">
               <% for (let i = 1; i <= 4; i++) { %>
               <button
                 type="button"
@@ -28,7 +28,7 @@
             <div class="carousel-inner">
               <% for (let i = 1; i <= 4; i++) { %>
               <div
-                class="carousel-item <%= i === 1 ? 'active' : '' %> position-relative"
+                class="carousel-item | <%= i === 1 ? 'active' : '' %> position-relative"
               >
                 <picture>
                   <source
@@ -46,19 +46,21 @@
                   />
                 </picture>
                 <div
-                  class="bg-primary-950 w-100 d-none d-md-block position-absolute bottom-0"
+                  class="bg-primary-950 w-100 position-absolute bottom-0"
                   style="--bs-bg-opacity: 0.8"
                 >
-                  <div class="d-flex text-light container | carousel__footer">
+                  <div class="d-flex text-light justify-content-between justify-content-lg-start container | carousel__footer">
                     <h5 class="fs-5 fw-bold mb-0 me-24">南蠻雞咖哩</h5>
-                    <p class="d-flex gap-16 align-items-center fw-medium mb-0">
+                    <p
+                      class="fs-6 d-flex gap-16 align-items-center fw-medium mb-0"
+                    >
                       <span>#主食</span>
                       <span>#飯料理</span>
                       <span>#雞肉</span>
                     </p>
                     <a
                       href="./recipe.html"
-                      class="text-light opacity-50-hover d-flex align-items-center gap-8 ms-auto fw-medium"
+                      class="text-light opacity-50-hover d-lg-flex align-items-center gap-8 ms-auto fw-medium d-none"
                       ><span>查看詳情</span
                       ><img
                         src="/assets/images/white-arrow-icon.svg"
@@ -71,7 +73,7 @@
             </div>
           </div>
           <button
-            class="carousel-control-prev"
+            class="d-none d-sm-block | carousel-control-prev"
             type="button"
             data-bs-target="#hero"
             data-bs-slide="prev"
@@ -83,7 +85,7 @@
             <span class="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next"
+            class="d-none d-sm-block | carousel-control-next"
             type="button"
             data-bs-target="#hero"
             data-bs-slide="next"
@@ -100,7 +102,7 @@
             今天想煮什麼料理？
           </h1>
           <p
-            class="text-center fs-5 d-flex justify-content-center align-items-center flex-wrap column-gap-12 text-light"
+            class="text-center fs-5 d-flex justify-content-center align-items-center flex-wrap column-gap-12 text-light d-sm-block d-none"
           >
             <span class="fs-4 fw-bold me-20">熱門關鍵字</span>
             <span>雞肉</span>
@@ -111,12 +113,12 @@
         </div>
       </div>
 
-      <div class="container mb-84">
+      <div class="container mb-lg-84 mb-40">
         <div class="row justify-content-lg-between">
-          <div class="col-lg-8">
-            <section class="mb-104">
+          <div class="col-lg-8 col-12">
+            <section class="mb-lg-104 mb-40">
               <div
-                class="d-flex justify-content-lg-between align-items-center mb-lg-32"
+                class="d-flex justify-content-between align-items-center mb-sm-32 mb-16"
               >
                 <h2 class="fw-bold fs-2 text-dark position-relative m-0">
                   今日食譜推薦
@@ -127,13 +129,13 @@
                 <a
                   class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium"
                   href="./menus.html"
-                  ><span>查看詳情</span
+                  ><span class="d-none d-md-block">查看詳情</span
                   ><img src="../assets/images/Right Arrow.svg" alt="查看詳情"
                 /></a>
               </div>
-              <div class="row gx-5 gy-6">
+              <div class="row gx-lg-5 gx-2 gy-lg-6 gy-3">
                 <% for (let i = 1; i <= 4; i++) { %>
-                <div class="col-lg-6">
+                <div class="col-6">
                   <div class="rounded-3 shadow">
                     <div class="position-relative">
                       <a href="./recipe.html">
@@ -148,13 +150,13 @@
                           />
                           <img
                             src="../assets/images/home/card-img.png"
-                            class="card__image object-fit-cover rounded-top-3 opacity-50-hover"
+                            class="object-fit-cover rounded-top-3 opacity-50-hover | card__image"
                             alt="蕃茄海鮮義大利麵"
                           />
                         </picture>
                       </a>
                       <button
-                        class="position-absolute border-0 bg-light rounded-circle top-16px end-16px p-8"
+                        class="position-absolute border-0 bg-light rounded-circle p-8 | btn--collection"
                         aria-label="收藏按鈕"
                       >
                         <img
@@ -164,14 +166,16 @@
                       </button>
                       <% if (i !== 2) { %>
                       <button
-                        class="position-absolute border-0 bottom-12px start-12px bg-dark bg-opacity-40 rounded-3 py-4 px-6 opacity-50-hover"
+                        class="position-absolute border-0 bg-dark bg-opacity-40 rounded-3 py-4 px-6 opacity-50-hover | btn--video"
                         aria-label="錄影播放"
                       >
                         <img src="../assets/images/video.svg" alt="錄影播放" />
                       </button>
                       <% } %>
                     </div>
-                    <div class="py-20 px-16 bg-light rounded-bottom-3">
+                    <div
+                      class="py-lg-20 px-lg-16 p-8 bg-light rounded-bottom-3"
+                    >
                       <h5 class="fs-5 fw-bold mb-8">
                         <a
                           href="./recipe.html"
@@ -180,32 +184,42 @@
                           蕃茄海鮮義大利麵</a
                         >
                       </h5>
-                      <p class="d-flex gap-16 text-gray-600 fw-medium">
-                        <span class="d-flex align-items-center gap-4">
+                      <p
+                        class="d-flex column-gap-lg-16 column-gap-8 row-gap-4 row-gap-xl-16 text-gray-600 fw-medium flex-wrap mb-0 mb-lg-16"
+                      >
+                        <span
+                          class="d-flex align-items-center gap-4 order-last order-lg-first"
+                        >
                           <img
                             src="../assets/images/chef-hat.svg"
                             alt=""
+                            class="card__image--title"
                           /><span>DAYDAYcook</span>
                         </span>
                         <span class="d-flex align-items-center gap-4">
                           <img
                             src="../assets/images/stopwatch.svg"
                             alt=""
+                            class="card__image--title"
                           /><span>20 min</span>
                         </span>
                         <span class="d-flex align-items-center gap-4">
-                          <img src="../assets/images/heart.svg" alt="" /><span
-                            >150</span
-                          >
+                          <img
+                            src="../assets/images/heart.svg"
+                            alt=""
+                            class="card__image--title"
+                          /><span>150</span>
                         </span>
                       </p>
-                      <p class="text-gray-600 d-flex gap-8 flex-wrap m-0">
+                      <p
+                        class="text-gray-600 d-flex gap-8 flex-wrap m-0 d-none d-xl-block"
+                      >
                         <span
-                          class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                          class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50 d-inline-block"
                           ><span class="pe-4">#</span>主食</span
                         >
                         <span
-                          class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                          class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50 d-inline-block"
                           ><span class="pe-4">#</span>義大利麵</span
                         >
                       </p>
@@ -217,7 +231,7 @@
             </section>
             <section>
               <div
-                class="d-flex justify-content-lg-between align-items-center mb-lg-32"
+                class="d-flex justify-content-between align-items-center mb-sm-32 mb-16"
               >
                 <h2 class="fw-bold fs-2 text-dark position-relative m-0">
                   當季料理
@@ -228,13 +242,13 @@
                 <a
                   class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium"
                   href="./menus.html"
-                  ><span>查看詳情</span
+                  ><span class="d-none d-md-block">查看詳情</span
                   ><img src="../assets/images/Right Arrow.svg" alt="查看詳情"
                 /></a>
               </div>
-              <div class="row gx-5 gy-6">
+              <div class="row gx-lg-5 gx-2 gy-lg-6 gy-3">
                 <% for (let i = 1; i <= 4; i++) { %>
-                <div class="col-lg-6">
+                <div class="col-6">
                   <div class="rounded-3 shadow">
                     <div class="position-relative">
                       <a href="./recipe.html">
@@ -249,13 +263,13 @@
                           />
                           <img
                             src="../assets/images/home/card-img.png"
-                            class="card__image object-fit-cover rounded-top-3 opacity-50-hover"
+                            class="object-fit-cover rounded-top-3 opacity-50-hover | card__image"
                             alt="蕃茄海鮮義大利麵"
                           />
                         </picture>
                       </a>
                       <button
-                        class="position-absolute border-0 bg-light rounded-circle top-16px end-16px p-8"
+                        class="position-absolute border-0 bg-light rounded-circle p-8 | btn--collection"
                         aria-label="收藏按鈕"
                       >
                         <img
@@ -265,14 +279,16 @@
                       </button>
                       <% if (i === 2) { %>
                       <button
-                        class="position-absolute border-0 bottom-12px start-12px bg-dark bg-opacity-40 rounded-3 py-4 px-6 opacity-50-hover"
+                        class="position-absolute border-0 bg-dark bg-opacity-40 rounded-3 py-4 px-6 opacity-50-hover | btn--video"
                         aria-label="錄影播放"
                       >
                         <img src="../assets/images/video.svg" alt="錄影播放" />
                       </button>
                       <% } %>
                     </div>
-                    <div class="py-20 px-16 bg-light rounded-bottom-3">
+                    <div
+                      class="py-lg-20 px-lg-16 p-8 bg-light rounded-bottom-3"
+                    >
                       <h5 class="fs-5 fw-bold mb-8">
                         <a
                           href="./recipe.html"
@@ -281,32 +297,42 @@
                           蕃茄海鮮義大利麵</a
                         >
                       </h5>
-                      <p class="d-flex gap-16 text-gray-600 fw-medium">
-                        <span class="d-flex align-items-center gap-4">
+                      <p
+                        class="d-flex column-gap-lg-16 column-gap-8 row-gap-4 row-gap-xl-16 text-gray-600 fw-medium flex-wrap mb-0 mb-lg-16"
+                      >
+                        <span
+                          class="d-flex align-items-center gap-4 order-last order-lg-first"
+                        >
                           <img
                             src="../assets/images/chef-hat.svg"
                             alt=""
+                            class="card__image--title"
                           /><span>DAYDAYcook</span>
                         </span>
                         <span class="d-flex align-items-center gap-4">
                           <img
                             src="../assets/images/stopwatch.svg"
                             alt=""
+                            class="card__image--title"
                           /><span>20 min</span>
                         </span>
                         <span class="d-flex align-items-center gap-4">
-                          <img src="../assets/images/heart.svg" alt="" /><span
-                            >150</span
-                          >
+                          <img
+                            src="../assets/images/heart.svg"
+                            alt=""
+                            class="card__image--title"
+                          /><span>150</span>
                         </span>
                       </p>
-                      <p class="text-gray-600 d-flex gap-8 flex-wrap m-0">
+                      <p
+                        class="text-gray-600 d-flex gap-8 flex-wrap m-0 d-none d-lg-block"
+                      >
                         <span
-                          class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                          class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50 d-inline-block"
                           ><span class="pe-4">#</span>主食</span
                         >
                         <span
-                          class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                          class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50 d-inline-block"
                           ><span class="pe-4">#</span>義大利麵</span
                         >
                       </p>
@@ -317,17 +343,17 @@
               </div>
             </section>
           </div>
-          <div class="col-lg-3">
-            <section>
+          <div class="col-lg-3 col-12">
+            <section class="d-none d-lg-block">
               <h2
-                class="fs-4 fw-semibold d-flex align-items-center column-gap-4 mb-36 justify-content-center"
+                class="fs-4 fw-semibold d-flex align-items-center column-gap-4 mb-lg-36 mb-20 justify-content-center"
               >
                 <img src="../assets/images/ranking.svg" alt="" /><span
                   class="text-primary-800"
                   >熱門食譜排行</span
                 >
               </h2>
-              <ol class="row gy-4 p-0 mb-16 list-unstyled">
+              <ol class="row g-4 p-0 mb-16 list-unstyled">
                 <% for (let i = 1; i <= 5; i++) { %>
                 <li class="col-lg">
                   <div class="position-relative rounded-3 shadow">
@@ -386,10 +412,10 @@
                 ><img src="../assets/images/Right Arrow.svg" alt="查看詳情"
               /></a>
             </section>
-            <div class="border-dash-bottom my-56"></div>
+            <div class="border-dash-bottom my-lg-56 mt-40 mb-12"></div>
             <section>
               <h2
-                class="fs-4 fw-semibold d-flex align-items-center column-gap-4 mb-40 justify-content-center"
+                class="fs-4 fw-semibold d-flex align-items-center column-gap-4 mb-lg-40 mb-12 justify-content-center"
               >
                 <img src="../assets/images/calendar.svg" alt="" /><span
                   class="text-primary-800"
@@ -397,79 +423,98 @@
                 >
               </h2>
               <ul class="p-0">
-                <li class="text-primary-800">
-                  <h3 class="py-8 px-16 bg-light rounded-2 shadow mb-0">
-                    <img
-                      src="../assets/images/lettuce.svg"
-                      class="me-4"
-                      alt=""
-                    />
-                    蔬菜
-                  </h3>
-                  <section
-                    class="d-flex p-16 flex-wrap row-gap-16 column-gap-24"
-                  >
-                    <% ['高麗菜', '花椰菜', '白蘿蔔', '空心菜', '茄子',
-                    '小白菜'].forEach(function (item) { %>
-                    <a
-                      href="#"
-                      class="d-flex align-items-center gap-4 opacity-50-hover"
-                      ><span class="text-primary-800"><%= item %></span
-                      ><img src="../assets/images/right-caret.svg" alt=""
-                    /></a>
-                    <% }) %>
-                  </section>
+                <li class="text-primary-800 row g-0 mb-12 mb-lg-0">
+                  <div class="col-3 col-sm-2 col-lg-12">
+                    <h3
+                      class="py-lg-8 px-16 py-16 bg-light rounded-2 custom-shadow-lg mb-0 d-flex flex-column flex-lg-row gap-4 align-items-center justify-content-center fs-5"
+                    >
+                      <img src="../assets/images/lettuce.svg" alt="" />
+                      蔬菜
+                    </h3>
+                  </div>
+                  <div class="col-sm-1 d-none d-sm-block d-lg-none"></div>
+                  <div class="col-9 col-lg-12">
+                    <section
+                      class="d-flex p-lg-16 p-8 pe-0 flex-wrap row-gap-lg-16 column-gap-lg-24 gap-8"
+                    >
+                      <% ['高麗菜', '花椰菜', '白蘿蔔', '空心菜', '茄子',
+                      '小白菜'].forEach(function (item) { %>
+                      <a
+                        href="#"
+                        class="d-flex align-items-center gap-4 opacity-50-hover"
+                        ><span class="text-primary-800"><%= item %></span
+                        ><img src="../assets/images/right-caret.svg" alt=""
+                      /></a>
+                      <% }) %>
+                    </section>
+                  </div>
                 </li>
-                <li class="text-primary-800">
-                  <h3 class="py-8 px-16 bg-light rounded-2 shadow mb-0">
-                    <img src="../assets/images/apple.svg" class="me-4" alt="" />
-                    水果
-                  </h3>
-                  <section
-                    class="d-flex p-16 flex-wrap row-gap-16 column-gap-24"
-                  >
-                    <% ['水梨', '芒果', '水蜜桃', '櫻桃'].forEach(function
-                    (item) { %>
-                    <a
-                      href="#"
-                      class="d-flex align-items-center gap-4 opacity-50-hover"
-                      ><span class="text-primary-800"><%= item %></span
-                      ><img src="../assets/images/right-caret.svg" alt=""
-                    /></a>
-                    <% }) %>
-                  </section>
+                <li class="text-primary-800 row g-0 mb-12 mb-lg-0">
+                  <div class="col-3 col-sm-2 col-lg-12">
+                    <h3
+                      class="py-lg-8 px-16 py-16 bg-light rounded-2 custom-shadow-lg mb-0 d-flex flex-column flex-lg-row gap-4 align-items-center justify-content-center fs-5"
+                    >
+                      <img src="../assets/images/apple.svg" alt="" />
+                      水果
+                    </h3>
+                  </div>
+                  <div class="col-sm-1 d-none d-sm-block d-lg-none"></div>
+                  <div class="col-9 col-lg-12">
+                    <section
+                      class="d-flex p-lg-16 p-8 pe-0 flex-wrap row-gap-lg-16 column-gap-lg-24 gap-8"
+                    >
+                      <% ['水梨', '芒果', '水蜜桃', '櫻桃'].forEach(function
+                      (item) { %>
+                      <a
+                        href="#"
+                        class="d-flex align-items-center gap-4 opacity-50-hover"
+                        ><span class="text-primary-800"><%= item %></span
+                        ><img src="../assets/images/right-caret.svg" alt=""
+                      /></a>
+                      <% }) %>
+                    </section>
+                  </div>
                 </li>
-                <li class="text-primary-800">
-                  <h3 class="py-8 px-16 bg-light rounded-2 shadow mb-0">
-                    <img src="../assets/images/fish.svg" class="me-4" alt="" />
-                    海鮮
-                  </h3>
-                  <section
-                    class="d-flex p-16 flex-wrap row-gap-16 column-gap-24"
-                  >
-                    <% ['高麗菜', '花椰菜', '白蘿蔔', '空心菜', '茄子',
-                    '小白菜'].forEach(function (item) { %>
-                    <a
-                      href="#"
-                      class="d-flex align-items-center gap-4 opacity-50-hover"
-                      ><span class="text-primary-800"><%= item %></span
-                      ><img src="../assets/images/right-caret.svg" alt=""
-                    /></a>
-                    <% }) %>
-                  </section>
+                <li class="text-primary-800 row g-0 mb-0">
+                  <div class="col-3 col-sm-2 col-lg-12">
+                    <h3
+                      class="py-lg-8 px-16 py-16 bg-light rounded-2 custom-shadow-lg mb-0 d-flex flex-column flex-lg-row gap-4 align-items-center justify-content-center fs-5"
+                    >
+                      <img src="../assets/images/fish.svg" alt="" />
+                      海鮮
+                    </h3>
+                  </div>
+                  <div class="col-sm-1 d-none d-sm-block d-lg-none"></div>
+                  <div class="col-9 col-lg-12">
+                    <section
+                      class="d-flex p-lg-16 p-8 pe-0 flex-wrap row-gap-lg-16 column-gap-lg-24 gap-8"
+                    >
+                      <% ['高麗菜', '花椰菜', '白蘿蔔', '空心菜', '茄子',
+                      '小白菜'].forEach(function (item) { %>
+                      <a
+                        href="#"
+                        class="d-flex align-items-center gap-4 opacity-50-hover"
+                        ><span class="text-primary-800"><%= item %></span
+                        ><img src="../assets/images/right-caret.svg" alt=""
+                      /></a>
+                      <% }) %>
+                    </section>
+                  </div>
                 </li>
               </ul>
             </section>
           </div>
         </div>
       </div>
+
       <div class="position-relative">
-        <div class="container py-80">
+        <div class="container py-lg-80 py-24 px-16 px-md-0 overflow-scroll">
           <div
             class="d-flex justify-content-lg-between align-items-center mb-lg-40"
           >
             <h2 class="fs-2 fw-bold position-relative">
-              跟著做就沒問題，影音食譜講解全步驟
+              <span class="d-none d-lg-inline-block">跟著做就沒問題，</span
+              >影音食譜講解全步驟
               <hr
                 class="border-bottom border-primary-300 border-8 m-0 position-absolute bottom-0 w-100"
               />
@@ -477,13 +522,13 @@
             <a
               class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium"
               href="./menus.html"
-              ><span>查看詳情</span
+              ><span class="d-none d-md-block">查看詳情</span
               ><img src="../assets/images/Right Arrow.svg" alt="查看詳情"
             /></a>
           </div>
-          <div class="row gx-5">
+          <div class="d-flex gap-16 gap-lg-32">
             <% for (let i = 1; i <= 4; i++) { %>
-            <div class="col-lg-3">
+            <div class="flex-grow-0 flex-xl-grow-1">
               <div class="position-relative">
                 <picture>
                   <source
@@ -503,23 +548,29 @@
                 <a
                   href="./recipe.html#video"
                   aria-label="前往班尼迪克蛋頁面的影片播放區"
-                  class="position-absolute p-16 top-50 start-50 translate-middle bg-light rounded-circle opacity-50-hover"
+                  class="position-absolute p-16 top-50 start-50 translate-middle rounded-circle opacity-50-hover | card__video--playBtn"
                 >
                   <img
                     src="../assets/images/play-icon.svg"
                     alt="前往班尼迪克蛋頁面的影片播放區"
+                    class="d-none d-md-inline-block"
+                  />
+                  <img
+                    src="../assets/images/play-no-background.svg"
+                    alt=""
+                    class="d-md-none"
                   />
                 </a>
               </div>
               <div
-                class="py-12 px-16 bg-dark d-flex align-items-center justify-content-lg-between"
+                class="py-12 px-16 bg-dark d-flex align-items-center justify-content-between"
               >
                 <h3 class="m-0">
                   <a class="fs-6 text-light fw-bold" href="./recipe.html"
                     >班尼迪克蛋</a
                   >
                 </h3>
-                <a href="./recipe.html"
+                <a href="./recipe.html" class="d-none d-md-inline-block"
                   ><img
                     src="../assets/images/white-arrow-icon.svg"
                     alt="前往班尼迪克蛋頁面"
@@ -534,7 +585,7 @@
             <img src="../assets/images/Crown.svg" alt="" class="" />
           </div>
           <p class="fs-3 fw-bold mt-8">VIP會員獨享服務</p>
-          <p class="fw-medium lh-lg mb-lg-80">
+          <p class="fw-medium lh-lg mb-lg-80 d-none d-xl-block">
             光看文字食譜還是不太夠？<br />我們提供給您最豐富仔細的影音食譜教學！
           </p>
           <a
@@ -548,9 +599,10 @@
           </a>
         </div>
       </div>
-      <div class="container py-80">
+
+      <div class="container py-lg-80 py-40">
         <div class="row pt-98 gx-5 position-relative pb-16">
-          <div class="col-lg-6">
+          <div class="col-lg-6 mb-16 mb-lg-0">
             <div class="bg-primary-950">
               <iframe
                 class="w-100 object-fit-cover | iframe"
@@ -563,7 +615,9 @@
             </div>
             <div class="d-flex text-light bg-primary-950 py-12 px-16">
               <h5 class="fs-5 fw-bold mb-0 me-24">南蠻雞咖哩</h5>
-              <p class="d-flex gap-8 align-items-center fw-medium mb-0">
+              <p
+                class="d-flex gap-8 align-items-center fw-medium mb-0 d-none d-lg-block"
+              >
                 <span># 主食</span>
                 <span># 飯料理</span>
                 <span># 雞肉</span>
@@ -571,7 +625,7 @@
               <a
                 href="./recipe.html"
                 class="text-light opacity-50-hover d-flex align-items-center gap-8 ms-auto fw-medium"
-                ><span>查看詳情</span
+                ><span class="d-none d-md-block">查看詳情</span
                 ><img
                   src="/assets/images/white-arrow-icon.svg"
                   alt="前往南蠻雞咖哩"
@@ -590,21 +644,38 @@
           </div>
           <div class="col-lg-6">
             <div
-              class="border border-secondary-700 h-100 rounded-3 bg-white d-flex flex-column align-items-center justify-content-center text-center px-32"
+              class="border border-secondary-700 h-100 rounded-3 bg-white d-flex flex-column align-items-lg-center justify-content-center text-center px-lg-32 py-lg-0 py-12 px-16"
             >
-              <h2 class="mb-24 text-dark">
+              <h2 class="mb-24 text-dark d-none d-lg-block">
                 多種豐富影音食譜，帶你一步一步線上學會做出美味料理！
               </h2>
+              <div
+                class="d-flex justify-content-between d-block d-lg-none mb-12"
+              >
+                <div class="flex-shrink-0">
+                  <div class="mb-8">
+                    <img
+                      src="../assets/images/logo-without-word.svg"
+                      alt="logo"
+                    />
+                  </div>
+                  <h2 class="fs-5 mb-0">VIP會員獨享</h2>
+                </div>
+                <p class="w-50 fs-8 align-self-end lh-lg text-start mb-0">
+                  光看文字食譜還是不太夠？
+                  我們提供給您最豐富仔細的影音食譜教學！
+                </p>
+              </div>
               <a
                 href="./subscribe.html"
-                class="bg-secondary-500 py-16 px-24 rounded-3 text-light mb-8 opacity-75-hover"
+                class="bg-secondary-500 py-8 px-16 py-lg-16 rounded-3 text-light mb-lg-8 mb-0 opacity-75-hover d-block d-lg-inline-block"
                 ><img
                   src="../assets/images/Crown.svg"
                   alt=""
-                  class="me-8"
+                  class="me-4 me-lg-8"
                 />點我立即升級 VIP</a
               >
-              <p class="text-gray-600">
+              <p class="text-gray-600 d-none d-lg-block">
                 已經是 VIP 會員？ 請
                 <button type="button" class="bg-transparent border-0 p-0">
                   <span class="text-decoration-underline text-primary-800"
@@ -617,14 +688,69 @@
           </div>
         </div>
       </div>
+
+      <section class="d-block d-lg-none mb-40">
+        <div class="border-dash-bottom mb-40"></div>
+        <h2
+          class="fs-4 fw-semibold d-flex align-items-center column-gap-4 mb-lg-36 mb-20 justify-content-center"
+        >
+          <img src="../assets/images/ranking.svg" alt="" /><span
+            class="text-primary-800"
+            >熱門食譜排行</span
+          >
+        </h2>
+        <ol
+          class="d-flex p-0 mb-16 list-unstyled overflow-scroll ps-16 gap-8 | card__ranks"
+        >
+          <% for (let i = 1; i <= 5; i++) { %>
+          <li class="">
+            <div class="position-relative rounded-3 shadow">
+              <div
+                class="position-absolute text-center bg-primary-500 text-light fw-semibold rounded-circle | card__rank--rank"
+              >
+                <%= i %>
+              </div>
+              <picture>
+                <source
+                  srcset="../assets/images/home/rank-card-img.avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="../assets/images/home/rank-card-img.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="../assets/images/home/rank-card-img.png"
+                  class="rounded-top-1 object-fit-cover | card__rank--image"
+                  alt="熱門第一名食譜"
+                />
+              </picture>
+              <div class="p-8 bg-light rounded-bottom-1">
+                <h5 class="mb-0 fs-8 fw-medium text-primary-900">
+                  紅絲絨杯子蛋糕
+                </h5>
+              </div>
+            </div>
+          </li>
+          <% } %>
+        </ol>
+        <a
+          class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium justify-content-end"
+          href="./menus.html"
+          ><span>查看詳情</span
+          ><img src="../assets/images/Right Arrow.svg" alt="查看詳情"
+        /></a>
+      </section>
+
       <div class="container">
-        <div class="border-dash-bottom container mb-80"></div>
+        <div class="border-dash-bottom container mb-lg-80 mb-40"></div>
         <section>
           <div
-            class="d-flex justify-content-lg-between align-items-center mb-40"
+            class="d-flex justify-content-between align-items-center mb-sm-40 mb-16"
           >
             <h2 class="fw-bold fs-2 text-dark position-relative m-0">
-              十分鐘內搞定，簡單好上手
+              <span class="d-none d-lg-inline-block">十分鐘內搞定，</span
+              >簡單好上手
               <hr
                 class="border-bottom border-primary-300 border-8 m-0 position-absolute bottom-0 w-100"
               />
@@ -632,13 +758,13 @@
             <a
               class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium"
               href="./menus.html"
-              ><span>查看詳情</span
+              ><span class="d-none d-lg-inline-block">查看詳情</span
               ><img src="../assets/images/Right Arrow.svg" alt="查看詳情"
             /></a>
           </div>
-          <div class="row g-5">
+          <div class="row g-lg-5 gx-2 gy-3">
             <% for (let i = 1; i <= 4; i++) { %>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-6">
               <div class="rounded shadow">
                 <div class="position-relative">
                   <a href="./recipe.html">
@@ -659,44 +785,56 @@
                     </picture>
                   </a>
                   <button
-                    class="position-absolute border-0 bg-light rounded-circle top-16px end-16px p-8"
+                    class="position-absolute border-0 bg-light rounded-circle p-8 | btn--collection"
                     aria-label="收藏按鈕"
                   >
                     <img src="../assets/images/bookmark.svg" alt="收藏" />
                   </button>
                   <button
-                    class="position-absolute border-0 bottom-12px start-12px bg-dark bg-opacity-40 rounded-3 py-4 px-6 opacity-50-hover"
+                    class="position-absolute border-0 bg-dark bg-opacity-40 rounded-3 py-4 px-6 opacity-50-hover | btn--video"
                     aria-label="錄影播放"
                   >
                     <img src="../assets/images/video.svg" alt="錄影播放" />
                   </button>
                 </div>
-                <div class="p-12 bg-light rounded-bottom">
+                <div class="p-lg-12 p-8 bg-light rounded-bottom">
                   <h5 class="fs-5 fw-bold mb-8">
                     <a href="./recipe.html" class="text-dark opacity-50-hover">
                       日式馬鈴薯沙拉</a
                     >
                   </h5>
-                  <p class="d-flex gap-16 text-gray-600 fw-medium">
-                    <span class="d-flex align-items-center gap-4">
-                      <img src="../assets/images/chef-hat.svg" alt="" /><span
-                        >DAYDAYcook</span
-                      >
+                  <p
+                    class="d-flex text-gray-600 fw-medium column-gap-8 row-gap-lg-8 row-gap-6 flex-wrap mb-0 mb-lg-16"
+                  >
+                    <span
+                      class="d-flex align-items-center gap-4 order-last order-lg-first"
+                    >
+                      <img
+                        src="../assets/images/chef-hat.svg"
+                        alt=""
+                        class="card__image--title"
+                      /><span>DAYDAYcook</span>
                     </span>
                     <span class="d-flex align-items-center gap-4">
-                      <img src="../assets/images/stopwatch.svg" alt="" /><span
-                        >20 min</span
-                      >
+                      <img
+                        src="../assets/images/stopwatch.svg"
+                        alt=""
+                        class="card__image--title"
+                      /><span>20 min</span>
                     </span>
                     <span class="d-flex align-items-center gap-4">
-                      <img src="../assets/images/heart.svg" alt="" /><span
-                        >150</span
-                      >
+                      <img
+                        src="../assets/images/heart.svg"
+                        alt=""
+                        class="card__image--title"
+                      /><span>150</span>
                     </span>
                   </p>
-                  <p class="text-gray-600 d-flex gap-8 flex-wrap m-0">
+                  <p
+                    class="text-gray-600 d-flex gap-8 flex-wrap m-0 d-none d-xl-block"
+                  >
                     <span
-                      class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                      class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50 d-inline-block"
                       ><span class="pe-4">#</span>沙拉</span
                     >
                   </p>
@@ -708,10 +846,10 @@
         </section>
         <section>
           <div
-            class="d-flex justify-content-lg-between align-items-center my-40"
+            class="d-flex justify-content-between align-items-center my-sm-40 my-16"
           >
             <h2 class="fw-bold fs-2 text-dark position-relative m-0">
-              少油少糖，健康好料理
+              <span class="d-none d-lg-inline-block">少油少糖，</span>健康好料理
               <hr
                 class="border-bottom border-primary-300 border-8 m-0 position-absolute bottom-0 w-100"
               />
@@ -719,13 +857,13 @@
             <a
               class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium"
               href="./menus.html"
-              ><span>查看詳情</span
+              ><span class="d-none d-lg-inline-block">查看詳情</span
               ><img src="../assets/images/Right Arrow.svg" alt="查看詳情"
             /></a>
           </div>
-          <div class="row g-5">
+          <div class="row g-lg-5 gx-2 gy-3">
             <% for (let i = 1; i <= 4; i++) { %>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-6">
               <div class="rounded shadow">
                 <div class="position-relative">
                   <a href="./recipe.html">
@@ -746,44 +884,56 @@
                     </picture>
                   </a>
                   <button
-                    class="position-absolute border-0 bg-light rounded-circle top-16px end-16px p-8"
+                    class="position-absolute border-0 bg-light rounded-circle p-8 | btn--collection"
                     aria-label="收藏按鈕"
                   >
                     <img src="../assets/images/bookmark.svg" alt="收藏" />
                   </button>
                   <button
-                    class="position-absolute border-0 bottom-12px start-12px bg-dark bg-opacity-40 rounded-3 py-4 px-6 opacity-50-hover"
+                    class="position-absolute border-0 bg-dark bg-opacity-40 rounded-3 py-4 px-6 opacity-50-hover | btn--video"
                     aria-label="錄影播放"
                   >
                     <img src="../assets/images/video.svg" alt="錄影播放" />
                   </button>
                 </div>
-                <div class="p-12 bg-light rounded-bottom">
+                <div class="p-lg-12 p-8 bg-light rounded-bottom">
                   <h5 class="fs-5 fw-bold mb-8">
                     <a href="./recipe.html" class="text-dark opacity-50-hover">
                       日式馬鈴薯沙拉</a
                     >
                   </h5>
-                  <p class="d-flex gap-16 text-gray-600 fw-medium">
-                    <span class="d-flex align-items-center gap-4">
-                      <img src="../assets/images/chef-hat.svg" alt="" /><span
-                        >DAYDAYcook</span
-                      >
+                  <p
+                    class="d-flex text-gray-600 fw-medium column-gap-8 row-gap-lg-8 row-gap-6 flex-wrap mb-0 mb-lg-16"
+                  >
+                    <span
+                      class="d-flex align-items-center gap-4 order-last order-lg-first"
+                    >
+                      <img
+                        src="../assets/images/chef-hat.svg"
+                        alt=""
+                        class="card__image--title"
+                      /><span>DAYDAYcook</span>
                     </span>
                     <span class="d-flex align-items-center gap-4">
-                      <img src="../assets/images/stopwatch.svg" alt="" /><span
-                        >20 min</span
-                      >
+                      <img
+                        src="../assets/images/stopwatch.svg"
+                        alt=""
+                        class="card__image--title"
+                      /><span>20 min</span>
                     </span>
                     <span class="d-flex align-items-center gap-4">
-                      <img src="../assets/images/heart.svg" alt="" /><span
-                        >150</span
-                      >
+                      <img
+                        src="../assets/images/heart.svg"
+                        alt=""
+                        class="card__image--title"
+                      /><span>150</span>
                     </span>
                   </p>
-                  <p class="text-gray-600 d-flex gap-8 flex-wrap m-0">
+                  <p
+                    class="text-gray-600 d-flex gap-8 flex-wrap m-0 d-none d-xl-block"
+                  >
                     <span
-                      class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50"
+                      class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-primary-50 d-inline-block"
                       ><span class="pe-4">#</span>沙拉</span
                     >
                   </p>
@@ -792,13 +942,19 @@
             </div>
             <% } %>
           </div>
-          <div class="border-dash-bottom container mt-80"></div>
+          <div class="border-dash-bottom container mt-lg-80 mt-40"></div>
         </section>
       </div>
-      <div class="container pt-60 pb-120">
-        <div class="d-flex justify-content-lg-between align-items-center mb-60">
+
+      <div class="container pt-lg-60 pt-40 pb-lg-120 pb-80">
+        <div
+          class="d-flex justify-content-between align-items-center mb-lg-60 mb-16"
+        >
           <h2 class="fw-bold fs-2 text-dark position-relative m-0">
-            多位知名主廚，菜單不藏私
+            <span class="d-none d-lg-inline-block">多位</span>知名主廚<span
+              class="d-none d-lg-inline-block"
+              >，菜單不藏私</span
+            >
             <hr
               class="border-bottom border-primary-300 border-8 m-0 position-absolute bottom-0 w-100"
             />
@@ -806,14 +962,16 @@
           <a
             class="text-primary-800 d-flex align-items-center gap-8 opacity-50-hover fs-5 fw-medium"
             href="./menus.html"
-            ><span>看看其他推薦廚師</span
+            ><span class="d-none d-lg-inline-block">看看其他推薦廚師</span
             ><img src="../assets/images/home/change.svg" alt="看看其他推薦廚師"
           /></a>
         </div>
         <% for (let i = 1; i <= 3; i++) { %>
-        <div class="row mb-40 align-items-center">
+        <div
+          class="row mb-lg-40 mb-24 align-items-center justify-content-between g-0"
+        >
           <div class="col-6 row">
-            <div class="col-4">
+            <div class="col-lg-4">
               <div class="text-center | card__chef">
                 <img src="../assets/images/avatar.svg" alt="John Doe" />
                 <p
@@ -825,9 +983,21 @@
                     alt=""
                   />John Doe
                 </p>
+                <div
+                  class="text-gray-600 d-flex gap-4 mb-8 d-block d-lg-none fs-6"
+                >
+                  <span
+                    class="border border-1 border-primary-400 rounded-3 py-4 px-4 bg-light"
+                    ><span class="pe-4">#</span>飯食</span
+                  >
+                  <span
+                    class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-light"
+                    ><span class="pe-4">#</span>咖哩飯</span
+                  >
+                </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 d-lg-block d-none">
               <div class="text-gray-600 d-flex gap-4 flex-wrap mb-8">
                 <span
                   class="border border-1 border-primary-400 rounded-3 py-4 px-8 bg-light"
@@ -844,8 +1014,8 @@
               </p>
             </div>
           </div>
-          <div class="col-6 row gx-5">
-            <div class="col-6">
+          <div class="col-6 d-flex gap-lg-32 gap-8">
+            <div class="">
               <div class="position-relative card__chef">
                 <a href="./chef.html">
                   <picture>
@@ -859,7 +1029,7 @@
                     />
                     <img
                       src="../assets/images/home/chef-recipe.png"
-                      class="card__image-2 object-fit-cover w-100 rounded-4 card__image-3"
+                      class="object-fit-cover w-100 rounded-4 card__chef--image"
                       alt="南洋咖哩雞"
                     />
                   </picture>
@@ -872,7 +1042,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-6">
+            <div class="d-none d-md-block">
               <div class="position-relative card__chef">
                 <a href="./chef.html">
                   <picture>
@@ -886,7 +1056,7 @@
                     />
                     <img
                       src="../assets/images/home/chef-recipe.png"
-                      class="card__image-2 object-fit-cover w-100 rounded-4 card__image-3"
+                      class="object-fit-cover w-100 rounded-4 | card__chef--image"
                       alt="南洋咖哩雞"
                     />
                   </picture>
