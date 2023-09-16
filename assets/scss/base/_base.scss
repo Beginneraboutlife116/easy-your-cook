@@ -1,14 +1,5 @@
 $link-decoration: none;
 
-html,
-body {
-  scrollbar-width: none;
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
-}
-
 img {
   vertical-align: middle;
   max-width: 100%;

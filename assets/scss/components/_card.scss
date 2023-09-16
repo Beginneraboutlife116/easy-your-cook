@@ -23,13 +23,6 @@
   }
 
   &__rank {
-    &s {
-      &::-webkit-scrollbar {
-        display: none;
-      }
-      scrollbar-width: 0px;
-    }
-
     &--rank {
       aspect-ratio: 1;
       display: grid;
